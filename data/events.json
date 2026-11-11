@@ -1555,15 +1555,15 @@
         "en": "Picnic in the Park"
       },
       "description": {
-        "th": "งานปิกนิกในสวนที่อุทยาน 100 ปี จุฬาฯ 4 วัน 12–15 พฤศจิกายน จากโปสเตอร์ที่ทีมแชร์ในกลุ่ม ยังไม่พบประกาศออนไลน์ เวลาและรายละเอียดกิจกรรมให้ตรวจสอบกับผู้จัดก่อนไป",
-        "en": "A four-day picnic event at Chula Centenary Park, 12–15 November, from a poster shared in the team chat. No online announcement yet — check times and activities with the organiser before you go."
+        "th": "งานปิกนิกกลางอุทยาน 100 ปี จุฬาฯ 4 วัน โดย PMCU ร่วมกับ Nat.a.life ชวนมาพักผ่อนบนสนามหญ้ากับครอบครัว เพื่อน หรือพาน้องหมามาด้วย มี 4 โซน: Paint, Play & Picnic เวิร์กช็อปและกิจกรรมศิลปะ · Art & Craft Market ตลาดงานคราฟต์ · Picnic Café & Cooking อาหาร ขนม และเครื่องดื่มสำหรับปิกนิก · Picnic Music Corner ดนตรีและการแสดงสด",
+        "en": "A four-day picnic on the lawns of Chula Centenary Park, by PMCU with Nat.a.life — come with family, friends or your dog. Four zones: Paint, Play & Picnic (workshops and art activities) · Art & Craft Market · Picnic Café & Cooking (food, snacks and drinks for your picnic) · Picnic Music Corner (live music and performances)."
       },
       "date": "2026-11-12",
       "end_date": "2026-11-15",
-      "start": "",
-      "end": "",
+      "start": "16:00",
+      "end": "22:00",
       "open_end": false,
-      "all_day": true,
+      "all_day": false,
       "park": "chula",
       "venue": {
         "th": "",
@@ -1572,12 +1572,12 @@
       "category": "community",
       "effort": "gentle",
       "cost": {
-        "th": "",
-        "en": ""
+        "th": "เข้างานฟรี",
+        "en": "Free entry"
       },
       "organiser": {
-        "th": "",
-        "en": ""
+        "th": "PMCU × Nat.a.life Organizer",
+        "en": "PMCU × Nat.a.life Organizer"
       },
       "registration": {
         "text": {
@@ -1586,19 +1586,51 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "16:00–22:00",
+          "th": "เปิดงานทุกวัน 12–15 พ.ย.",
+          "en": "Open daily, 12–15 Nov"
+        },
+        {
+          "time": "15 พ.ย. 18:45–20:15",
+          "th": "Decibell band เล่นสดที่ Music Corner",
+          "en": "Decibell band live at the Music Corner (15 Nov)"
+        }
+      ],
       "sources": [
         {
           "label": {
-            "th": "โปสเตอร์จากแชททีม (12–15 พ.ย. สวน 100)",
-            "en": "Poster from team chat (12–15 Nov, Chula park)"
+            "th": "เพจสามย่าน–บรรทัดทอง × PMCU (Facebook, 9 พ.ย.)",
+            "en": "Samyan–Banthat Thong × PMCU (Facebook, 9 Nov)"
+          },
+          "url": "https://www.facebook.com/banthatthong.bkk/posts/pfbid0VdrzdaiJ9yYmsViLJU7Dw2pyLQMUuHH5bMYNYHJMHKEM751UfuaSBywsQsnHzfsVl"
+        },
+        {
+          "label": {
+            "th": "Nat.a.life Organizer (Facebook, 11 พ.ย.)",
+            "en": "Nat.a.life Organizer (Facebook, 11 Nov)"
+          },
+          "url": ""
+        },
+        {
+          "label": {
+            "th": "Decibell band (Facebook, 10 พ.ย.)",
+            "en": "Decibell band (Facebook, 10 Nov)"
+          },
+          "url": "https://www.facebook.com/Decibellband/posts/pfbid02uRBhz47g2mGSKYhNLY9xRTvNQ8reXRnVqhTzUAbekNysFfYxC23uRmkCFubjpASTl"
+        },
+        {
+          "label": {
+            "th": "โปสเตอร์จากแชททีม",
+            "en": "Poster from team chat"
           },
           "url": ""
         }
       ],
       "image": "",
       "venue_check": false,
-      "poster_only": true
+      "poster_only": false
     },
     {
       "id": "lumpini-aerobics-nov",
@@ -2054,6 +2086,142 @@
       "image": "",
       "venue_check": false,
       "poster_only": false
+    },
+    {
+      "park": "chula",
+      "category": "music",
+      "effort": "light",
+      "image": "",
+      "venue_check": false,
+      "poster_only": false,
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "open_end": false,
+      "end_date": "2026-11-24",
+      "id": "wat-banthat-nov",
+      "title": {
+        "th": "งานวัดบรรทัดทอง ตอน วัยมันส์ วันเพ็ญ",
+        "en": "Banthat Thong Temple Fair: Full-Moon Fun (Loy Krathong)"
+      },
+      "description": {
+        "th": "งานวัดแบบไทยร่วมสมัยรับเทศกาลลอยกระทง ชวนออกมาเต้นสวิงใต้แสงจันทร์ดวงยักษ์ (Swing Under the Moon) พร้อมของกิน ซุ้มเกม และดนตรีสด จัดโดย PMCU ร่วมกับ ททท. สำนักงานกรุงเทพมหานคร และผู้ประกอบการย่านบรรทัดทอง ที่ลานโกคาร์ทหน้าอุทยาน 100 ปี จุฬาฯ ฝั่งถนนบรรทัดทอง",
+        "en": "A contemporary Thai temple fair for Loy Krathong — swing dancing under a giant moon (Swing Under the Moon), street food, game stalls and live music. By PMCU with TAT Bangkok and Banthat Thong businesses, on the go-kart lot in front of Chula Centenary Park, Banthat Thong Road side."
+      },
+      "date": "2026-11-18",
+      "start": "",
+      "end": "",
+      "all_day": true,
+      "venue": {
+        "th": "ลานโกคาร์ท หน้าอุทยานฝั่งถนนบรรทัดทอง",
+        "en": "Go-kart lot, Banthat Thong Road side of the park"
+      },
+      "cost": {
+        "th": "",
+        "en": ""
+      },
+      "organiser": {
+        "th": "PMCU × ททท. สำนักงานกรุงเทพมหานคร × Nat.a.life",
+        "en": "PMCU × TAT Bangkok Office × Nat.a.life"
+      },
+      "schedule": [
+        {
+          "time": "20 พ.ย. 21:30–23:00",
+          "th": "ลำไย ไหทองคำ",
+          "en": "Lamyai Haithongkham (20 Nov)"
+        },
+        {
+          "time": "24 พ.ย. 20:00–21:00",
+          "th": "โจอี้ ภูวศิษฐ์ (คืนปิดงาน)",
+          "en": "Joey Phuwasit — closing night (24 Nov)"
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "th": "ททท. สำนักงานกรุงเทพมหานคร (Facebook, 26 ต.ค.)",
+            "en": "TAT Bangkok Office (Facebook, 26 Oct)"
+          },
+          "url": "https://web.facebook.com/tatbangkok/posts/pfbid0aeFbWUZ2gzQS5SYYo1sMiyXxpz4mcMLkW4qtqpj957ueoKPFHfwhxe18JPuvyXLvl"
+        },
+        {
+          "label": {
+            "th": "Time Out กรุงเทพฯ (Facebook, 30 ต.ค.)",
+            "en": "Time Out Bangkok TH (Facebook, 30 Oct)"
+          },
+          "url": "https://web.facebook.com/TimeOutBangkokTH/posts/pfbid032Xzvz91mGcbMm5pM4FUdqLC9eQApvPtaz1jmxQXffqYoGP5mb2kb8NueXqw62URzl"
+        },
+        {
+          "label": {
+            "th": "Nat.a.life Organizer · ไลน์อัปศิลปิน (Facebook, 7 พ.ย.)",
+            "en": "Nat.a.life Organizer · artist line-up (Facebook, 7 Nov)"
+          },
+          "url": ""
+        }
+      ]
+    },
+    {
+      "park": "chula",
+      "category": "market",
+      "effort": "light",
+      "image": "",
+      "venue_check": false,
+      "poster_only": false,
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "open_end": false,
+      "end_date": "2026-12-31",
+      "id": "wat-banthat-dec",
+      "title": {
+        "th": "งานวัดบรรทัดทอง ตอน สุขสนั่น ลั่นดาว",
+        "en": "Banthat Thong Temple Fair: Christmas & New Year"
+      },
+      "description": {
+        "th": "ส่งท้ายปีเก่าต้อนรับปีใหม่แบบงานวัดไทย ต้นคริสต์มาส LED แสงไฟ ซุ้มเกมงานวัด ร้านค้าและของอร่อย ชวนมา “อร่อยฟิน กินข้ามปี” และนับถอยหลังด้วยกัน จัดโดย PMCU ร่วมกับ ททท. สำนักงานกรุงเทพมหานคร",
+        "en": "See out the year Thai temple-fair style: an LED Christmas tree, lights, fair games, stalls and street food — eat your way into the new year and count down together. By PMCU with TAT Bangkok."
+      },
+      "date": "2026-12-25",
+      "start": "",
+      "end": "",
+      "all_day": true,
+      "venue": {
+        "th": "หน้าอุทยาน 100 ปี จุฬาฯ ฝั่งถนนบรรทัดทอง",
+        "en": "In front of the park, Banthat Thong Road side"
+      },
+      "cost": {
+        "th": "",
+        "en": ""
+      },
+      "organiser": {
+        "th": "PMCU × ททท. สำนักงานกรุงเทพมหานคร × Nat.a.life",
+        "en": "PMCU × TAT Bangkok Office × Nat.a.life"
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "ททท. สำนักงานกรุงเทพมหานคร (Facebook, 26 ต.ค.)",
+            "en": "TAT Bangkok Office (Facebook, 26 Oct)"
+          },
+          "url": "https://web.facebook.com/tatbangkok/posts/pfbid0aeFbWUZ2gzQS5SYYo1sMiyXxpz4mcMLkW4qtqpj957ueoKPFHfwhxe18JPuvyXLvl"
+        },
+        {
+          "label": {
+            "th": "Time Out กรุงเทพฯ (Facebook, 30 ต.ค.)",
+            "en": "Time Out Bangkok TH (Facebook, 30 Oct)"
+          },
+          "url": "https://web.facebook.com/TimeOutBangkokTH/posts/pfbid032Xzvz91mGcbMm5pM4FUdqLC9eQApvPtaz1jmxQXffqYoGP5mb2kb8NueXqw62URzl"
+        }
+      ]
     }
   ]
 }
