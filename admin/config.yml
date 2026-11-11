@@ -253,7 +253,7 @@ collections:
         widget: image
         required: false
       - name: venue_check
-        label: สถานที่ยังไม่ยืนยัน (แสดงคำเตือน)
+        label: ข้อมูลไม่ตรงกันระหว่างแหล่ง (แสดงคำเตือน)
         widget: boolean
         default: false
       - name: poster_only

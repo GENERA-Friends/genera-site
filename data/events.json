@@ -7,8 +7,8 @@
         "en": "Chula Klang Plaeng 3 — outdoor cinema"
       },
       "description": {
-        "th": "หนังกลางแปลงในอุทยาน ฉาย ‘รถไฟฟ้ามาหานะเธอ’ และ ‘10 Things I Hate About You’ พร้อมเวทีเสวนา ดนตรีสด และเวิร์กช็อป เช่น ดูดวง วาดรูปสดโดยนิสิต เฮนนา เพนต์หินคลายเครียด ทำพวงกุญแจ และพัด DIY",
-        "en": "An open-air movie night screening ‘Rot Fai Fah Ma Ha Na Ther’ and ‘10 Things I Hate About You’, with a talk, live music and workshops: tarot readings, live student sketches, henna, worry-stone painting, keychains and DIY fans."
+        "th": "จุฬาฯ กลางแปลง ครั้งที่ 3 กลับมาพร้อมลมหนาวปลายปี ชวนมานั่งดูหนังกลางแจ้งบนเนินสนามหญ้าของอุทยาน กับหนังรักสองเรื่องจากคนละยุค ‘รถไฟฟ้ามาหานะเธอ’ และ ‘10 Things I Hate About You’ ก่อนหนังเริ่มมีวงดนตรี เวทีเสวนา และเวิร์กช็อปเพียบ: ดูดวง ถ่าย Photo Booth วาดรูปสดโดยนิสิต เฮนนาอาร์ต เพนต์หิน Worry Stone คลายเครียด ทำพวงกุญแจ และออกแบบพัด DIY มีร้านอาหารและเครื่องดื่มในงาน ไม่มีค่าเข้างาน แนะนำพกเสื่อมาปูนั่ง",
+        "en": "Chula Klang Plaeng returns for a third round as the cool season arrives: an open-air double bill on the park's sloping lawn — the Thai classic ‘Rot Fai Fah Ma Ha Na Ther’ and the 90s teen romance ‘10 Things I Hate About You’. Before the films there's live music, a talk and plenty of workshops: tarot readings, a photo booth, live portraits by students, henna art, worry-stone painting, keychains and DIY fans. Food and drink stalls on site, free entry — bring a picnic mat."
       },
       "date": "2026-11-06",
       "end_date": "",
@@ -18,8 +18,8 @@
       "all_day": false,
       "park": "chula",
       "venue": {
-        "th": "",
-        "en": ""
+        "th": "เนินสนามหญ้า (อัฒจันทร์)",
+        "en": "The sloping lawn (amphitheatre)"
       },
       "category": "film",
       "effort": "gentle",
@@ -45,14 +45,19 @@
           "en": "Live music"
         },
         {
+          "time": "16:30–21:00",
+          "th": "เวิร์กช็อปและนิทรรศการ",
+          "en": "Workshops & exhibition"
+        },
+        {
           "time": "17:00–17:40",
           "th": "เวทีเสวนา",
           "en": "Talk"
         },
         {
           "time": "17:45–19:45",
-          "th": "รถไฟฟ้ามาหานะเธอ",
-          "en": "Rot Fai Fah Ma Ha Na Ther"
+          "th": "ภาพยนตร์: รถไฟฟ้ามาหานะเธอ",
+          "en": "Film: Rot Fai Fah Ma Ha Na Ther"
         },
         {
           "time": "19:45–20:15",
@@ -61,8 +66,8 @@
         },
         {
           "time": "20:15–21:50",
-          "th": "10 Things I Hate About You",
-          "en": "10 Things I Hate About You"
+          "th": "ภาพยนตร์: 10 Things I Hate About You",
+          "en": "Film: 10 Things I Hate About You"
         }
       ],
       "sources": [
@@ -88,12 +93,12 @@
     {
       "id": "tay28",
       "title": {
-        "th": "Tay Flea Market ซีซั่น 28: Nippon",
-        "en": "Tay Flea Market Season 28: Nippon"
+        "th": "TAY SS28 Nippon Flea Market",
+        "en": "TAY SS28 Nippon Flea Market"
       },
       "description": {
-        "th": "ตลาดนัดวินเทจและของมือสองชื่อดังกลับมาในธีมญี่ปุ่น ซีซั่นก่อนๆ มีร้านค้ากว่า 200 ร้านและเข้าชมฟรี",
-        "en": "The popular vintage and second-hand flea market returns with a Japanese theme. Previous seasons had 200+ stalls and free entry."
+        "th": "Tay Flea Market ซีซั่น 28 มาในธีมญี่ปุ่น ‘Nippon’ ตลาดนัดของวินเทจ เสื้อผ้ามือสอง และของสะสม จัด 4 วันติดตั้งแต่บ่ายถึงดึก ซีซั่นก่อนๆ ที่อุทยานมีร้านค้ากว่า 200 ร้านและเข้าชมฟรี",
+        "en": "Tay Flea Market's 28th season goes Japanese with a ‘Nippon’ theme — vintage, second-hand fashion and collectibles, four days running from late afternoon until late. Previous seasons at the park had 200+ stalls and free entry."
       },
       "date": "2026-11-05",
       "end_date": "2026-11-08",
@@ -123,7 +128,13 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "16:00–23:30",
+          "th": "ตลาดเปิดทุกวัน 5–8 พ.ย.",
+          "en": "Market open daily, 5–8 Nov"
+        }
+      ],
       "sources": [
         {
           "label": {
@@ -203,8 +214,8 @@
         "en": "MOLLY 20th Anniversary Exhibition – Bangkok"
       },
       "description": {
-        "th": "นิทรรศการฉลอง 20 ปี MOLLY ธีม ‘The Little Galaxy’ โดย POP MART Thailand ร่วมกับ ททท. และ PMCU พร้อมกิจกรรม Stamp Collection กับร้านค้า 15 ร้านในย่านบรรทัดทอง ใช้บริการครบ 3 ร้านแลกโปสการ์ด MOLLY รุ่นพิเศษ",
-        "en": "POP MART Thailand's 20th-anniversary MOLLY exhibition ‘The Little Galaxy’, with TAT and PMCU, plus a stamp trail with 15 shops around Banthat Thong — visit 3 to collect a limited MOLLY postcard."
+        "th": "นิทรรศการฉลอง 20 ปี MOLLY ธีม ‘The Little Galaxy’ ที่อุทยาน 100 ปี จุฬาฯ โดย POP MART Thailand ร่วมกับ ททท. และ PMCU พร้อมกิจกรรม MOLLY 20th Anniversary Stamp Collection เชื่อมนิทรรศการกับร้านอาหารและร้านค้าย่านบรรทัดทอง 15 ร้าน ครอบคลุม 3 พื้นที่ตั้งแต่ฝั่งพระราม 1 ถึงพระราม 4 ใช้บริการครบ 3 ร้าน สะสมแสตมป์แลกรับ MOLLY Limited Edition Postcard",
+        "en": "POP MART Thailand's MOLLY 20th-anniversary exhibition ‘The Little Galaxy’ at the park, with TAT and PMCU. The MOLLY 20th Anniversary Stamp Collection links it to 15 restaurants and shops around Banthat Thong, across three areas from Rama 1 to Rama 4 Road — spend at any 3 to collect stamps and claim a limited-edition MOLLY postcard."
       },
       "date": "2026-09-24",
       "end_date": "2026-10-25",
@@ -234,7 +245,23 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "1",
+          "th": "รับการ์ดสะสมแสตมป์",
+          "en": "Get a stamp card"
+        },
+        {
+          "time": "2",
+          "th": "ใช้บริการร้านที่ร่วมกิจกรรมให้ครบ 3 ร้าน",
+          "en": "Visit 3 participating shops"
+        },
+        {
+          "time": "3",
+          "th": "แลกรับโปสการ์ด MOLLY รุ่นพิเศษ",
+          "en": "Claim the limited MOLLY postcard"
+        }
+      ],
       "sources": [
         {
           "label": {
@@ -262,8 +289,8 @@
         "en": "CHULA Let’s Play #3: Park of Traditional Games"
       },
       "description": {
-        "th": "เทศกาลชวนเด็กและครอบครัวเงยหน้าจากจอ กลับมาเล่นการละเล่นพื้นบ้านกลางสวน โดย PMCU ร่วมกับกระทรวงวัฒนธรรม เครือข่ายเล่นเปลี่ยนโลก และ สสส.",
-        "en": "A festival inviting children and families off their screens to play traditional Thai games in the park, by PMCU with the Ministry of Culture, the Play Changes the World network and ThaiHealth."
+        "th": "CHULA Let’s Play ครั้งที่ 3 ตอน “อุทยานฯ การละเล่น” ชวนเด็กและครอบครัวเงยหน้าจากจอ มาเล่นการละเล่นพื้นบ้านด้วยกันกลางสวน มีโซน SATARANA Learning Space เข้าร่วมฟรี จัดโดย PMCU ร่วมกับกระทรวงวัฒนธรรม เครือข่ายเล่นเปลี่ยนโลก และ สสส. (หมายเหตุ: ในแชททีมจดไว้ 19 พ.ย. แต่โปสเตอร์และไทยโพสต์ระบุ 19 กันยายน 2569)",
+        "en": "CHULA Let’s Play #3, ‘Park of Traditional Games’, invites kids and families off their screens to play traditional Thai games together, including a SATARANA Learning Space zone. Free. By PMCU with the Ministry of Culture, the Play Changes the World network and ThaiHealth. (The team chat noted 19 Nov, but the poster and Thai Post both say 19 September 2026.)"
       },
       "date": "2026-09-19",
       "end_date": "",
@@ -273,14 +300,14 @@
       "all_day": false,
       "park": "chula",
       "venue": {
-        "th": "",
-        "en": ""
+        "th": "SATARANA Learning Space",
+        "en": "SATARANA Learning Space"
       },
       "category": "family",
       "effort": "moderate",
       "cost": {
-        "th": "",
-        "en": ""
+        "th": "ฟรี",
+        "en": "Free"
       },
       "organiser": {
         "th": "PMCU × กระทรวงวัฒนธรรม × สสส.",
@@ -373,8 +400,8 @@
         "en": "Music in the Park: Bangkok String Quartet"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย Bangkok String Quartet",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Bangkok String Quartet."
+        "th": "วงเครื่องสายสี่ชิ้นบรรเลงเพลงคลาสสิกและเพลงคุ้นหู งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น.",
+        "en": "A string quartet playing classical pieces and familiar tunes. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00."
       },
       "date": "2026-11-01",
       "end_date": "",
@@ -404,8 +431,26 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -432,8 +477,8 @@
         "en": "Music in the Park: Bangkok Brass Quintet"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย Bangkok Brass Quintet",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Bangkok Brass Quintet."
+        "th": "วงเครื่องเป่าทองเหลืองห้าชิ้น เสียงทรัมเป็ตและทรอมโบนสไตล์คลาสสิก งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น.",
+        "en": "A five-piece brass ensemble with a classic trumpet-and-trombone sound. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00."
       },
       "date": "2026-11-07",
       "end_date": "",
@@ -463,8 +508,26 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -491,8 +554,8 @@
         "en": "Music in the Park: Bangkok Thai Music Ensemble"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย วงดนตรีไทยกรุงเทพมหานคร",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Bangkok Thai Music Ensemble."
+        "th": "วงดนตรีไทยของกรุงเทพมหานคร บรรเลงริมแม่น้ำเจ้าพระยา งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น. หมายเหตุ: กรุงเทพธุรกิจ (4 พ.ย.) ระบุว่ารอบนี้เป็นวงโปงลางมหานคร",
+        "en": "Bangkok's Thai music ensemble, by the Chao Phraya River. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00. Note: Bangkok Biz News (4 Nov) lists Pong Lang Maha Nakhon for this date."
       },
       "date": "2026-11-08",
       "end_date": "",
@@ -522,8 +585,26 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -540,7 +621,7 @@
         }
       ],
       "image": "",
-      "venue_check": false,
+      "venue_check": true,
       "poster_only": false
     },
     {
@@ -550,8 +631,8 @@
         "en": "Music in the Park: BMA Band"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย BMA Band",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring BMA Band."
+        "th": "วงดนตรีประจำกรุงเทพมหานคร เล่นเพลงไทยและสากลฟังสบาย งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น.",
+        "en": "Bangkok's own municipal band, playing easy-listening Thai and international songs. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00."
       },
       "date": "2026-11-14",
       "end_date": "",
@@ -581,8 +662,26 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -609,8 +708,8 @@
         "en": "Music in the Park: Bangkok Ballroom #7"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย บางกอกลีลาศ #7",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Bangkok Ballroom #7."
+        "th": "ลีลาศยามเย็นที่ลุมพินีสถาน รอบนี้เฉพาะผู้ที่ลงทะเบียนล่วงหน้า งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น.",
+        "en": "An evening of ballroom dancing at Lumphinisathan — registered participants only. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00."
       },
       "date": "2026-11-15",
       "end_date": "",
@@ -626,8 +725,8 @@
       "category": "music",
       "effort": "gentle",
       "cost": {
-        "th": "ฟรี (เฉพาะผู้ลงทะเบียนล่วงหน้า)",
-        "en": "Free (pre-registered only)"
+        "th": "ฟรี (เฉพาะผู้ลงทะเบียน)",
+        "en": "Free (registered participants only)"
       },
       "organiser": {
         "th": "กรุงเทพมหานคร",
@@ -635,13 +734,31 @@
       },
       "registration": {
         "text": {
-          "th": "",
-          "en": ""
+          "th": "รอบนี้ต้องลงทะเบียนล่วงหน้า ดูประกาศของ กทม.",
+          "en": "Advance registration required — see the BMA announcement."
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -668,8 +785,8 @@
         "en": "Music in the Park: The Generate"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย The Generate",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring The Generate."
+        "th": "วงดนตรีสดเล่นเพลงป๊อปฟังสบายริมทะเลสาบ งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น. วันนี้มี 3 เวทีพร้อมกัน: สวนเบญจกิติ สวนสันติชัยปราการ และอุทยานเบญจสิริ",
+        "en": "A live band playing easy pop by the lake. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00. Three stages run at once today: Benjakitti, Santichaiprakan and Benjasiri parks."
       },
       "date": "2026-11-21",
       "end_date": "",
@@ -699,8 +816,26 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -727,8 +862,8 @@
         "en": "Music in the Park: The Bangkok Contemp Band"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย The Bangkok Contemp Band",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring The Bangkok Contemp Band."
+        "th": "วงดนตรีร่วมสมัย ใต้ป้อมพระสุเมรุ ริมเจ้าพระยา งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น. วันนี้มี 3 เวทีพร้อมกัน: สวนเบญจกิติ สวนสันติชัยปราการ และอุทยานเบญจสิริ หมายเหตุ: กรุงเทพธุรกิจ (4 พ.ย.) ระบุว่ารอบนี้เป็นวงดนตรีไทยของกรุงเทพมหานคร",
+        "en": "A contemporary band beneath Phra Sumen Fort on the river. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00. Three stages run at once today: Benjakitti, Santichaiprakan and Benjasiri parks. Note: Bangkok Biz News (4 Nov) lists Bangkok's Thai music ensemble for this date."
       },
       "date": "2026-11-21",
       "end_date": "",
@@ -758,8 +893,26 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -776,7 +929,7 @@
         }
       ],
       "image": "",
-      "venue_check": false,
+      "venue_check": true,
       "poster_only": false
     },
     {
@@ -786,8 +939,8 @@
         "en": "Music in the Park: Jerguntee"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย Jerguntee",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Jerguntee."
+        "th": "วงดนตรีสดเล่นเพลงฟังสบายยามเย็นใจกลางสุขุมวิท งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น. วันนี้มี 3 เวทีพร้อมกัน: สวนเบญจกิติ สวนสันติชัยปราการ และอุทยานเบญจสิริ",
+        "en": "A live set for a relaxed evening in the heart of Sukhumvit. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00. Three stages run at once today: Benjakitti, Santichaiprakan and Benjasiri parks."
       },
       "date": "2026-11-21",
       "end_date": "",
@@ -817,8 +970,26 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -845,8 +1016,8 @@
         "en": "Music in the Park: BKK Jazz Group"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย BKK Jazz Group",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring BKK Jazz Group."
+        "th": "แจ๊สยามเย็นใต้ร่มไม้ในสวนรถไฟ งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น. วันนี้มี 3 เวทีพร้อมกัน: สวนวชิรเบญจทัศ สวนหลวงพระราม 8 และสวนเบญจกิติ",
+        "en": "Evening jazz under the trees of Rot Fai Park. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00. Three stages run at once today: Wachirabenchathat, Rama VIII and Benjakitti parks."
       },
       "date": "2026-11-22",
       "end_date": "",
@@ -876,8 +1047,26 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -894,7 +1083,7 @@
         }
       ],
       "image": "",
-      "venue_check": true,
+      "venue_check": false,
       "poster_only": false
     },
     {
@@ -904,8 +1093,8 @@
         "en": "Music in the Park: Ponglang Maha Nakhon"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย โปงลางมหานคร",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Ponglang Maha Nakhon."
+        "th": "ดนตรีพื้นบ้านอีสาน โปงลาง แคน พิณ จังหวะสนุก งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น. วันนี้มี 3 เวทีพร้อมกัน: สวนวชิรเบญจทัศ สวนหลวงพระราม 8 และสวนเบญจกิติ หมายเหตุ: กรุงเทพธุรกิจ (4 พ.ย.) ระบุว่ารอบนี้เป็น The Bangkok Contemp Band",
+        "en": "Lively Isan folk music — pong lang, khaen and phin. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00. Three stages run at once today: Wachirabenchathat, Rama VIII and Benjakitti parks. Note: Bangkok Biz News (4 Nov) lists The Bangkok Contemp Band for this date."
       },
       "date": "2026-11-22",
       "end_date": "",
@@ -935,8 +1124,26 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -953,7 +1160,7 @@
         }
       ],
       "image": "",
-      "venue_check": false,
+      "venue_check": true,
       "poster_only": false
     },
     {
@@ -963,8 +1170,8 @@
         "en": "Music in the Park: HIRAN Band / TOR KRITSAKORN"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย HIRAN Band / TOR KRITSAKORN",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring HIRAN Band / TOR KRITSAKORN."
+        "th": "HIRAN Band พร้อมแขกรับเชิญพิเศษ ต่อ กฤษกร งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น. วันนี้มี 3 เวทีพร้อมกัน: สวนวชิรเบญจทัศ สวนหลวงพระราม 8 และสวนเบญจกิติ",
+        "en": "HIRAN Band with special guest Tor Kritsakorn. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00. Three stages run at once today: Wachirabenchathat, Rama VIII and Benjakitti parks."
       },
       "date": "2026-11-22",
       "end_date": "",
@@ -994,67 +1201,26 @@
         },
         "url": ""
       },
-      "schedule": [],
-      "sources": [
+      "schedule": [
         {
-          "label": {
-            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
-            "en": "Time Out Thailand · Music in the Park, Nov"
-          },
-          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
         },
         {
-          "label": {
-            "th": "รายการจากแชททีม (โพสต์ กทม.)",
-            "en": "List from team chat (BMA post)"
-          },
-          "url": ""
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
         }
       ],
-      "image": "",
-      "venue_check": true,
-      "poster_only": false
-    },
-    {
-      "id": "mip-11-28-benjakitti",
-      "title": {
-        "th": "ดนตรีในสวน: Sustain & Step from D Dance Thailand",
-        "en": "Music in the Park: Sustain & Step from D Dance Thailand"
-      },
-      "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย Sustain & Step from D Dance Thailand",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Sustain & Step from D Dance Thailand."
-      },
-      "date": "2026-11-28",
-      "end_date": "",
-      "start": "17:00",
-      "end": "",
-      "open_end": true,
-      "all_day": false,
-      "park": "benjakitti",
-      "venue": {
-        "th": "",
-        "en": ""
-      },
-      "category": "music",
-      "effort": "gentle",
-      "cost": {
-        "th": "เข้าชมฟรี",
-        "en": "Free"
-      },
-      "organiser": {
-        "th": "กรุงเทพมหานคร",
-        "en": "Bangkok Metropolitan Administration"
-      },
-      "registration": {
-        "text": {
-          "th": "",
-          "en": ""
-        },
-        "url": ""
-      },
-      "schedule": [],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -1075,14 +1241,14 @@
       "poster_only": false
     },
     {
-      "id": "mip-11-28-benjakitti",
+      "id": "mip-11-28-benjakitti-dance",
       "title": {
-        "th": "ดนตรีในสวน: TESKA Winds",
-        "en": "Music in the Park: TESKA Winds"
+        "th": "ดนตรีในสวน: Sustain & Step from D Dance Thailand",
+        "en": "Music in the Park: Sustain & Step from D Dance Thailand"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย TESKA Winds",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring TESKA Winds."
+        "th": "โชว์เต้นจาก D Dance Thailand งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น.",
+        "en": "A dance show by D Dance Thailand. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00."
       },
       "date": "2026-11-28",
       "end_date": "",
@@ -1112,8 +1278,103 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-28-teska",
+      "title": {
+        "th": "ดนตรีในสวน: TESKA Winds",
+        "en": "Music in the Park: TESKA Winds"
+      },
+      "description": {
+        "th": "วงเครื่องเป่าลมไม้และทองเหลือง บรรเลงเพลงคลาสสิกและเพลงประกอบภาพยนตร์ งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น. หมายเหตุ: รายการในแชททีมระบุสวนเบญจกิติ แต่กรุงเทพธุรกิจระบุลุมพินีสถาน สวนลุมพินี",
+        "en": "A wind ensemble playing classical pieces and film music. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00. Note: the team's list says Benjakitti Park, but Bangkok Biz News says Lumphinisathan, Lumphini Park."
+      },
+      "date": "2026-11-28",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "benjakitti",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -1140,8 +1401,8 @@
         "en": "Music in the Park: BMO: Bangkok Metropolitan Orchestra"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย BMO: Bangkok Metropolitan Orchestra",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring BMO: Bangkok Metropolitan Orchestra."
+        "th": "วงออร์เคสตราของกรุงเทพมหานคร ปิดท้ายเดือนด้วยเพลงคลาสสิกเต็มวง งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น.",
+        "en": "Bangkok's own orchestra closes the month with a full classical programme. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00."
       },
       "date": "2026-11-29",
       "end_date": "",
@@ -1171,8 +1432,26 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -1199,8 +1478,8 @@
         "en": "Music in the Park: Bangkok Thai Music Contest"
       },
       "description": {
-        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย ประชันดนตรีไทยกรุงเทพมหานคร",
-        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Bangkok Thai Music Contest."
+        "th": "การประชันวงดนตรีไทยของกรุงเทพมหานคร งานเทศกาล “ดนตรีในสวน 6 สวนรอบกรุงเทพ” ของ กทม. จัดทุกเสาร์–อาทิตย์ตลอดเดือนพฤศจิกายน นั่งฟังเพลงไทย–สากลรับลมหนาว เข้าชมฟรี เริ่ม 17:00 น.",
+        "en": "Bangkok's Thai classical music competition. Part of Bangkok's “Music in the Park” festival across six city parks — every Saturday and Sunday in November, Thai and international music in the cool-season breeze. Free, from 17:00."
       },
       "date": "2026-11-29",
       "end_date": "",
@@ -1230,8 +1509,26 @@
         },
         "url": ""
       },
-      "schedule": [],
+      "schedule": [
+        {
+          "time": "17:00",
+          "th": "เริ่มการแสดง",
+          "en": "Performance starts"
+        },
+        {
+          "time": "—",
+          "th": "ควรเตรียม: เสื่อปูนั่ง พัดหรือร่ม และขวดน้ำส่วนตัว · ทิ้งขยะให้ถูกที่ · แนะนำเดินทางด้วย BTS/MRT/รถเมล์",
+          "en": "Bring: A picnic mat, a fan or umbrella and your own water bottle · use the bins · BTS, MRT or bus recommended"
+        }
+      ],
       "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · ตารางดนตรีในสวน พ.ย. 69",
+            "en": "Bangkok Biz News · Music in the Park, Nov 2026"
+          },
+          "url": "https://www.bangkokbiznews.com/news/1259149"
+        },
         {
           "label": {
             "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
@@ -1245,6 +1542,133 @@
             "en": "List from team chat (BMA post)"
           },
           "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "picnic-1112",
+      "title": {
+        "th": "Picnic in the Park",
+        "en": "Picnic in the Park"
+      },
+      "description": {
+        "th": "งานปิกนิกในสวนที่อุทยาน 100 ปี จุฬาฯ 4 วัน 12–15 พฤศจิกายน จากโปสเตอร์ที่ทีมแชร์ในกลุ่ม ยังไม่พบประกาศออนไลน์ เวลาและรายละเอียดกิจกรรมให้ตรวจสอบกับผู้จัดก่อนไป",
+        "en": "A four-day picnic event at Chula Centenary Park, 12–15 November, from a poster shared in the team chat. No online announcement yet — check times and activities with the organiser before you go."
+      },
+      "date": "2026-11-12",
+      "end_date": "2026-11-15",
+      "start": "",
+      "end": "",
+      "open_end": false,
+      "all_day": true,
+      "park": "chula",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "community",
+      "effort": "gentle",
+      "cost": {
+        "th": "",
+        "en": ""
+      },
+      "organiser": {
+        "th": "",
+        "en": ""
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "โปสเตอร์จากแชททีม (12–15 พ.ย. สวน 100)",
+            "en": "Poster from team chat (12–15 Nov, Chula park)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": true
+    },
+    {
+      "id": "lumpini-aerobics-nov",
+      "title": {
+        "th": "แอโรบิกสวนลุมพินี ประจำเดือนพฤศจิกายน",
+        "en": "Lumpini Park aerobics — November"
+      },
+      "description": {
+        "th": "เต้นแอโรบิกฟรีทุกวันที่ลานแอโรบิกสวนลุมพินี (หลังพระบรมรูป ร.6) ผู้นำเต้นเดือนนี้หมุนเวียนกันมาหลายทีม เช่น ครูแมว ครูตุ๊ก ครูน้อย Zumba Thailand THE DIVA THAILAND และ JETTS FITNESS TEAM ท่าเต้นพื้นฐาน ทำตามได้ง่าย มือใหม่มาได้เลย",
+        "en": "Free aerobics every day at Lumpini Park's aerobics ground (behind the King Rama VI statue). This month's leaders rotate between several teams — including Kru Maew, Kru Tuk, Kru Noi, Zumba Thailand, THE DIVA THAILAND and JETTS FITNESS TEAM. Basic, easy-to-follow routines; beginners welcome."
+      },
+      "date": "2026-11-01",
+      "end_date": "2026-11-30",
+      "start": "18:00",
+      "end": "19:00",
+      "open_end": false,
+      "all_day": false,
+      "park": "lumpini",
+      "venue": {
+        "th": "ลานแอโรบิก หลังพระบรมรูป ร.6",
+        "en": "Aerobics ground behind the King Rama VI statue"
+      },
+      "category": "wellness",
+      "effort": "moderate",
+      "cost": {
+        "th": "ฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร · สวนลุมพินี",
+        "en": "Bangkok Metropolitan Administration · Lumpini Park"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [
+        {
+          "time": "18:00–19:00",
+          "th": "จันทร์–ศุกร์ รอบ 1 · ผู้นำเต้นของ กทม.",
+          "en": "Mon–Fri, round 1 · BMA instructor"
+        },
+        {
+          "time": "19:00–20:00",
+          "th": "จันทร์–ศุกร์ รอบ 2 · ซุมบ้า",
+          "en": "Mon–Fri, round 2 · Zumba"
+        },
+        {
+          "time": "17:00–18:00",
+          "th": "เสาร์–อาทิตย์และวันหยุด มีรอบเดียว",
+          "en": "Sat, Sun & holidays · one round"
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "th": "โปสเตอร์ผู้นำเต้นแอโรบิก พ.ย. จากแชททีม",
+            "en": "November aerobics leader posters from team chat"
+          },
+          "url": ""
+        },
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ · แอโรบิกสวนลุมพินี (เวลารอบ, เม.ย. 69)",
+            "en": "Bangkok Biz News · Lumpini aerobics (session times, Apr 2026)"
+          },
+          "url": "https://www.bangkokbiznews.com/lifestyle/judprakai/1229082"
         }
       ],
       "image": "",
