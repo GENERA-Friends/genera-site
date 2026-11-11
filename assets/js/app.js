@@ -363,7 +363,7 @@ function media(e){
     if(ph)return `<div class="card-media"><img src="${ph}" alt="" loading="lazy"><span class="tag" style="--c:${CATS[e.cat].c}"><i></i>${esc(L(CATS[e.cat]))}</span><span class="pz-chip"><b>${a.d}</b>${esc(fmt(a.y,a.m,a.d,{month:"short"}))}</span>${saveBtn(e)}</div>`;
     return `<div class="card-media poster" style="--c:${CATS[e.cat].c}"><span class="pz-ic">${icon(CATS[e.cat].icon)}</span><span class="pz-date"><b>${a.d}</b>${esc(fmt(a.y,a.m,a.d,{month:"short"}))}</span><span class="pz-park">${esc(L(PARKS[e.park]))}</span><span class="tag" style="--c:${CATS[e.cat].c}"><i></i>${esc(L(CATS[e.cat]))}</span>${saveBtn(e)}</div>`;
   }
-  return `<div class="card-media"><img src="${IMG[e.id]||IMG[e.img]}" alt="" loading="lazy"><span class="tag" style="--c:${CATS[e.cat].c}"><i></i>${esc(L(CATS[e.cat]))}</span>${saveBtn(e)}</div>`;
+  return `<div class="card-media"><img src="${IMG[e.id]||IMG[e.img]}" alt="" loading="lazy" onerror="${fb(e)}"><span class="tag" style="--c:${CATS[e.cat].c}"><i></i>${esc(L(CATS[e.cat]))}</span>${saveBtn(e)}</div>`;
 }
 function card(e,showDate=true){
   const st=statusOf(e), left=seatsLeft(e), almost=left!=null&&left>0&&left/e.cap<.25&&!isPast(e), rt=rangeText(e);
@@ -414,6 +414,7 @@ function renderChrome(){
 const statsHtml=()=>t("stats").map(([a,b])=>`<div class="stat"><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join("");
 
 /* ================= home ================= */
+function fb(e){const u=(e.kind==="real"?IMG["park:"+e.park]:null)||IMG.hero;return `this.onerror=null;this.src='${u}'`;}
 function evImg(e){return e.kind==="real"?(IMG[e.id]||IMG["park:"+e.park]||IMG.hero):IMG[e.img];}
 const LOGO_SVG='<svg viewBox="0 0 104 104" aria-hidden="true"><use href="#genera-logo"/></svg>';
 function renderHome(){
@@ -421,7 +422,7 @@ function renderHome(){
   let ev=today.find(e=>now.min<endMin(e)),eyebrow,when,live=false;
   if(ev){live=now.min>=toMin(ev.s);eyebrow=live?t("nowEyebrow"):`${t("todayEyebrow")} · ${t("acts")(today.length)}`;when=live?timeRange(ev):`${timeRange(ev)} · ${statusOf(ev).txt}`;}
   else{ev=upcoming(addDays(TODAY,1),14,false).filter(e=>!e.allDay)[0];eyebrow=t("allDoneToday");when=t("nextOn")(fmt(ev.y,ev.m,ev.d,{weekday:"long",day:"numeric",month:"long"}),timeRange(ev));}
-  $("#todayNote").innerHTML=`<div class="upnext-media"><img src="${evImg(ev)}" alt=""><span class="upnext-kind">${esc(ev.kind==="real"?t("upNextReal"):t("upNextProg"))}</span></div>
+  $("#todayNote").innerHTML=`<div class="upnext-media"><img src="${evImg(ev)}" alt="" onerror="${fb(ev)}"><span class="upnext-kind">${esc(ev.kind==="real"?t("upNextReal"):t("upNextProg"))}</span></div>
     <div class="upnext-body"><div class="upnext-eyebrow${live?" live":""}"><span class="dot" aria-hidden="true"></span>${esc(eyebrow)}</div>
     <h2 class="upnext-title">${esc(L(ev))}</h2>
     <div class="meta-row">${icon("clock")}${esc(when)}</div><div class="meta-row">${icon("map-pin")}${esc(placeShort(ev))}</div>
@@ -652,7 +653,7 @@ function renderPanel(){
     const st=statusOf(e),rt=rangeText(e);
     head.innerHTML=`${backBtn()}<span class="cat-line" style="--c:${CATS[e.cat].c}"><span class="dot" aria-hidden="true"></span>${esc(L(CATS[e.cat]))}</span>${saveBtn(e)}${closeBtn()}`;
     const vph=e.kind==="real"&&!IMG[e.id]&&IMG["park:"+e.park];
-    const top=vph?`<div class="d-media"><img src="${vph}" alt=""><span class="venue-cap">${esc((state.lang==="th"?"ภาพสถานที่: ":"Venue photo: ")+L(PARKS[e.park]))}</span></div>`:e.kind==="real"&&!IMG[e.id]?`<div class="d-media poster" style="--c:${CATS[e.cat].c}"><span class="pz-ic">${icon(CATS[e.cat].icon)}</span><span class="pz-park">${esc(L(PARKS[e.park]))}</span></div>`:`<div class="d-media"><img src="${IMG[e.id]||IMG[e.img]}" alt=""></div>`;
+    const top=vph?`<div class="d-media"><img src="${vph}" alt=""><span class="venue-cap">${esc((state.lang==="th"?"ภาพสถานที่: ":"Venue photo: ")+L(PARKS[e.park]))}</span></div>`:e.kind==="real"&&!IMG[e.id]?`<div class="d-media poster" style="--c:${CATS[e.cat].c}"><span class="pz-ic">${icon(CATS[e.cat].icon)}</span><span class="pz-park">${esc(L(PARKS[e.park]))}</span></div>`:`<div class="d-media"><img src="${IMG[e.id]||IMG[e.img]}" alt="" onerror="${fb(e)}"></div>`;
     let facts=fact("calendar-days",t("fDate"),rt||fmtLong(e),rt?fmtLong(e):"")+fact("clock",t("fTime"),timeRange(e),st?st.txt:"")+fact("map-pin",t("fPlace"),placeOf(e),e.kind==="real"?S(PARKS[e.park],"d"):"");
     let extra="";
     if(e.kind==="real"){

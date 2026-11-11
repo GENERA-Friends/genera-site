@@ -203,7 +203,7 @@
           "url": "https://www.timeout.com/bangkok/th/news/pymk-the-concert-chula-110326"
         }
       ],
-      "image": "",
+      "image": "https://unsplash.com/photos/GviNzTLMBA8/download?w=960",
       "venue_check": false,
       "poster_only": false
     },
@@ -697,7 +697,7 @@
           "url": ""
         }
       ],
-      "image": "",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Stannington_Brass_Band_concert_at_Wetherby_Bandstand_%2819th_September_2021%29_001.jpg?width=960",
       "venue_check": false,
       "poster_only": false
     },
@@ -1628,7 +1628,7 @@
           "url": ""
         }
       ],
-      "image": "",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Feast_Picnic.jpg?width=960",
       "venue_check": false,
       "poster_only": false
     },
@@ -2091,7 +2091,7 @@
       "park": "chula",
       "category": "music",
       "effort": "light",
-      "image": "",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/Loy_Krathong_Bangkok_Lumpini_Park_2.jpg?width=960",
       "venue_check": false,
       "poster_only": false,
       "registration": {
@@ -2168,7 +2168,7 @@
       "park": "chula",
       "category": "market",
       "effort": "light",
-      "image": "",
+      "image": "https://commons.wikimedia.org/wiki/Special:FilePath/DFC_4494_A_lively_nighttime_carnival_with_colorful_rides_-_a_glowing_Ferris_wheel_pirate_ship_swing_and_game_stalls_lighting_up_the_midway_as_families_enjoy_the_fair.jpg?width=960",
       "venue_check": false,
       "poster_only": false,
       "registration": {
