@@ -3,13 +3,13 @@
 # 2) เปิด https://<ชื่อผู้ใช้>.github.io/<ชื่อ repo>/admin/ แล้วกด "Sign in with Token"
 backend:
   name: github
-  repo: YOUR-GITHUB-USERNAME/genera-site  # <-- แก้ตรงนี้
+  repo: Pholaphat18/genera-site
   branch: main
   commit_messages:
     update: อัปเดต {{slug}} ผ่านหลังบ้าน
 media_folder: assets/img/uploads
 public_folder: assets/img/uploads
-site_url: https://YOUR-GITHUB-USERNAME.github.io/genera-site/  # <-- แก้ตรงนี้
+site_url: https://pholaphat18.github.io/genera-site/
 collections:
 - name: content
   label: ข้อมูลเว็บไซต์
