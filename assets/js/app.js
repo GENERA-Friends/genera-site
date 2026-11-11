@@ -9,6 +9,19 @@ const T = {
     myBookings:"กิจกรรมของฉัน", menu:"เมนู", close:"ปิด", back:"ย้อนกลับ",
     heroTitle:"สวนของชุมชน พื้นที่ของทุกวัน", heroText:"ต้นแบบปฏิทินกิจกรรมของอุทยาน 100 ปี จุฬาฯ รวมกิจกรรมจริงในสวนและสวนใกล้เคียง กับโปรแกรมประจำสัปดาห์ที่ออกแบบให้คนเลิกงาน",
     exploreMap:"ดูแผนผังอุทยาน", joinActs:"ดูกิจกรรม",
+    heroScript:"ที่ที่เมืองได้หายใจ", evScript:"ทุกวันในสวน", mapScript:"เดินเล่นทั่วอุทยาน", aboutScript:"เรื่องของเรา", heroBig:"สวนของทุก\u2060คน ทุก\u2060วัน",
+    aboutLabel:"เกี่ยวกับเรา", aboutA:"GENERA คือปฏิทินกิจกรรมของอุทยาน 100 ปี จุฬาฯ ", aboutHi:"สำหรับคนทำงาน ครอบครัว ผู้สูงอายุ และทุกคนในย่านสามย่าน", aboutB:" ที่อยากรู้ว่าวันนี้สวนมีอะไร แล้วออกมาใช้พื้นที่สีเขียวของเมืองได้ง่ายขึ้น",
+    addr:"ถนน 100 ปี จุฬาฯ (จุฬาฯ ซอย 5) เขตปทุมวัน กรุงเทพฯ", hours:"เปิดทุกวัน 05:00–22:00 น. · เข้าฟรี", fLoc:"ที่ตั้ง", fHours:"เวลาเปิด",
+    moodScript:"เลือกตามใจ", realScript:"เร็วๆ นี้ในสวน", progScript:"ทุกสัปดาห์", parkScript:"รู้จักสวนของเรา",
+    upNextReal:"กิจกรรมจริง", upNextProg:"โปรแกรม GENERA",
+    nextRound:"รอบถัดไป", book:"จองที่",
+    faqScript:"สงสัยไหม", faqTitle:"คำถามที่พบบ่อย", faqSub:"ข้อมูลพื้นฐานก่อนไปอุทยาน 100 ปี จุฬาฯ",
+    faq:[["อุทยานเปิดกี่โมง เสียค่าเข้าไหม","เปิดทุกวันประมาณ 05:00–22:00 น. และเข้าฟรี กิจกรรมส่วนใหญ่ฟรีเช่นกัน บางงานอาจต้องลงทะเบียนล่วงหน้า ดูรายละเอียดได้ในแต่ละกิจกรรม"],
+         ["เดินทางไปอย่างไร","MRT สามย่าน ทางออก 2 แล้วเดินตามถนนพญาไทราว 8–10 นาที หรือรถเมล์สายที่ผ่านถนนพระราม 1 / พระราม 4 แล้วเข้าถนน 100 ปี จุฬาฯ (จุฬาฯ ซอย 5)"],
+         ["มีที่จอดรถไหม","มีที่จอดรถใต้อาคารอเนกประสงค์ ประมาณ 200 คัน"],
+         ["ถ้าฝนตก กิจกรรมยังจัดไหม","โปรแกรมกลางแจ้งของ GENERA จะย้ายเข้าอาคารอเนกประสงค์ ส่วนกิจกรรมจริงให้ดูประกาศจากผู้จัด"],
+         ["การจองที่ในเว็บนี้ใช้ได้จริงไหม","ยังไม่ได้ การจองเป็นตัวอย่าง (ต้นแบบ) บันทึกไว้ในเบราว์เซอร์ของคุณเท่านั้น และยังไม่มีใครได้รับข้อมูล"]],
+    ctaScript:"เจอกันที่สวน", ctaTitle:"พร้อม\u2060ออก\u2060ไป\u2060สวน หรือ\u2060ยัง?", ctaAbout:"เกี่ยวกับโครงการ",
     f1:"พักผ่อน ชาร์จพลัง", f1s:"ผ่อนคลาย ฟื้นตัว และคลายเครียด", f2:"กิจกรรมชุมชน", f2s:"กิจกรรมฟรีสำหรับทุกวัย", f3:"พื้นที่สำหรับทุกคน", f3s:"ออกแบบให้ทุกคนใช้ได้สบาย",
     todayEyebrow:"วันนี้ที่สวน", nowEyebrow:"กำลังจัดอยู่ตอนนี้", allDoneToday:"กิจกรรมวันนี้จบแล้ว · กิจกรรมถัดไป", seeDetails:"ดูรายละเอียด",
     moodTitle:"วันนี้รู้สึกอย่างไร", moodSub:"เลือกอารมณ์ของคุณ แล้วเราจะหากิจกรรมที่เหมาะให้",
@@ -83,6 +96,19 @@ const T = {
     myBookings:"My activities", menu:"Menu", close:"Close", back:"Go back",
     heroTitle:"Your community park, your everyday space", heroText:"A prototype activity calendar for Chula Centenary Park — real events in the park and nearby parks, plus a weekly programme designed for people after work.",
     exploreMap:"View park plan", joinActs:"See events",
+    heroScript:"Where the city slows down", evScript:"Every day in the park", mapScript:"Wander the park", aboutScript:"Our story", heroBig:"A park for everyone, every day",
+    aboutLabel:"About us", aboutA:"GENERA is an activity calendar for Chula Centenary Park, ", aboutHi:"made for workers, families, older people and everyone around Samyan", aboutB:" who want to know what's on today and get out into the city's green space more easily.",
+    addr:"100 Years Chulalongkorn Rd (Chula Soi 5), Pathum Wan, Bangkok", hours:"Open daily 05:00–22:00 · Free entry", fLoc:"Location", fHours:"Opening hours",
+    moodScript:"Pick your pace", realScript:"Coming up in the park", progScript:"Every week", parkScript:"Know your park",
+    upNextReal:"Real event", upNextProg:"GENERA programme",
+    nextRound:"Next session", book:"Book a spot",
+    faqScript:"Good to know", faqTitle:"Frequently asked questions", faqSub:"The basics before you visit Chula Centenary Park.",
+    faq:[["When is the park open, and is it free?","It's open every day, about 05:00–22:00, and entry is free. Most events are free too; some need you to register first — check each event."],
+         ["How do I get there?","Take the MRT to Samyan, exit 2, then walk along Phaya Thai Road for 8–10 minutes. Buses on Rama 1 or Rama 4 Road also stop nearby; enter via 100 Years Chulalongkorn Road (Chula Soi 5)."],
+         ["Is there parking?","Yes — an underground car park under the multipurpose building holds about 200 cars."],
+         ["What happens if it rains?","Outdoor GENERA sessions move into the multipurpose building. For real events, check the organiser's announcements."],
+         ["Are bookings on this site real?","Not yet. Booking is a prototype — it's saved only in your browser and nobody receives it."]],
+    ctaScript:"See you in the park", ctaTitle:"Ready to head outside?", ctaAbout:"About the project",
     f1:"Rest & recharge", f1s:"Relax, recover and unwind.", f2:"Community activities", f2s:"Free events for all ages.", f3:"Inclusive space", f3s:"Designed for everyone.",
     todayEyebrow:"Today at the park", nowEyebrow:"Happening now", allDoneToday:"Today's activities have finished · Up next", seeDetails:"See details",
     moodTitle:"How do you feel today?", moodSub:"Pick a mood and we'll show activities that fit.",
@@ -374,6 +400,8 @@ function renderChrome(){
   $$("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===state.lang)));
   const nav=ROUTES.map(r=>`<a href="#${r}"${state.route===r?' aria-current="page"':""}>${esc(t("nav")[r])}</a>`).join("");
   $("#mainNav").innerHTML=nav;$("#sheetNav").innerHTML=nav;
+  $("#footNav").innerHTML=ROUTES.map(r=>`<a href="#${r}">${icon("arrow-up-right")}${esc(t("nav")[r])}</a>`).join("");
+  document.body.dataset.route=state.route;
   $("#menuBtn").setAttribute("aria-label",t("menu"));$("#menuBtn").dataset.tip=t("menu");
   $$(".icon-btn[data-close]").forEach(b=>{b.setAttribute("aria-label",t("close"));b.dataset.tip=t("close");});
   const up=bookings.filter(b=>{const e=findEvent(b.uid);return e&&!isPast(e);}).length;
@@ -385,22 +413,51 @@ function renderChrome(){
 const statsHtml=()=>t("stats").map(([a,b])=>`<div class="stat"><b>${esc(a)}</b><span>${esc(b)}</span></div>`).join("");
 
 /* ================= home ================= */
+function evImg(e){return e.kind==="real"?(IMG[e.id]||IMG["park:"+e.park]||IMG.hero):IMG[e.img];}
+const LOGO_SVG='<svg viewBox="0 0 104 104" aria-hidden="true"><use href="#genera-logo"/></svg>';
 function renderHome(){
   const now=bkkNow(),today=eventsOn(now.y,now.m,now.d).filter(e=>!e.allDay);
-  let ev=today.find(e=>now.min<endMin(e)),eyebrow,when;
-  if(ev){const live=now.min>=toMin(ev.s);eyebrow=live?t("nowEyebrow"):`${t("todayEyebrow")} · ${t("acts")(today.length)}`;when=live?timeRange(ev):`${timeRange(ev)} · ${statusOf(ev).txt}`;}
+  let ev=today.find(e=>now.min<endMin(e)),eyebrow,when,live=false;
+  if(ev){live=now.min>=toMin(ev.s);eyebrow=live?t("nowEyebrow"):`${t("todayEyebrow")} · ${t("acts")(today.length)}`;when=live?timeRange(ev):`${timeRange(ev)} · ${statusOf(ev).txt}`;}
   else{ev=upcoming(addDays(TODAY,1),14,false).filter(e=>!e.allDay)[0];eyebrow=t("allDoneToday");when=t("nextOn")(fmt(ev.y,ev.m,ev.d,{weekday:"long",day:"numeric",month:"long"}),timeRange(ev));}
-  $("#todayNote").innerHTML=`<span class="bell">${icon("bell")}</span><div class="txt"><div class="eyebrow">${esc(eyebrow)}</div><div class="main">${esc(L(ev))}</div><div class="meta">${esc(when)} · ${esc(placeShort(ev))}</div></div><button type="button" class="btn btn-primary" data-open="${ev.uid}">${esc(t("seeDetails"))}</button>`;
+  $("#todayNote").innerHTML=`<div class="upnext-media"><img src="${evImg(ev)}" alt=""><span class="upnext-kind">${esc(ev.kind==="real"?t("upNextReal"):t("upNextProg"))}</span></div>
+    <div class="upnext-body"><div class="upnext-eyebrow${live?" live":""}"><span class="dot" aria-hidden="true"></span>${esc(eyebrow)}</div>
+    <h2 class="upnext-title">${esc(L(ev))}</h2>
+    <div class="meta-row">${icon("clock")}${esc(when)}</div><div class="meta-row">${icon("map-pin")}${esc(placeShort(ev))}</div>
+    <button type="button" class="btn btn-dark btn-arrow" data-open="${ev.uid}"><span class="arrow-dot" aria-hidden="true">${icon("arrow-up-right")}</span>${esc(t("seeDetails"))}</button></div>`;
+  const rib=[...Object.values(CATS).map(c=>L(c)),...Object.values(PARKS).map(q=>L(q))];
+  const one=rib.map(x=>`<span class="rb-item">${esc(x)}</span><span class="rb-logo">${LOGO_SVG}</span>`).join("");
+  $("#ribbon").innerHTML=`<div class="rb-run">${one}</div><div class="rb-run">${one}</div>`;
+  $("#aboutStmt").innerHTML=`${esc(t("aboutA"))}<em>${esc(t("aboutHi"))}</em>${esc(t("aboutB"))}`;
   $("#moods").innerHTML=Object.entries(MOODS).map(([k,m])=>`<button type="button" class="mood" data-mood="${k}"><span class="mood-ic">${icon(m.icon)}</span><span><b>${esc(L(m))}</b><span>${esc(S(m,"s"))}</span></span></button>`).join("");
   const real=dedupe(upcoming(TODAY,60,false).filter(e=>e.kind==="real"));
   const chulaFirst=[...real.filter(e=>e.park==="chula"),...real.filter(e=>e.park!=="chula")].slice(0,4).sort((a,b)=>a.key.localeCompare(b.key)||toMin(a.s)-toMin(b.s));
   $("#realCards").innerHTML=chulaFirst.map(e=>card(e)).join("");
-  const wk=upcoming(TODAY,7,false).filter(e=>e.kind==="prog"&&seatsLeft(e)>0);
-  $("#popCards").innerHTML=[...wk].sort((a,b)=>(1-seatsLeft(b)/b.cap)-(1-seatsLeft(a)/a.cap)).slice(0,4).map(e=>card(e)).join("");
+  const nextOf={};upcoming(TODAY,8,false).filter(e=>e.kind==="prog").forEach(e=>{if(!nextOf[e.id])nextOf[e.id]=e;});
+  const rows=PROG.map(p=>nextOf[p.id]).filter(Boolean).sort((a,b)=>a.key.localeCompare(b.key)||toMin(a.s)-toMin(b.s));
+  $("#progList").innerHTML=rows.map((e,i)=>`<li class="hx-row" data-pimg="${evImg(e)}" data-pcap="${esc(L(e))}">
+    <span class="hx-num">${String(i+1).padStart(2,"0")}</span>
+    <span class="hx-ic" style="--c:${CATS[e.cat].c}">${icon(CATS[e.cat].icon)}</span>
+    <div class="hx-row-main"><h3 class="display-sm"><button type="button" data-open="${e.uid}">${esc(L(e))}</button></h3>
+      <p>${esc(S(e,"d"))}</p>
+      <div class="hx-row-meta"><span>${icon("calendar-days")}${esc(t("nextRound"))}: ${esc(fmtShort(e))}</span><span>${icon("clock")}${esc(timeRange(e))}</span><span>${icon("map-pin")}${esc(placeShort(e))}</span></div></div>
+  </li>`).join("");
+  const f=rows[0];if(f){$("#progImg").src=evImg(f);$("#progCap").textContent=L(f);}
   $("#parkStats").innerHTML=statsHtml();
+  $("#faq").innerHTML=t("faq").map(([q,a],i)=>`<details class="faq-item"${i===0?" open":""}><summary><span>${esc(q)}</span><span class="faq-ic" aria-hidden="true">${icon("plus")}</span></summary><p>${esc(a)}</p></details>`).join("");
+  observeReveal();
 }
+let revealObs=null;
+function observeReveal(){
+  const els=$$(".reveal:not(.in)");
+  const reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if(reduce||!("IntersectionObserver" in window)){els.forEach(x=>x.classList.add("in"));return;}
+  if(!revealObs)revealObs=new IntersectionObserver(es=>es.forEach(en=>{if(en.isIntersecting){en.target.classList.add("in");revealObs.unobserve(en.target);}}),{rootMargin:"0px 0px -8% 0px",threshold:.05});
+  els.forEach(x=>revealObs.observe(x));
+}
+document.addEventListener("pointerover",ev=>{const r=ev.target.closest&&ev.target.closest(".hx-row[data-pimg]");if(!r)return;const im=$("#progImg");if(im&&im.getAttribute("src")!==r.dataset.pimg){im.src=r.dataset.pimg;$("#progCap").textContent=r.dataset.pcap;}});
+document.addEventListener("focusin",ev=>{const r=ev.target.closest&&ev.target.closest(".hx-row[data-pimg]");if(!r)return;const im=$("#progImg");if(im){im.src=r.dataset.pimg;$("#progCap").textContent=r.dataset.pcap;}});
 
-/* ================= events ================= */
 function renderFilters(){
   const opts=[["all",t("all"),null],...Object.entries(CATS).map(([k,c])=>[k,L(c),c.c])];
   $("#chips").innerHTML=opts.map(([k,l,c])=>`<button type="button" class="chip" data-cat="${k}" aria-pressed="${state.cat===k}"${c?` style="--c:${c}"`:""}>${c?'<span class="dot" aria-hidden="true"></span>':""}${esc(l)}</button>`).join("");
@@ -514,7 +571,9 @@ function renderAbout(){
 }
 
 /* ================= router ================= */
+let READY=false;
 function render(){
+  if(!READY)return;
   renderChrome();
   $$("[data-route]").forEach(s=>s.hidden=s.dataset.route!==state.route);
   ({home:renderHome,events:renderEvents,map:renderMap,about:renderAbout})[state.route]();
@@ -785,5 +844,5 @@ $("#grid").addEventListener("keydown",ev=>{const st={ArrowLeft:-1,ArrowRight:1,A
 
 $$("[data-icon]").forEach(el=>el.innerHTML=ICONS[el.dataset.icon]||"");
 fromHash();
-loadData().then(()=>{render();setInterval(()=>{if(!overlay.current)render();},60000);})
+loadData().then(()=>{READY=true;render();setInterval(()=>{if(!overlay.current)render();},60000);})
   .catch(err=>{console.error(err);$("#main").insertAdjacentHTML("afterbegin",`<div class="warn" role="alert">${icon("info")}<span>${state.lang==="th"?"โหลดข้อมูลกิจกรรมไม่สำเร็จ ลองรีเฟรชหน้านี้ ถ้าเปิดไฟล์จากเครื่อง ให้รันผ่านเซิร์ฟเวอร์ (ดู README)":"Couldn't load the activity data. Refresh the page — if you opened the file directly, run it through a local server (see README)."}</span></div>`);});

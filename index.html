@@ -7,8 +7,9 @@
 <title>GENERA — Park activity calendar</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@500;600&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Kanit:wght@500;600&family=Mali:wght@500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/css/styles.css">
+<link rel="stylesheet" href="assets/css/theme.css">
 <link rel="icon" href="assets/img/genera-logo.svg">
 </head>
 <body>
@@ -17,69 +18,110 @@
 <div class="app" id="app">
 <header class="site-header">
   <div class="inner">
+    <nav class="nav" aria-label="Main" id="mainNav"></nav>
     <a class="brand" href="#home" aria-label="GENERA — Home">
       <span class="brand-logo" aria-hidden="true"><svg viewBox="0 0 104 104"><use href="#genera-logo"/></svg></span>
       <span class="brand-name">GENERA</span>
     </a>
-    <nav class="nav" aria-label="Main" id="mainNav"></nav>
-    <div class="seg head-lang" role="group" aria-label="Language / ภาษา">
-      <button type="button" data-lang="th" lang="th">ไทย</button>
-      <button type="button" data-lang="en" lang="en">EN</button>
+    <div class="head-right">
+      <div class="seg head-lang" role="group" aria-label="Language / ภาษา">
+        <button type="button" data-lang="th" lang="th">ไทย</button>
+        <button type="button" data-lang="en" lang="en">EN</button>
+      </div>
+      <button type="button" class="btn btn-lime mine head-mine" data-action="mine"><span class="icon" data-icon="calendar-check" aria-hidden="true"></span><span data-i18n="myBookings"></span><span class="count" data-count hidden></span></button>
+      <button type="button" class="icon-btn menu-btn mine" id="menuBtn" aria-expanded="false" aria-controls="menuSheet"><span class="icon" data-icon="menu" aria-hidden="true"></span><span class="count" data-count hidden></span></button>
     </div>
-    <button type="button" class="btn btn-secondary mine head-mine" data-action="mine"><span class="icon" data-icon="calendar-check" aria-hidden="true"></span><span data-i18n="myBookings"></span><span class="count" data-count hidden></span></button>
-    <button type="button" class="icon-btn menu-btn mine" id="menuBtn" aria-expanded="false" aria-controls="menuSheet"><span class="icon" data-icon="menu" aria-hidden="true"></span><span class="count" data-count hidden></span></button>
   </div>
 </header>
 
 <main class="page" id="main" tabindex="-1">
   <!-- HOME -->
   <section data-route="home" hidden>
-    <div class="hero-wrap">
-      <div class="hero">
-        <img class="hero-img" alt="" data-img="hero">
-        <div class="hero-fade" aria-hidden="true"></div>
-        <div class="hero-copy">
-          <p class="big"><span class="brand-logo" aria-hidden="true"><svg viewBox="0 0 104 104"><use href="#genera-logo"/></svg></span>GENERA</p>
-          <h1 tabindex="-1" data-i18n="heroTitle"></h1>
-          <p data-i18n="heroText"></p>
-          <div class="hero-actions">
-            <a class="btn btn-ghost-light" href="#map"><span data-i18n="exploreMap"></span><span class="icon" data-icon="arrow-right" aria-hidden="true"></span></a>
-            <a class="btn btn-light" href="#events" data-i18n="joinActs"></a>
+    <div class="hx-hero">
+      <img class="hx-hero-img" alt="" data-img="hero">
+      <div class="hx-hero-shade" aria-hidden="true"></div>
+      <div class="hx-hero-inner">
+        <div class="hx-hero-copy">
+          <p class="script hx-script" data-i18n="heroScript"></p>
+          <h1 class="display hx-title" tabindex="-1" data-i18n="heroBig"></h1>
+          <p class="hx-lede" data-i18n="heroText"></p>
+          <div class="hx-actions">
+            <a class="btn btn-lime btn-arrow" href="#events"><span class="arrow-dot" aria-hidden="true"><span class="icon" data-icon="arrow-up-right"></span></span><span data-i18n="joinActs"></span></a>
+            <a class="btn btn-orange btn-arrow" href="#map"><span class="arrow-dot" aria-hidden="true"><span class="icon" data-icon="arrow-up-right"></span></span><span data-i18n="exploreMap"></span></a>
+          </div>
+        </div>
+        <aside class="upnext" id="todayNote" aria-live="polite"></aside>
+      </div>
+    </div>
+    <div class="ribbon" aria-hidden="true"><div class="ribbon-track" id="ribbon"></div></div>
+
+    <section class="wrap hx-about reveal">
+      <p class="script hx-label" data-i18n="aboutLabel"></p>
+      <p class="hx-statement" id="aboutStmt"></p>
+      <figure class="hx-about-img"><img alt="" data-img="z:lawn" loading="lazy"></figure>
+      <p class="hx-addr"><span class="icon" data-icon="map-pin" aria-hidden="true"></span><span data-i18n="addr"></span></p>
+    </section>
+
+    <section class="wrap hx-sec reveal">
+      <div class="hx-head"><p class="script" data-i18n="moodScript"></p><h2 class="display" data-i18n="moodTitle"></h2><p data-i18n="moodSub"></p></div>
+      <div class="moods" id="moods"></div>
+    </section>
+
+    <section class="wrap hx-sec reveal">
+      <div class="hx-head hx-head-row">
+        <div><p class="script" data-i18n="realScript"></p><h2 class="display" data-i18n="realTitle"></h2><p data-i18n="realSub"></p></div>
+        <button type="button" class="btn btn-dark btn-arrow" data-gosrc="real"><span class="arrow-dot" aria-hidden="true"><span class="icon" data-icon="arrow-up-right"></span></span><span data-i18n="seeAllReal"></span></button>
+      </div>
+      <div class="cards" id="realCards"></div>
+    </section>
+
+    <section class="hx-prog-band reveal">
+      <div class="wrap hx-prog">
+        <div class="hx-prog-side">
+          <p class="script" data-i18n="progScript"></p>
+          <h2 class="display" data-i18n="progTitle"></h2>
+          <p data-i18n="progSub"></p>
+          <figure class="hx-prog-img"><img alt="" id="progImg" loading="lazy"><figcaption class="script" id="progCap"></figcaption></figure>
+          <button type="button" class="btn btn-dark btn-arrow" data-gosrc="prog"><span class="arrow-dot" aria-hidden="true"><span class="icon" data-icon="arrow-up-right"></span></span><span data-i18n="seeAllProg"></span></button>
+        </div>
+        <ol class="hx-list" id="progList"></ol>
+      </div>
+    </section>
+
+    <section class="hx-stats reveal">
+      <img class="hx-stats-img" alt="" data-img="z:roof" loading="lazy">
+      <div class="wrap hx-stats-inner">
+        <div><p class="script" data-i18n="parkScript"></p><h2 class="display" data-i18n="parkTitle"></h2><p data-i18n="parkSub"></p>
+          <a class="btn btn-lime btn-arrow" href="#map"><span class="arrow-dot" aria-hidden="true"><span class="icon" data-icon="arrow-up-right"></span></span><span data-i18n="seePlan"></span></a></div>
+        <div class="hx-statgrid" id="parkStats"></div>
+      </div>
+    </section>
+
+    <section class="wrap hx-faq reveal">
+      <div class="hx-head"><p class="script" data-i18n="faqScript"></p><h2 class="display" data-i18n="faqTitle"></h2><p data-i18n="faqSub"></p></div>
+      <div class="faq" id="faq"></div>
+    </section>
+
+    <section class="wrap reveal">
+      <div class="hx-cta">
+        <img alt="" data-img="z:wetland" loading="lazy">
+        <div class="hx-cta-copy">
+          <p class="script" data-i18n="ctaScript"></p>
+          <h2 class="display" data-i18n="ctaTitle"></h2>
+          <div class="hx-actions">
+            <a class="btn btn-lime btn-arrow" href="#events"><span class="arrow-dot" aria-hidden="true"><span class="icon" data-icon="arrow-up-right"></span></span><span data-i18n="joinActs"></span></a>
+            <a class="btn btn-ghost-light" href="#about" data-i18n="ctaAbout"></a>
           </div>
         </div>
       </div>
-      <div class="features">
-        <div class="feature"><span class="icon" data-icon="sprout" aria-hidden="true"></span><div><b data-i18n="f1"></b><span data-i18n="f1s"></span></div></div>
-        <div class="feature"><span class="icon" data-icon="users" aria-hidden="true"></span><div><b data-i18n="f2"></b><span data-i18n="f2s"></span></div></div>
-        <div class="feature"><span class="icon" data-icon="accessibility" aria-hidden="true"></span><div><b data-i18n="f3"></b><span data-i18n="f3s"></span></div></div>
-      </div>
-    </div>
-    <section class="today-note" aria-live="polite" id="todayNote"></section>
-
-    <div class="section-head"><div><h2 class="section-title" data-i18n="moodTitle"></h2><p data-i18n="moodSub"></p></div></div>
-    <div class="moods" id="moods"></div>
-
-    <div class="section-head">
-      <div><h2 class="section-title" data-i18n="realTitle"></h2><p data-i18n="realSub"></p></div>
-      <button type="button" class="link-btn" data-gosrc="real"><span data-i18n="seeAllReal"></span><span class="icon" data-icon="arrow-right" aria-hidden="true"></span></button>
-    </div>
-    <div class="cards" id="realCards"></div>
-
-    <div class="section-head">
-      <div><h2 class="section-title" data-i18n="progTitle"></h2><p data-i18n="progSub"></p></div>
-      <button type="button" class="link-btn" data-gosrc="prog"><span data-i18n="seeAllProg"></span><span class="icon" data-icon="arrow-right" aria-hidden="true"></span></button>
-    </div>
-    <div class="cards" id="popCards"></div>
-
-    <div class="section-head"><div><h2 class="section-title" data-i18n="parkTitle"></h2><p data-i18n="parkSub"></p></div>
-      <a class="link-btn" href="#map"><span data-i18n="seePlan"></span><span class="icon" data-icon="arrow-right" aria-hidden="true"></span></a></div>
-    <div class="stats" id="parkStats"></div>
+    </section>
   </section>
 
   <!-- EVENTS -->
   <section data-route="events" hidden>
     <div class="ev-head">
       <div>
+        <p class="script page-script" data-i18n="evScript"></p>
         <h1 class="page-title" tabindex="-1" data-i18n="evTitle"></h1>
         <p class="page-lede" data-i18n="evLede"></p>
         <div class="searchbar">
@@ -143,6 +185,7 @@
   <section data-route="map" hidden>
     <div class="map-layout">
       <div>
+        <p class="script page-script" data-i18n="mapScript"></p>
         <h1 class="page-title" tabindex="-1" data-i18n="mapTitle"></h1>
         <p class="page-lede" data-i18n="mapLede"></p>
         <ul class="zones" id="zoneList"></ul>
@@ -160,7 +203,8 @@
 
   <!-- ABOUT -->
   <section data-route="about" hidden>
-    <h1 class="page-title" tabindex="-1" data-i18n="aboutTitle"></h1>
+    <p class="script page-script" data-i18n="aboutScript"></p>
+        <h1 class="page-title" tabindex="-1" data-i18n="aboutTitle"></h1>
     <p class="page-lede" data-i18n="aboutLede"></p>
     <div class="quote"><div class="eyebrow" data-i18n="hmwLabel"></div><p data-i18n="hmw"></p></div>
     <div class="about-grid">
@@ -187,7 +231,23 @@
 </main>
 
 <footer class="site-foot">
-  <div class="inner"><span data-i18n="foot1"></span><span data-i18n="foot2"></span></div>
+  <div class="inner">
+    <div class="foot-col">
+      <nav class="foot-nav" id="footNav" aria-label="Footer"></nav>
+      <a class="btn btn-lime btn-arrow" href="#events"><span class="arrow-dot" aria-hidden="true"><span class="icon" data-icon="arrow-up-right"></span></span><span data-i18n="joinActs"></span></a>
+      <p class="foot-small"><span data-i18n="foot1"></span><br><span data-i18n="foot2"></span></p>
+    </div>
+    <div class="foot-col">
+      <div class="crop"><h3 data-i18n="fLoc"></h3><p data-i18n="addr"></p></div>
+      <div class="crop"><h3 data-i18n="fHours"></h3><p data-i18n="hours"></p></div>
+      <div class="crop"><h3 data-i18n="teamTitle"></h3><p>Nanon Ruengchinda · Nirandon Sae-fan · Nop Skowratananont · Pholaphat Atchararuji · Nacha Variwong</p></div>
+    </div>
+    <div class="foot-brand" aria-hidden="true">
+      <span class="foot-logo"><svg viewBox="0 0 104 104"><use href="#genera-logo"/></svg></span>
+      <span class="foot-word">GENERA</span>
+      <span class="foot-tag">— SDG 11 · Chula Centenary Park —</span>
+    </div>
+  </div>
 </footer>
 </div>
 
