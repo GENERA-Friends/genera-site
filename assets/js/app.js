@@ -198,7 +198,8 @@ const PARKS = {
   rama8:{th:"สวนหลวงพระราม 8",en:"Rama VIII Park",dth:"เขตบางพลัด",den:"Bang Phlat"},
   lumpini:{th:"ลุมพินีสถาน สวนลุมพินี",en:"Lumphinisathan, Lumphini Park",dth:"เขตปทุมวัน",den:"Pathum Wan"},
   santi:{th:"สวนสันติชัยปราการ",en:"Santichaiprakan Park",dth:"เขตพระนคร",den:"Phra Nakhon"},
-  wachira:{th:"สวนวชิรเบญจทัศ (สวนรถไฟ)",en:"Wachirabenchathat (Rot Fai) Park",dth:"เขตจตุจักร",den:"Chatuchak"}
+  wachira:{th:"สวนวชิรเบญจทัศ (สวนรถไฟ)",en:"Wachirabenchathat (Rot Fai) Park",dth:"เขตจตุจักร",den:"Chatuchak"},
+  somdetya:{th:"อุทยานเฉลิมพระเกียรติสมเด็จย่า",en:"Princess Mother Memorial Park",dth:"เขตคลองสาน",den:"Khlong San"}
 };
 const MOODS = {
   rest:{icon:"sofa",th:"เหนื่อย อยากพัก",en:"Tired — I just want to rest",sth:"กิจกรรมเบามาก นั่งฟัง นั่งดู",sen:"Very gentle — sit, listen, watch",fn:e=>e.lv==="gentle"&&e.cat!=="market"},

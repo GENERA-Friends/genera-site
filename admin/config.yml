@@ -112,6 +112,8 @@ collections:
           value: santi
         - label: สวนวชิรเบญจทัศ (สวนรถไฟ)
           value: wachira
+        - label: อุทยานเฉลิมพระเกียรติสมเด็จย่า
+          value: somdetya
       - widget: object
         collapsed: false
         fields:
@@ -519,6 +521,8 @@ collections:
           value: santi
         - label: สวนวชิรเบญจทัศ (สวนรถไฟ)
           value: wachira
+        - label: อุทยานเฉลิมพระเกียรติสมเด็จย่า
+          value: somdetya
       - name: image
         label: รูป
         widget: image

@@ -71,7 +71,7 @@
       "url": "https://www.traveloka.com/th-th/explore/destination/things-to-do-in-cu-centenary-park/1007527"
     }
   ],
-  "last_checked": "2026-11-10",
+  "last_checked": "2026-11-11",
   "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/CU_Centenary_Park_%28I%29.jpg/960px-CU_Centenary_Park_%28I%29.jpg",
   "park_photos": [
     {
@@ -101,6 +101,10 @@
     {
       "park": "chula",
       "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/CU_Centenary_Park_%28I%29.jpg/960px-CU_Centenary_Park_%28I%29.jpg"
+    },
+    {
+      "park": "somdetya",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1a/Bkksuansomdetya090527c.jpg/960px-Bkksuansomdetya090527c.jpg"
     }
   ],
   "photo_credits": [
@@ -191,6 +195,10 @@
     {
       "label": "ภาพ / Photo: Wachirabenchathat Park Stone Garden — Supanut Arunoprayote, CC BY 4.0 (Wikimedia Commons)",
       "url": "https://commons.wikimedia.org/wiki/File:Wachirabenchathat_Park_Stone_Garden_05.23.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Princess Mother Memorial Park — Hdamm, CC BY-SA 3.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Bkksuansomdetya090527c.jpg"
     }
   ]
 }
