@@ -1,0 +1,232 @@
+{
+  "zones": [
+    {
+      "id": "entrance",
+      "name": {
+        "th": "ลานทางเข้า & บ่อหน่วงน้ำ",
+        "en": "Entrance plaza & retention pond"
+      },
+      "short": {
+        "th": "ทางเข้า & บ่อน้ำ",
+        "en": "Entrance & pond"
+      },
+      "icon": "droplets",
+      "color": "var(--z-rest)",
+      "x": 22,
+      "y": 31,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/24/CU100YearsPark2018.jpg/960px-CU100YearsPark2018.jpg",
+      "description": {
+        "th": "ลานโล่งทางเข้าใต้ร่มต้นจามจุรี ใช้จัดกิจกรรมได้ ข้างกันคือบ่อหน่วงน้ำที่รับน้ำฝนจากทั้งอุทยาน",
+        "en": "An open entrance plaza shaded by rain trees, used for events, beside the retention pond that collects rain from the whole park."
+      },
+      "good_to_know": {
+        "th": "บ่อหน่วงน้ำคือจุดต่ำสุดของอุทยาน ทั้งสวนลาดเอียงลงมาทางนี้",
+        "en": "The pond is the park's lowest point — the whole site slopes down towards it."
+      },
+      "highlights": [
+        {
+          "th": "ร่มเงาต้นจามจุรี สัญลักษณ์ของจุฬาฯ",
+          "en": "Shade from rain trees, Chula's symbol"
+        },
+        {
+          "th": "บ่อหน่วงน้ำรับน้ำฝนของทั้งสวน",
+          "en": "Retention pond that collects the park's rain"
+        },
+        {
+          "th": "ลานโล่งสำหรับจัดกิจกรรม",
+          "en": "Open plaza for events"
+        }
+      ]
+    },
+    {
+      "id": "amphi",
+      "name": {
+        "th": "อัฒจันทร์สนามหญ้า",
+        "en": "Lawn amphitheatre"
+      },
+      "short": {
+        "th": "อัฒจันทร์",
+        "en": "Amphitheatre"
+      },
+      "icon": "tent",
+      "color": "var(--z-activity)",
+      "x": 45,
+      "y": 42,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/78/%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_%2820250327164541%29.jpg/960px-%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_%2820250327164541%29.jpg",
+      "description": {
+        "th": "ทางลาดใหญ่ที่หันหน้าลงสู่บ่อน้ำ ใช้เป็นอัฒจันทร์สำหรับการแสดงและกิจกรรมสาธารณะ",
+        "en": "The big slope facing the pond doubles as an amphitheatre for performances and public events."
+      },
+      "good_to_know": {
+        "th": "เอาเสื่อมานั่งได้ ช่วงเย็นแดดอ่อนกำลังดี",
+        "en": "Bring a mat — the evening light here is lovely."
+      },
+      "highlights": [
+        {
+          "th": "ขั้นบันไดหญ้าสำหรับนั่งชม",
+          "en": "Grass terraces for seating"
+        },
+        {
+          "th": "หันหน้าลงบ่อน้ำ",
+          "en": "Faces the retention pond"
+        },
+        {
+          "th": "เหมาะกับดนตรีและหนังกลางแปลง",
+          "en": "Good for music and outdoor cinema"
+        }
+      ]
+    },
+    {
+      "id": "lawn",
+      "name": {
+        "th": "ลานรับน้ำ (สนามหญ้ากลาง)",
+        "en": "Detention lawn"
+      },
+      "short": {
+        "th": "ลานหญ้ากลาง",
+        "en": "Detention lawn"
+      },
+      "icon": "trees",
+      "color": "var(--z-green)",
+      "x": 62,
+      "y": 40,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/99/Chulalongkorn_University_Centenary_Park.jpg/960px-Chulalongkorn_University_Centenary_Park.jpg",
+      "description": {
+        "th": "สนามหญ้ากว้างกลางสวนที่ออกแบบให้รับน้ำได้เมื่อฝนตกหนัก วันปกติใช้ปิกนิก โยคะ และออกกำลังกายเบาๆ",
+        "en": "The wide central lawn is designed to hold water in heavy rain; on normal days it's for picnics, yoga and gentle exercise."
+      },
+      "good_to_know": {
+        "th": "หลังฝนตกหนักสนามอาจยังชื้น กิจกรรมบนสนามจะย้ายเข้าอาคารอเนกประสงค์",
+        "en": "After heavy rain the lawn may stay wet; lawn sessions move into the multipurpose hall."
+      },
+      "highlights": [
+        {
+          "th": "สนามหญ้าโล่งสำหรับปิกนิก",
+          "en": "Open lawn for picnics"
+        },
+        {
+          "th": "ทางเดินแตกกิ่งแบบต้นจามจุรี",
+          "en": "Paths branching like a rain tree"
+        },
+        {
+          "th": "แนวต้นไม้รับน้ำ (rain garden) ริมทางเดิน",
+          "en": "Rain-garden tree lines along the paths"
+        }
+      ]
+    },
+    {
+      "id": "wetland",
+      "name": {
+        "th": "พื้นที่ชุ่มน้ำประดิษฐ์",
+        "en": "Constructed wetland"
+      },
+      "short": {
+        "th": "พื้นที่ชุ่มน้ำ",
+        "en": "Wetland"
+      },
+      "icon": "waves",
+      "color": "var(--z-rest)",
+      "x": 33,
+      "y": 86,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7e/%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_%2820250327164427%29.jpg/960px-%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_%2820250327164427%29.jpg",
+      "description": {
+        "th": "แนวพื้นที่ชุ่มน้ำตามขอบอุทยาน บำบัดน้ำด้วยพืช เก็บน้ำไว้รดต้นไม้ และเป็นทางเดินชมธรรมชาติ",
+        "en": "Wetlands along the park's long edges clean water with plants, store it for irrigation and make a nature walk."
+      },
+      "good_to_know": {
+        "th": "ทางเดินรอบสวนผ่านแนวพื้นที่ชุ่มน้ำ ร่มรื่นช่วงเย็น",
+        "en": "The loop path runs past the wetlands and is shady in the evening."
+      },
+      "highlights": [
+        {
+          "th": "บำบัดน้ำด้วยพืช",
+          "en": "Plants that clean the water"
+        },
+        {
+          "th": "เก็บน้ำไว้ใช้หน้าแล้ง",
+          "en": "Stores water for the dry season"
+        },
+        {
+          "th": "ทางเดินรอบสวน",
+          "en": "Loop path around the park"
+        }
+      ]
+    },
+    {
+      "id": "classroom",
+      "name": {
+        "th": "ห้องเรียนกลางแจ้ง & สนามเด็กเล่น",
+        "en": "Outdoor classrooms & playgrounds"
+      },
+      "short": {
+        "th": "ห้องเรียนกลางแจ้ง",
+        "en": "Outdoor classrooms"
+      },
+      "icon": "graduation-cap",
+      "color": "var(--z-community)",
+      "x": 62,
+      "y": 79,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b3/%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_%2820250327164326%29.jpg/960px-%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_%2820250327164326%29.jpg",
+      "description": {
+        "th": "ห้องเรียนกลางแจ้งหลายแห่งรอบสวน เช่น สวนสมุนไพร มุมทำสมาธิ สวนไผ่ และสนามเด็กเล่น",
+        "en": "Outdoor classrooms around the park, including an herb garden, a meditation area, a bamboo garden and playgrounds."
+      },
+      "good_to_know": {
+        "th": "เหมาะกับครอบครัวที่มากับเด็ก และกิจกรรมกลุ่มเล็ก",
+        "en": "Great for families with kids and small-group sessions."
+      },
+      "highlights": [
+        {
+          "th": "สวนสมุนไพร",
+          "en": "Herb garden"
+        },
+        {
+          "th": "มุมทำสมาธิและสวนไผ่",
+          "en": "Meditation area and bamboo garden"
+        },
+        {
+          "th": "สนามเด็กเล่น",
+          "en": "Playgrounds"
+        }
+      ]
+    },
+    {
+      "id": "roof",
+      "name": {
+        "th": "อาคารอเนกประสงค์ & หลังคาเขียว",
+        "en": "Multipurpose hall & green roof"
+      },
+      "short": {
+        "th": "หลังคาเขียว",
+        "en": "Green roof"
+      },
+      "icon": "building-2",
+      "color": "var(--z-green)",
+      "x": 86,
+      "y": 31,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/CU_Centenary_Park_Panorama.jpg/960px-CU_Centenary_Park_Panorama.jpg",
+      "description": {
+        "th": "จุดสูงสุดของอุทยาน หลังคาเขียว 5,200 ตร.ม. เดินขึ้นได้ผ่านเนินและทางลาด ภายในอาคารใช้จัดสัมมนาและกิจกรรมชุมชน ใต้อาคารเป็นลานจอดรถ",
+        "en": "The park's high point: a 5,200 m² green roof you can walk up via mounds and ramps. The hall hosts seminars and community events, with parking underneath."
+      },
+      "good_to_know": {
+        "th": "ถ้าฝนตก โปรแกรมกลางแจ้งของ GENERA จะย้ายเข้ามาในอาคาร",
+        "en": "When it rains, GENERA's outdoor sessions move inside the hall."
+      },
+      "highlights": [
+        {
+          "th": "หลังคาเขียว 5,200 ตร.ม. เดินขึ้นได้",
+          "en": "5,200 m² walkable green roof"
+        },
+        {
+          "th": "ลานจอดรถใต้อาคาร ประมาณ 200 คัน",
+          "en": "Underground parking for about 200 cars"
+        },
+        {
+          "th": "ห้องจัดกิจกรรมในร่ม",
+          "en": "Indoor event space"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1255 @@
+{
+  "events": [
+    {
+      "id": "klangplaeng3",
+      "title": {
+        "th": "จุฬาฯ กลางแปลง ครั้งที่ 3",
+        "en": "Chula Klang Plaeng 3 — outdoor cinema"
+      },
+      "description": {
+        "th": "หนังกลางแปลงในอุทยาน ฉาย ‘รถไฟฟ้ามาหานะเธอ’ และ ‘10 Things I Hate About You’ พร้อมเวทีเสวนา ดนตรีสด และเวิร์กช็อป เช่น ดูดวง วาดรูปสดโดยนิสิต เฮนนา เพนต์หินคลายเครียด ทำพวงกุญแจ และพัด DIY",
+        "en": "An open-air movie night screening ‘Rot Fai Fah Ma Ha Na Ther’ and ‘10 Things I Hate About You’, with a talk, live music and workshops: tarot readings, live student sketches, henna, worry-stone painting, keychains and DIY fans."
+      },
+      "date": "2026-11-06",
+      "end_date": "",
+      "start": "16:00",
+      "end": "21:50",
+      "open_end": false,
+      "all_day": false,
+      "park": "chula",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "film",
+      "effort": "gentle",
+      "cost": {
+        "th": "ฟรี ไม่มีค่าเข้างาน",
+        "en": "Free entry"
+      },
+      "organiser": {
+        "th": "จุฬาฯ กลางแปลง (IG @chulaklangplaeng)",
+        "en": "Chula Klang Plaeng (IG @chulaklangplaeng)"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [
+        {
+          "time": "16:20–17:00",
+          "th": "ดนตรีสด",
+          "en": "Live music"
+        },
+        {
+          "time": "17:00–17:40",
+          "th": "เวทีเสวนา",
+          "en": "Talk"
+        },
+        {
+          "time": "17:45–19:45",
+          "th": "รถไฟฟ้ามาหานะเธอ",
+          "en": "Rot Fai Fah Ma Ha Na Ther"
+        },
+        {
+          "time": "19:45–20:15",
+          "th": "สารคดี",
+          "en": "Documentary"
+        },
+        {
+          "time": "20:15–21:50",
+          "th": "10 Things I Hate About You",
+          "en": "10 Things I Hate About You"
+        }
+      ],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand",
+            "en": "Time Out Thailand"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/chula-park-outdoor-movie-night-102926"
+        },
+        {
+          "label": {
+            "th": "โปสเตอร์ตารางกิจกรรม (แชททีม)",
+            "en": "Schedule poster (team chat)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "tay28",
+      "title": {
+        "th": "Tay Flea Market ซีซั่น 28: Nippon",
+        "en": "Tay Flea Market Season 28: Nippon"
+      },
+      "description": {
+        "th": "ตลาดนัดวินเทจและของมือสองชื่อดังกลับมาในธีมญี่ปุ่น ซีซั่นก่อนๆ มีร้านค้ากว่า 200 ร้านและเข้าชมฟรี",
+        "en": "The popular vintage and second-hand flea market returns with a Japanese theme. Previous seasons had 200+ stalls and free entry."
+      },
+      "date": "2026-11-05",
+      "end_date": "2026-11-08",
+      "start": "16:00",
+      "end": "23:30",
+      "open_end": false,
+      "all_day": false,
+      "park": "chula",
+      "venue": {
+        "th": "สวนหลวงสแควร์ – อุทยาน 100 ปี จุฬาฯ",
+        "en": "Suan Luang Square – Chula Centenary Park"
+      },
+      "category": "market",
+      "effort": "light",
+      "cost": {
+        "th": "",
+        "en": ""
+      },
+      "organiser": {
+        "th": "Tay Flea Market",
+        "en": "Tay Flea Market"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "โปสเตอร์จากแชททีม",
+            "en": "Poster from team chat"
+          },
+          "url": ""
+        },
+        {
+          "label": {
+            "th": "Time Out Thailand · ซีซั่นก่อนหน้าที่อุทยาน",
+            "en": "Time Out Thailand · previous season at the park"
+          },
+          "url": "https://www.timeout.com/bangkok/news/thai-tay-flea-market-040326"
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": true
+    },
+    {
+      "id": "pymk",
+      "title": {
+        "th": "PYMK The Concert: Melody in the Garden",
+        "en": "PYMK The Concert: Melody in the Garden"
+      },
+      "description": {
+        "th": "คอนเสิร์ตปิกนิกใต้ร่มไม้ โดย Project Paradiso (กรีน พี่ต้น จิ๋ว) เล่าเรื่องและร้องเพลงของศิลปินในตำนาน เช่น พุ่มพวง ดวงจันทร์ สุรพล สมบัติเจริญ เติ้ง ลี่จวิน และ Whitney Houston ปูเสื่อนั่งฟังได้เลย จัด 2 รอบ เสาร์และอาทิตย์",
+        "en": "A picnic-style concert under the trees by Project Paradiso (Green, Pee Ton and Jiew), telling stories and singing songs of legends like Phumphuang Duangchan, Surapol Sombatcharoen, Teresa Teng and Whitney Houston. Two shows, Saturday and Sunday. Bring a mat."
+      },
+      "date": "2026-11-28",
+      "end_date": "2026-11-29",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "chula",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "ฟรี (ต้องกดบัตรล่วงหน้า)",
+        "en": "Free (claim a ticket in advance)"
+      },
+      "organiser": {
+        "th": "นำเสนอโดย AP",
+        "en": "Presented by AP"
+      },
+      "registration": {
+        "text": {
+          "th": "กดบัตรผ่าน Ticketmelon เปิด 7 พ.ย. 12:00 น.",
+          "en": "Tickets on Ticketmelon, released 7 Nov at 12:00"
+        },
+        "url": "https://www.ticketmelon.com"
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand",
+            "en": "Time Out Thailand"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/pymk-the-concert-chula-110326"
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "molly",
+      "title": {
+        "th": "MOLLY 20th Anniversary Exhibition – Bangkok",
+        "en": "MOLLY 20th Anniversary Exhibition – Bangkok"
+      },
+      "description": {
+        "th": "นิทรรศการฉลอง 20 ปี MOLLY ธีม ‘The Little Galaxy’ โดย POP MART Thailand ร่วมกับ ททท. และ PMCU พร้อมกิจกรรม Stamp Collection กับร้านค้า 15 ร้านในย่านบรรทัดทอง ใช้บริการครบ 3 ร้านแลกโปสการ์ด MOLLY รุ่นพิเศษ",
+        "en": "POP MART Thailand's 20th-anniversary MOLLY exhibition ‘The Little Galaxy’, with TAT and PMCU, plus a stamp trail with 15 shops around Banthat Thong — visit 3 to collect a limited MOLLY postcard."
+      },
+      "date": "2026-09-24",
+      "end_date": "2026-10-25",
+      "start": "",
+      "end": "",
+      "open_end": false,
+      "all_day": true,
+      "park": "chula",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "culture",
+      "effort": "gentle",
+      "cost": {
+        "th": "",
+        "en": ""
+      },
+      "organiser": {
+        "th": "POP MART Thailand × ททท. × PMCU",
+        "en": "POP MART Thailand × TAT × PMCU"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "กรุงเทพธุรกิจ",
+            "en": "Bangkok Biz News"
+          },
+          "url": "https://www.bangkokbiznews.com/business/1251720"
+        },
+        {
+          "label": {
+            "th": "ไทยโพสต์ (Stamp Collection)",
+            "en": "Thai Post (stamp trail)"
+          },
+          "url": "https://www.thaipost.net/public-relations-news/1091235/"
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "letsplay3",
+      "title": {
+        "th": "CHULA Let’s Play ครั้งที่ 3: อุทยานฯ การละเล่น",
+        "en": "CHULA Let’s Play #3: Park of Traditional Games"
+      },
+      "description": {
+        "th": "เทศกาลชวนเด็กและครอบครัวเงยหน้าจากจอ กลับมาเล่นการละเล่นพื้นบ้านกลางสวน โดย PMCU ร่วมกับกระทรวงวัฒนธรรม เครือข่ายเล่นเปลี่ยนโลก และ สสส.",
+        "en": "A festival inviting children and families off their screens to play traditional Thai games in the park, by PMCU with the Ministry of Culture, the Play Changes the World network and ThaiHealth."
+      },
+      "date": "2026-09-19",
+      "end_date": "",
+      "start": "10:00",
+      "end": "20:00",
+      "open_end": false,
+      "all_day": false,
+      "park": "chula",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "family",
+      "effort": "moderate",
+      "cost": {
+        "th": "",
+        "en": ""
+      },
+      "organiser": {
+        "th": "PMCU × กระทรวงวัฒนธรรม × สสส.",
+        "en": "PMCU × Ministry of Culture × ThaiHealth"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "ไทยโพสต์",
+            "en": "Thai Post"
+          },
+          "url": "https://www.thaipost.net/public-relations-news/1065596/"
+        },
+        {
+          "label": {
+            "th": "PMCU",
+            "en": "PMCU"
+          },
+          "url": "https://pmcu.co.th/chula-centenary-park/"
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "reading5",
+      "title": {
+        "th": "Reading in the Park EP5",
+        "en": "Reading in the Park EP5"
+      },
+      "description": {
+        "th": "นั่งอ่านหนังสือกับคนแปลกหน้าแบบไม่ใช้โทรศัพท์ แล้วคุยกันเรื่องวรรณกรรม ศิลปะ และวัฒนธรรมเป็นกลุ่มเล็ก นำหนังสือหรือ e-reader และเสื่อมาเอง",
+        "en": "Read with strangers, phones off, then chat in small groups about literature, art and culture. Bring a book or e-reader and a mat."
+      },
+      "date": "2026-11-21",
+      "end_date": "",
+      "start": "15:30",
+      "end": "18:00",
+      "open_end": false,
+      "all_day": false,
+      "park": "benjakitti",
+      "venue": {
+        "th": "อัฒจันทร์หลัก",
+        "en": "Main Amphitheatre"
+      },
+      "category": "culture",
+      "effort": "gentle",
+      "cost": {
+        "th": "ฟรี (ลงทะเบียนล่วงหน้า)",
+        "en": "Free with registration"
+      },
+      "organiser": {
+        "th": "Bangkok Literature & Arts Festival × กทม.",
+        "en": "Bangkok Literature & Arts Festival × BMA"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand",
+            "en": "Time Out Thailand"
+          },
+          "url": "https://www.timeout.com/bangkok/news/reading-in-the-park-returns-to-benjakitti-110626"
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-01-benjasiri",
+      "title": {
+        "th": "ดนตรีในสวน: Bangkok String Quartet",
+        "en": "Music in the Park: Bangkok String Quartet"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย Bangkok String Quartet",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Bangkok String Quartet."
+      },
+      "date": "2026-11-01",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "benjasiri",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-07-benjasiri",
+      "title": {
+        "th": "ดนตรีในสวน: Bangkok Brass Quintet",
+        "en": "Music in the Park: Bangkok Brass Quintet"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย Bangkok Brass Quintet",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Bangkok Brass Quintet."
+      },
+      "date": "2026-11-07",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "benjasiri",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-08-rama8",
+      "title": {
+        "th": "ดนตรีในสวน: วงดนตรีไทยกรุงเทพมหานคร",
+        "en": "Music in the Park: Bangkok Thai Music Ensemble"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย วงดนตรีไทยกรุงเทพมหานคร",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Bangkok Thai Music Ensemble."
+      },
+      "date": "2026-11-08",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "rama8",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-14-benjakitti",
+      "title": {
+        "th": "ดนตรีในสวน: BMA Band",
+        "en": "Music in the Park: BMA Band"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย BMA Band",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring BMA Band."
+      },
+      "date": "2026-11-14",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "benjakitti",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-15-lumpini",
+      "title": {
+        "th": "ดนตรีในสวน: บางกอกลีลาศ #7",
+        "en": "Music in the Park: Bangkok Ballroom #7"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย บางกอกลีลาศ #7",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Bangkok Ballroom #7."
+      },
+      "date": "2026-11-15",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "lumpini",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "ฟรี (เฉพาะผู้ลงทะเบียนล่วงหน้า)",
+        "en": "Free (pre-registered only)"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-21-benjakitti",
+      "title": {
+        "th": "ดนตรีในสวน: The Generate",
+        "en": "Music in the Park: The Generate"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย The Generate",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring The Generate."
+      },
+      "date": "2026-11-21",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "benjakitti",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-21-santi",
+      "title": {
+        "th": "ดนตรีในสวน: The Bangkok Contemp Band",
+        "en": "Music in the Park: The Bangkok Contemp Band"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย The Bangkok Contemp Band",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring The Bangkok Contemp Band."
+      },
+      "date": "2026-11-21",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "santi",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-21-benjasiri",
+      "title": {
+        "th": "ดนตรีในสวน: Jerguntee",
+        "en": "Music in the Park: Jerguntee"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย Jerguntee",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Jerguntee."
+      },
+      "date": "2026-11-21",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "benjasiri",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-22-wachira",
+      "title": {
+        "th": "ดนตรีในสวน: BKK Jazz Group",
+        "en": "Music in the Park: BKK Jazz Group"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย BKK Jazz Group",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring BKK Jazz Group."
+      },
+      "date": "2026-11-22",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "wachira",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": true,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-22-rama8",
+      "title": {
+        "th": "ดนตรีในสวน: โปงลางมหานคร",
+        "en": "Music in the Park: Ponglang Maha Nakhon"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย โปงลางมหานคร",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Ponglang Maha Nakhon."
+      },
+      "date": "2026-11-22",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "rama8",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-22-benjakitti",
+      "title": {
+        "th": "ดนตรีในสวน: HIRAN Band / TOR KRITSAKORN",
+        "en": "Music in the Park: HIRAN Band / TOR KRITSAKORN"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย HIRAN Band / TOR KRITSAKORN",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring HIRAN Band / TOR KRITSAKORN."
+      },
+      "date": "2026-11-22",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "benjakitti",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": true,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-28-benjakitti",
+      "title": {
+        "th": "ดนตรีในสวน: Sustain & Step from D Dance Thailand",
+        "en": "Music in the Park: Sustain & Step from D Dance Thailand"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย Sustain & Step from D Dance Thailand",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Sustain & Step from D Dance Thailand."
+      },
+      "date": "2026-11-28",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "benjakitti",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-28-benjakitti",
+      "title": {
+        "th": "ดนตรีในสวน: TESKA Winds",
+        "en": "Music in the Park: TESKA Winds"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย TESKA Winds",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring TESKA Winds."
+      },
+      "date": "2026-11-28",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "benjakitti",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": true,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-29-benjakitti",
+      "title": {
+        "th": "ดนตรีในสวน: BMO: Bangkok Metropolitan Orchestra",
+        "en": "Music in the Park: BMO: Bangkok Metropolitan Orchestra"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย BMO: Bangkok Metropolitan Orchestra",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring BMO: Bangkok Metropolitan Orchestra."
+      },
+      "date": "2026-11-29",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "benjakitti",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    },
+    {
+      "id": "mip-11-29-lumpini",
+      "title": {
+        "th": "ดนตรีในสวน: ประชันดนตรีไทยกรุงเทพมหานคร",
+        "en": "Music in the Park: Bangkok Thai Music Contest"
+      },
+      "description": {
+        "th": "กิจกรรม “ดนตรีในสวน” ของกรุงเทพมหานคร ประจำเดือนพฤศจิกายน 2569 การแสดงโดย ประชันดนตรีไทยกรุงเทพมหานคร",
+        "en": "Bangkok's November 2026 “Music in the Park” series, featuring Bangkok Thai Music Contest."
+      },
+      "date": "2026-11-29",
+      "end_date": "",
+      "start": "17:00",
+      "end": "",
+      "open_end": true,
+      "all_day": false,
+      "park": "lumpini",
+      "venue": {
+        "th": "",
+        "en": ""
+      },
+      "category": "music",
+      "effort": "gentle",
+      "cost": {
+        "th": "เข้าชมฟรี",
+        "en": "Free"
+      },
+      "organiser": {
+        "th": "กรุงเทพมหานคร",
+        "en": "Bangkok Metropolitan Administration"
+      },
+      "registration": {
+        "text": {
+          "th": "",
+          "en": ""
+        },
+        "url": ""
+      },
+      "schedule": [],
+      "sources": [
+        {
+          "label": {
+            "th": "Time Out Thailand · ดนตรีในสวน พ.ย.",
+            "en": "Time Out Thailand · Music in the Park, Nov"
+          },
+          "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+        },
+        {
+          "label": {
+            "th": "รายการจากแชททีม (โพสต์ กทม.)",
+            "en": "List from team chat (BMA post)"
+          },
+          "url": ""
+        }
+      ],
+      "image": "",
+      "venue_check": false,
+      "poster_only": false
+    }
+  ]
+}

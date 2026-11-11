@@ -1,0 +1,220 @@
+{
+  "sessions": [
+    {
+      "id": "stretch",
+      "title": {
+        "th": "ยืดเหยียดผ่อนคลายหลังเลิกงาน",
+        "en": "After-work stretch & unwind"
+      },
+      "description": {
+        "th": "ยืดกล้ามเนื้อเบาๆ ทำได้ทั้งท่านั่งและท่ายืน ช่วยคลายความเมื่อยล้าจากการยืนทำงานมาทั้งวัน ไม่ต้องมีประสบการณ์",
+        "en": "Gentle stretches you can do seated or standing, to ease the aches of a day on your feet. No experience needed."
+      },
+      "weekday": 1,
+      "start": "17:30",
+      "end": "18:15",
+      "zone": "lawn",
+      "category": "rest",
+      "effort": "gentle",
+      "covered": false,
+      "capacity": 25,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e9/People_in_an_outdoor_yoga_class_near_the_Chiang_Kai-shek_Memorial_Hall_1981.jpg/960px-People_in_an_outdoor_yoga_class_near_the_Chiang_Kai-shek_Memorial_Hall_1981.jpg",
+      "bring": {
+        "th": "ใส่เสื้อผ้าสบายๆ",
+        "en": "Comfortable clothes"
+      }
+    },
+    {
+      "id": "tea",
+      "title": {
+        "th": "วงน้ำสมุนไพร คุยกันสบายๆ",
+        "en": "Herbal tea & chat circle"
+      },
+      "description": {
+        "th": "จิบน้ำสมุนไพรเย็นๆ ใต้ร่มจามจุรีริมบ่อน้ำ พบปะเพื่อนบ้านแบบไม่เร่งรีบ จะแวะนั่งห้านาทีหรือทั้งชั่วโมงก็ได้",
+        "en": "Cool herbal drinks under the rain trees by the pond and an unhurried chat with neighbours. Stay five minutes or the whole hour."
+      },
+      "weekday": 2,
+      "start": "17:30",
+      "end": "18:30",
+      "zone": "entrance",
+      "category": "community",
+      "effort": "gentle",
+      "covered": false,
+      "capacity": 30,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e1/Jasmine_tea_at_Bangkok_9.jpg/960px-Jasmine_tea_at_Bangkok_9.jpg",
+      "bring": {
+        "th": "ไม่ต้องเตรียมอะไร มีเครื่องดื่มให้",
+        "en": "Nothing — drinks are provided"
+      }
+    },
+    {
+      "id": "yoga",
+      "title": {
+        "th": "โยคะเบาๆ บนลานหญ้า",
+        "en": "Light yoga on the lawn"
+      },
+      "description": {
+        "th": "โยคะจังหวะช้า เหมาะกับทุกวัยและทุกระดับ เหมาะมากหลังเลิกงาน มีเสื่อให้ยืม",
+        "en": "A relaxing yoga session for all levels, perfect after work. Mats are provided."
+      },
+      "weekday": 3,
+      "start": "17:30",
+      "end": "18:30",
+      "zone": "lawn",
+      "category": "wellness",
+      "effort": "light",
+      "covered": false,
+      "capacity": 20,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b2/Outdoor_Yoga_At_the_Park.jpg/960px-Outdoor_Yoga_At_the_Park.jpg",
+      "bring": {
+        "th": "เสื้อผ้าสบายๆ ขวดน้ำ (มีเสื่อให้ยืม)",
+        "en": "Comfortable clothes and water (mats provided)"
+      }
+    },
+    {
+      "id": "garland",
+      "title": {
+        "th": "เวิร์กช็อปร้อยมาลัยและงานศิลปะ",
+        "en": "Garland & art workshop"
+      },
+      "description": {
+        "th": "ร้อยมาลัยดอกไม้ วาดรูป และงานฝีมือง่ายๆ กับวิทยากรจากชุมชน ในอาคารอเนกประสงค์ อุปกรณ์ฟรี นำผลงานกลับบ้านได้",
+        "en": "Thread flower garlands, paint and make simple crafts with a local maker in the multipurpose hall. Materials are free and you take your work home."
+      },
+      "weekday": 4,
+      "start": "17:30",
+      "end": "19:00",
+      "zone": "roof",
+      "category": "workshop",
+      "effort": "gentle",
+      "covered": true,
+      "capacity": 15,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/dd/4Y1A1081_Bangkok_%2833192271560%29.jpg/960px-4Y1A1081_Bangkok_%2833192271560%29.jpg",
+      "bring": {
+        "th": "ไม่ต้องเตรียม อุปกรณ์ฟรีทั้งหมด",
+        "en": "Nothing — all materials are free"
+      }
+    },
+    {
+      "id": "music",
+      "title": {
+        "th": "ดนตรีอะคูสติกยามเย็น",
+        "en": "Acoustic evening on the terraces"
+      },
+      "description": {
+        "th": "ดนตรีอะคูสติก ลูกทุ่ง และเพลงฟังสบายบนอัฒจันทร์สนามหญ้า นั่งฟัง ร้องตาม หรือแค่พักผ่อนก่อนกลับบ้าน",
+        "en": "Acoustic luk thung and easy-listening songs on the lawn amphitheatre. Sit back, sing along, or simply rest before heading home."
+      },
+      "weekday": 5,
+      "start": "18:00",
+      "end": "19:30",
+      "zone": "amphi",
+      "category": "community",
+      "effort": "gentle",
+      "covered": false,
+      "capacity": 40,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/DSCF0867_A_street-musician_duo_performs_outdoors_as_the_sun_sets_-_a_singer_with_a_handheld_mic_and_a_guitarist_singing_into_a_stand_mic_beside_palm_trees_and_market_stalls.jpg/960px-thumbnail.jpg",
+      "bring": {
+        "th": "เสื่อสำหรับนั่งบนอัฒจันทร์",
+        "en": "A mat for the grass terraces"
+      }
+    },
+    {
+      "id": "garden",
+      "title": {
+        "th": "ปลูกผักในสวนสมุนไพร",
+        "en": "Herb garden planting"
+      },
+      "description": {
+        "th": "ปลูกและดูแลแปลงสมุนไพรในห้องเรียนกลางแจ้งร่วมกัน เด็กและผู้สูงอายุร่วมได้",
+        "en": "Plant and tend the herb beds in the outdoor classroom together. Kids and older adults are welcome."
+      },
+      "weekday": 6,
+      "start": "07:30",
+      "end": "09:00",
+      "zone": "classroom",
+      "category": "workshop",
+      "effort": "moderate",
+      "covered": false,
+      "capacity": 20,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0a/2008_Oliver_community_garden_BaltimoreMD_PhotoBy_SusanReimer_BaltimoreSun_3926429108.jpg/960px-2008_Oliver_community_garden_BaltimoreMD_PhotoBy_SusanReimer_BaltimoreSun_3926429108.jpg",
+      "bring": {
+        "th": "หมวก รองเท้าหุ้มส้น ขวดน้ำ",
+        "en": "A hat, closed shoes and water"
+      }
+    },
+    {
+      "id": "play",
+      "title": {
+        "th": "บ่ายนี้เล่นด้วยกันทั้งครอบครัว",
+        "en": "Family play afternoon"
+      },
+      "description": {
+        "th": "เกมพื้นบ้านอย่างมอญซ่อนผ้าและรีรีข้าวสาร ข้างสนามเด็กเล่น พร้อมที่นั่งในร่มสำหรับผู้ใหญ่",
+        "en": "Traditional Thai games like mon son pha and ri ri khao san by the playground, with shaded seats for grown-ups."
+      },
+      "weekday": 6,
+      "start": "16:00",
+      "end": "17:30",
+      "zone": "classroom",
+      "category": "family",
+      "effort": "moderate",
+      "covered": false,
+      "capacity": 30,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/73/Hart_Norrha_Kids%27_Playground_01.jpg/960px-Hart_Norrha_Kids%27_Playground_01.jpg",
+      "bring": {
+        "th": "ขวดน้ำ หมวกกันแดด",
+        "en": "Water and a sun hat"
+      }
+    },
+    {
+      "id": "taichi",
+      "title": {
+        "th": "ไทเก๊กยามเช้า ทุกวัย",
+        "en": "Morning tai chi, all ages"
+      },
+      "description": {
+        "th": "เคลื่อนไหวช้าๆ ฝึกการทรงตัวและลมหายใจ เหมาะมากสำหรับผู้สูงอายุ",
+        "en": "Slow, flowing movement for balance and breathing. Especially good for older adults."
+      },
+      "weekday": 0,
+      "start": "06:30",
+      "end": "07:30",
+      "zone": "lawn",
+      "category": "wellness",
+      "effort": "gentle",
+      "covered": false,
+      "capacity": 25,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d2/S%C3%A9ance_de_Tai-Chi_matinale_au_Lumphini..._%288777890523%29.jpg",
+      "bring": {
+        "th": "เสื้อผ้าสบายๆ รองเท้าพื้นเรียบ",
+        "en": "Comfortable clothes and flat shoes"
+      }
+    },
+    {
+      "id": "walk",
+      "title": {
+        "th": "เดินชมพื้นที่ชุ่มน้ำ",
+        "en": "Wetland nature walk"
+      },
+      "description": {
+        "th": "เดินช้าๆ รอบสวนกับผู้นำกิจกรรม ผ่านพื้นที่ชุ่มน้ำและเล่าเรื่องการออกแบบให้สวนรับน้ำของเมือง",
+        "en": "An easy guided stroll past the wetlands, learning how the park was designed to hold the city's rainwater."
+      },
+      "weekday": 0,
+      "start": "16:30",
+      "end": "17:30",
+      "zone": "wetland",
+      "category": "rest",
+      "effort": "light",
+      "covered": false,
+      "capacity": 20,
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_%2820250327164306%29.jpg/960px-%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_%2820250327164306%29.jpg",
+      "bring": {
+        "th": "รองเท้าใส่สบาย ขวดน้ำ",
+        "en": "Comfortable shoes and water"
+      }
+    }
+  ]
+}

@@ -1,0 +1,562 @@
+# หลังบ้าน GENERA (Sveltia CMS)
+# 1) เปลี่ยน repo ด้านล่างเป็น <ชื่อผู้ใช้ GitHub>/<ชื่อ repo> ของทีม
+# 2) เปิด https://<ชื่อผู้ใช้>.github.io/<ชื่อ repo>/admin/ แล้วกด "Sign in with Token"
+backend:
+  name: github
+  repo: YOUR-GITHUB-USERNAME/genera-site  # <-- แก้ตรงนี้
+  branch: main
+  commit_messages:
+    update: อัปเดต {{slug}} ผ่านหลังบ้าน
+media_folder: assets/img/uploads
+public_folder: assets/img/uploads
+site_url: https://YOUR-GITHUB-USERNAME.github.io/genera-site/  # <-- แก้ตรงนี้
+collections:
+- name: content
+  label: ข้อมูลเว็บไซต์
+  editor:
+    preview: false
+  files:
+  - name: events
+    label: กิจกรรมจริง (Real events)
+    file: data/events.json
+    format: json
+    fields:
+    - name: events
+      label: รายการกิจกรรม
+      label_singular: กิจกรรม
+      widget: list
+      summary: '{{fields.date}} · {{fields.title.th}}'
+      fields:
+      - name: id
+        label: รหัส (ภาษาอังกฤษ ไม่เว้นวรรค ห้ามซ้ำ เช่น klangplaeng4)
+        widget: string
+        pattern:
+        - ^[a-z0-9-]+$
+        - ใช้ a-z 0-9 และ - เท่านั้น
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: string
+          required: false
+        - name: en
+          label: English
+          widget: string
+          required: false
+        name: title
+        label: ชื่อกิจกรรม
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: text
+          required: false
+        - name: en
+          label: English
+          widget: text
+          required: false
+        name: description
+        label: รายละเอียด
+      - name: date
+        label: วันที่เริ่ม
+        widget: datetime
+        time_format: false
+        date_format: YYYY-MM-DD
+        format: YYYY-MM-DD
+      - name: end_date
+        label: วันที่สิ้นสุด (ถ้าจัดหลายวัน)
+        widget: datetime
+        time_format: false
+        date_format: YYYY-MM-DD
+        format: YYYY-MM-DD
+        required: false
+      - name: start
+        label: เวลาเริ่ม (HH:MM)
+        widget: string
+        required: false
+        pattern:
+        - ^([01][0-9]|2[0-3]):[0-5][0-9]$|^$
+        - รูปแบบ 17:00
+      - name: end
+        label: เวลาจบ (HH:MM)
+        widget: string
+        required: false
+        pattern:
+        - ^([01][0-9]|2[0-3]):[0-5][0-9]$|^$
+        - รูปแบบ 21:00
+      - name: open_end
+        label: ไม่ระบุเวลาจบ (แสดง “…เป็นต้นไป”)
+        widget: boolean
+        default: false
+      - name: all_day
+        label: ไม่มีเวลาแน่นอน / ทั้งวัน
+        widget: boolean
+        default: false
+      - name: park
+        label: สวน
+        widget: select
+        options:
+        - label: อุทยาน 100 ปี จุฬาฯ
+          value: chula
+        - label: สวนเบญจกิติ
+          value: benjakitti
+        - label: อุทยานเบญจสิริ
+          value: benjasiri
+        - label: สวนหลวงพระราม 8
+          value: rama8
+        - label: ลุมพินีสถาน สวนลุมพินี
+          value: lumpini
+        - label: สวนสันติชัยปราการ
+          value: santi
+        - label: สวนวชิรเบญจทัศ (สวนรถไฟ)
+          value: wachira
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: string
+          required: false
+        - name: en
+          label: English
+          widget: string
+          required: false
+        name: venue
+        label: จุดในสวน (ถ้ามี)
+        required: false
+      - name: category
+        label: หมวด
+        widget: select
+        options:
+        - label: ดนตรี
+          value: music
+        - label: หนังกลางแปลง
+          value: film
+        - label: ตลาดนัด
+          value: market
+        - label: ศิลปะ & การอ่าน
+          value: culture
+        - label: ครอบครัว
+          value: family
+        - label: สุขภาพ
+          value: wellness
+        - label: เวิร์กช็อป
+          value: workshop
+        - label: ชุมชน
+          value: community
+        - label: พักผ่อน
+          value: rest
+      - name: effort
+        label: ความเหนื่อย
+        widget: select
+        default: gentle
+        options:
+        - label: เบามาก
+          value: gentle
+        - label: เบา
+          value: light
+        - label: ปานกลาง
+          value: moderate
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: string
+          required: false
+        - name: en
+          label: English
+          widget: string
+          required: false
+        name: cost
+        label: ค่าเข้า (เช่น ฟรี)
+        required: false
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: string
+          required: false
+        - name: en
+          label: English
+          widget: string
+          required: false
+        name: organiser
+        label: ผู้จัด
+        required: false
+      - name: registration
+        label: การลงทะเบียน (ถ้ามี)
+        widget: object
+        required: false
+        fields:
+        - widget: object
+          collapsed: false
+          fields:
+          - name: th
+            label: ภาษาไทย
+            widget: string
+            required: false
+          - name: en
+            label: English
+            widget: string
+            required: false
+          name: text
+          label: ข้อความ
+        - name: url
+          label: ลิงก์ลงทะเบียน
+          widget: string
+          required: false
+      - name: schedule
+        label: ตารางกิจกรรมย่อย
+        label_singular: ช่วงเวลา
+        widget: list
+        required: false
+        summary: '{{fields.time}} {{fields.th}}'
+        fields:
+        - name: time
+          label: เวลา (เช่น 17:00–17:40)
+          widget: string
+        - name: th
+          label: ภาษาไทย
+          widget: string
+        - name: en
+          label: English
+          widget: string
+      - name: sources
+        label: แหล่งที่มา (ต้องมีอย่างน้อย 1)
+        label_singular: แหล่งที่มา
+        widget: list
+        summary: '{{fields.label.th}}'
+        fields:
+        - widget: object
+          collapsed: false
+          fields:
+          - name: th
+            label: ภาษาไทย
+            widget: string
+            required: false
+          - name: en
+            label: English
+            widget: string
+            required: false
+          name: label
+          label: ชื่อแหล่ง
+        - name: url
+          label: ลิงก์ (ถ้ามี)
+          widget: string
+          required: false
+      - name: image
+        label: รูป/โปสเตอร์ (ไม่ใส่ก็ได้)
+        widget: image
+        required: false
+      - name: venue_check
+        label: สถานที่ยังไม่ยืนยัน (แสดงคำเตือน)
+        widget: boolean
+        default: false
+      - name: poster_only
+        label: ข้อมูลจากโปสเตอร์เท่านั้น (แสดงคำเตือน)
+        widget: boolean
+        default: false
+  - name: programme
+    label: โปรแกรมประจำสัปดาห์ GENERA
+    file: data/programme.json
+    format: json
+    fields:
+    - name: sessions
+      label: กิจกรรมประจำ
+      label_singular: กิจกรรม
+      widget: list
+      summary: '{{fields.title.th}} ({{fields.start}})'
+      fields:
+      - name: id
+        label: รหัส (a-z ไม่ซ้ำ)
+        widget: string
+        pattern:
+        - ^[a-z0-9-]+$
+        - ใช้ a-z 0-9 และ - เท่านั้น
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: string
+          required: false
+        - name: en
+          label: English
+          widget: string
+          required: false
+        name: title
+        label: ชื่อ
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: text
+          required: false
+        - name: en
+          label: English
+          widget: text
+          required: false
+        name: description
+        label: รายละเอียด
+      - name: weekday
+        label: วัน
+        widget: select
+        options:
+        - label: อาทิตย์
+          value: 0
+        - label: จันทร์
+          value: 1
+        - label: อังคาร
+          value: 2
+        - label: พุธ
+          value: 3
+        - label: พฤหัสบดี
+          value: 4
+        - label: ศุกร์
+          value: 5
+        - label: เสาร์
+          value: 6
+      - name: start
+        label: เวลาเริ่ม (HH:MM)
+        widget: string
+      - name: end
+        label: เวลาจบ (HH:MM)
+        widget: string
+      - name: zone
+        label: โซน
+        widget: select
+        options:
+        - label: ลานทางเข้า & บ่อหน่วงน้ำ
+          value: entrance
+        - label: อัฒจันทร์สนามหญ้า
+          value: amphi
+        - label: ลานรับน้ำ (สนามหญ้ากลาง)
+          value: lawn
+        - label: พื้นที่ชุ่มน้ำประดิษฐ์
+          value: wetland
+        - label: ห้องเรียนกลางแจ้ง & สนามเด็กเล่น
+          value: classroom
+        - label: อาคารอเนกประสงค์ & หลังคาเขียว
+          value: roof
+      - name: category
+        label: หมวด
+        widget: select
+        options:
+        - label: สุขภาพ
+          value: wellness
+        - label: เวิร์กช็อป
+          value: workshop
+        - label: ชุมชน
+          value: community
+        - label: ครอบครัว
+          value: family
+        - label: พักผ่อน
+          value: rest
+        - label: ดนตรี
+          value: music
+      - name: effort
+        label: ความเหนื่อย
+        widget: select
+        options:
+        - label: เบามาก
+          value: gentle
+        - label: เบา
+          value: light
+        - label: ปานกลาง
+          value: moderate
+      - name: covered
+        label: จัดในร่ม (มีหลังคา)
+        widget: boolean
+        default: false
+      - name: capacity
+        label: จำนวนที่นั่ง
+        widget: number
+        value_type: int
+        min: 1
+      - name: image
+        label: รูป
+        widget: image
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: string
+          required: false
+        - name: en
+          label: English
+          widget: string
+          required: false
+        name: bring
+        label: ควรเตรียม
+  - name: zones
+    label: โซนในแผนผังอุทยาน
+    file: data/zones.json
+    format: json
+    fields:
+    - name: zones
+      label: โซน
+      widget: list
+      allow_add: false
+      summary: '{{fields.name.th}}'
+      fields:
+      - name: id
+        label: รหัส (ห้ามแก้)
+        widget: string
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: string
+          required: false
+        - name: en
+          label: English
+          widget: string
+          required: false
+        name: name
+        label: ชื่อโซน
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: string
+          required: false
+        - name: en
+          label: English
+          widget: string
+          required: false
+        name: short
+        label: ชื่อสั้นบนแผนที่
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: text
+          required: false
+        - name: en
+          label: English
+          widget: text
+          required: false
+        name: description
+        label: คำอธิบาย
+      - widget: object
+        collapsed: false
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: text
+          required: false
+        - name: en
+          label: English
+          widget: text
+          required: false
+        name: good_to_know
+        label: ควรรู้
+      - name: highlights
+        label: จุดเด่น
+        widget: list
+        fields:
+        - name: th
+          label: ภาษาไทย
+          widget: string
+        - name: en
+          label: English
+          widget: string
+      - name: image
+        label: รูป
+        widget: image
+      - name: icon
+        label: ไอคอน (Lucide, ห้ามแก้ถ้าไม่แน่ใจ)
+        widget: string
+      - name: color
+        label: สี (ห้ามแก้ถ้าไม่แน่ใจ)
+        widget: string
+      - name: x
+        label: ตำแหน่ง X บนแผนที่ (%)
+        widget: number
+        value_type: float
+      - name: y
+        label: ตำแหน่ง Y บนแผนที่ (%)
+        widget: number
+        value_type: float
+  - name: site
+    label: ข้อมูลอุทยาน & แหล่งที่มา
+    file: data/site.json
+    format: json
+    fields:
+    - name: hero_image
+      label: รูปหน้าแรก (อัปโหลด หรือวางลิงก์รูป)
+      widget: image
+    - name: park_photos
+      label: รูปของแต่ละสวน (ใช้กับกิจกรรมที่ยังไม่มีโปสเตอร์)
+      widget: list
+      allow_add: false
+      summary: '{{fields.park}}'
+      fields:
+      - name: park
+        label: สวน
+        widget: select
+        options:
+        - label: อุทยาน 100 ปี จุฬาฯ
+          value: chula
+        - label: สวนเบญจกิติ
+          value: benjakitti
+        - label: อุทยานเบญจสิริ
+          value: benjasiri
+        - label: สวนหลวงพระราม 8
+          value: rama8
+        - label: ลุมพินีสถาน สวนลุมพินี
+          value: lumpini
+        - label: สวนสันติชัยปราการ
+          value: santi
+        - label: สวนวชิรเบญจทัศ (สวนรถไฟ)
+          value: wachira
+      - name: image
+        label: รูป
+        widget: image
+    - name: park_info
+      label: ข้อมูลการเข้าใช้อุทยาน
+      widget: list
+      fields:
+      - name: th
+        label: ภาษาไทย
+        widget: string
+      - name: en
+        label: English
+        widget: string
+    - name: sources
+      label: แหล่งที่มา (หน้าเกี่ยวกับ)
+      widget: list
+      summary: '{{fields.label}}'
+      fields:
+      - name: label
+        label: ชื่อ
+        widget: string
+      - name: url
+        label: ลิงก์
+        widget: string
+    - name: last_checked
+      label: ตรวจสอบข้อมูลล่าสุด
+      widget: datetime
+      time_format: false
+      date_format: YYYY-MM-DD
+      format: YYYY-MM-DD
+    - name: photo_credits
+      label: เครดิตภาพ (ต้องใส่ทุกครั้งที่ใช้รูปคนอื่น)
+      widget: list
+      summary: '{{fields.label}}'
+      fields:
+      - name: label
+        label: ชื่อภาพ — ผู้ถ่าย, สัญญาอนุญาต
+        widget: string
+      - name: url
+        label: ลิงก์หน้าต้นฉบับ
+        widget: string

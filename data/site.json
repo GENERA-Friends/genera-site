@@ -1,0 +1,196 @@
+{
+  "park_info": [
+    {
+      "th": "เข้าฟรีทุกวัน (ข้อมูลท่องเที่ยวระบุ 05:00–22:00 น.)",
+      "en": "Free entry daily (travel listings say 05:00–22:00)"
+    },
+    {
+      "th": "BTS สนามกีฬาแห่งชาติ ทางออก 2 · MRT หัวลำโพง (ประมาณ 900 ม.)",
+      "en": "BTS National Stadium exit 2 · MRT Hua Lamphong (about 900 m)"
+    },
+    {
+      "th": "ลานจอดรถใต้อาคาร ประมาณ 200 คัน · 20 บาท 2 ชม.แรก",
+      "en": "Parking for about 200 cars · 20 THB for the first 2 hours"
+    },
+    {
+      "th": "ติดย่านอาหารบรรทัดทอง",
+      "en": "Next to the Banthat Thong food street"
+    },
+    {
+      "th": "ถนน 100 ปี จุฬาฯ (เดิมซอยจุฬาฯ 5) เชื่อมพระราม 1 และพระราม 4",
+      "en": "Chula 100th Anniversary Road (old Chula Soi 5) links Rama 1 and Rama 4"
+    },
+    {
+      "th": "ดูแลโดย PMCU",
+      "en": "Managed by PMCU"
+    }
+  ],
+  "sources": [
+    {
+      "label": "PMCU — อุทยาน 100 ปี จุฬาฯ",
+      "url": "https://pmcu.co.th/chula-centenary-park/"
+    },
+    {
+      "label": "จุฬาฯ — บริการอุทยาน 100 ปี (การเดินทาง ที่จอดรถ)",
+      "url": "https://www.chula.ac.th/services/cu-centenary-park/"
+    },
+    {
+      "label": "CityGreen #16 (NParks) — Kotchakorn Voraakhom / LANDPROCESS",
+      "url": "https://www.nparks.gov.sg/-/media/cuge/ebook/citygreen/cg16/cg16_05.pdf"
+    },
+    {
+      "label": "Landscape Climate — CU Centenary Park",
+      "url": "https://landscapeclimate.cargo.site/Chulalongkorn-University-Centenary-Park"
+    },
+    {
+      "label": "Time Out — จุฬาฯ กลางแปลง ครั้งที่ 3",
+      "url": "https://www.timeout.com/bangkok/th/news/chula-park-outdoor-movie-night-102926"
+    },
+    {
+      "label": "Time Out — PYMK The Concert",
+      "url": "https://www.timeout.com/bangkok/th/news/pymk-the-concert-chula-110326"
+    },
+    {
+      "label": "Time Out — ดนตรีในสวน พฤศจิกายน",
+      "url": "https://www.timeout.com/bangkok/th/news/music-in-the-park-102926"
+    },
+    {
+      "label": "Time Out — Reading in the Park EP5",
+      "url": "https://www.timeout.com/bangkok/news/reading-in-the-park-returns-to-benjakitti-110626"
+    },
+    {
+      "label": "กรุงเทพธุรกิจ — MOLLY 20th Anniversary Exhibition",
+      "url": "https://www.bangkokbiznews.com/business/1251720"
+    },
+    {
+      "label": "ไทยโพสต์ — CHULA Let’s Play ครั้งที่ 3",
+      "url": "https://www.thaipost.net/public-relations-news/1065596/"
+    },
+    {
+      "label": "Traveloka — เวลาเปิดและที่ตั้งอุทยาน",
+      "url": "https://www.traveloka.com/th-th/explore/destination/things-to-do-in-cu-centenary-park/1007527"
+    }
+  ],
+  "last_checked": "2026-11-10",
+  "hero_image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/CU_Centenary_Park_%28I%29.jpg/960px-CU_Centenary_Park_%28I%29.jpg",
+  "park_photos": [
+    {
+      "park": "benjakitti",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/94/Benjakitti_Forest_Park_%28I%29.jpg/960px-Benjakitti_Forest_Park_%28I%29.jpg"
+    },
+    {
+      "park": "benjasiri",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0d/Benjasiri_park_at_evening.jpg/960px-Benjasiri_park_at_evening.jpg"
+    },
+    {
+      "park": "rama8",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5f/Rama_VIII_Park-Rama_VIII_Bridge.jpg/960px-Rama_VIII_Park-Rama_VIII_Bridge.jpg"
+    },
+    {
+      "park": "lumpini",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Lumphini_Park_%28I%29.jpg/960px-Lumphini_Park_%28I%29.jpg"
+    },
+    {
+      "park": "santi",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d0/Santi_Chai_Prakan_1.jpg/960px-Santi_Chai_Prakan_1.jpg"
+    },
+    {
+      "park": "wachira",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/15/Wachirabenchathat_Park_Stone_Garden_05.23.jpg/960px-Wachirabenchathat_Park_Stone_Garden_05.23.jpg"
+    },
+    {
+      "park": "chula",
+      "image": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7a/CU_Centenary_Park_%28I%29.jpg/960px-CU_Centenary_Park_%28I%29.jpg"
+    }
+  ],
+  "photo_credits": [
+    {
+      "label": "ภาพ / Photo: CU Centenary Park (I) — Supanut Arunoprayote, CC BY 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:CU_Centenary_Park_(I).jpg"
+    },
+    {
+      "label": "ภาพ / Photo: CU100YearsPark2018 — BunBn, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:CU100YearsPark2018.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: CU Centenary Park Panorama — BunBn, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:CU_Centenary_Park_Panorama.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Chulalongkorn University Centenary Park — Crcolas, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Chulalongkorn_University_Centenary_Park.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Chula Centenary Park (20250327164427) — MikSed, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_(20250327164427).jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Chula Centenary Park (20250327164326) — MikSed, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_(20250327164326).jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Chula Centenary Park (20250327164541) — MikSed, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_(20250327164541).jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Chula Centenary Park (20250327164306) — MikSed, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:%D0%9F%D0%B0%D1%80%D0%BA_100-%D0%BB%D0%B5%D1%82%D0%B8%D1%8F_%D0%A3%D0%BD%D0%B8%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82%D0%B0_%D0%A7%D1%83%D0%BB%D0%B0%D0%BB%D0%BE%D0%BD%D0%B3%D0%BA%D0%BE%D1%80%D0%BD_(20250327164306).jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Outdoor Yoga At the Park — Vuemobi Media, CC BY-SA 2.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Outdoor_Yoga_At_the_Park.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Outdoor yoga class, 1981 — kanegen, CC BY 2.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:People_in_an_outdoor_yoga_class_near_the_Chiang_Kai-shek_Memorial_Hall_1981.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Morning Tai Chi at Lumphini — Voyages etc..., CC BY 2.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:S%C3%A9ance_de_Tai-Chi_matinale_au_Lumphini..._(8777890523).jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Jasmine tea at Bangkok 9 — JIP, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Jasmine_tea_at_Bangkok_9.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Garland makers, Bangkok — Ninara, CC BY 2.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:4Y1A1081_Bangkok_(33192271560).jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Oliver community garden — Susan Reimer, CC BY 2.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:2008_Oliver_community_garden_BaltimoreMD_PhotoBy_SusanReimer_BaltimoreSun_3926429108.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Street-musician duo at sunset — PattayaPatrol, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:DSCF0867_A_street-musician_duo_performs_outdoors_as_the_sun_sets_-_a_singer_with_a_handheld_mic_and_a_guitarist_singing_into_a_stand_mic_beside_palm_trees_and_market_stalls.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Kids' playground — Chris.sherlock2, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Hart_Norrha_Kids%27_Playground_01.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Benjakitti Forest Park (I) — Supanut Arunoprayote, CC BY 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Benjakitti_Forest_Park_(I).jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Benjasiri park at evening — Sry85, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Benjasiri_park_at_evening.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Rama VIII Park — Phoebus 28, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Rama_VIII_Park-Rama_VIII_Bridge.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Lumphini Park (I) — Supanut Arunoprayote, CC BY 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Lumphini_Park_(I).jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Santi Chai Prakan — Rangan Datta Wiki, CC BY-SA 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Santi_Chai_Prakan_1.jpg"
+    },
+    {
+      "label": "ภาพ / Photo: Wachirabenchathat Park Stone Garden — Supanut Arunoprayote, CC BY 4.0 (Wikimedia Commons)",
+      "url": "https://commons.wikimedia.org/wiki/File:Wachirabenchathat_Park_Stone_Garden_05.23.jpg"
+    }
+  ]
+}
