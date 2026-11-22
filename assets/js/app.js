@@ -400,7 +400,7 @@ function renderChrome(){
   $$("[data-i18n]").forEach(el=>{const v=t(el.dataset.i18n);if(typeof v==="string")el.textContent=v;});
   $$("[data-i18n-ph]").forEach(el=>el.placeholder=t(el.dataset.i18nPh));
   $$("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===state.lang)));
-  const nav=ROUTES.map(r=>`<a href="#${r}"${state.route===r?' aria-current="page"':""}>${esc(t("nav")[r])}</a>`).join("");
+  const nav=ROUTES.filter(r=>r!=="about").map(r=>`<a href="#${r}"${state.route===r?' aria-current="page"':""}>${esc(t("nav")[r])}</a>`).join("");
   $("#mainNav").innerHTML=nav;$("#sheetNav").innerHTML=nav;
   $("#footNav").innerHTML=ROUTES.map(r=>`<a href="#${r}">${icon("arrow-up-right")}${esc(t("nav")[r])}</a>`).join("");
   document.body.dataset.route=state.route;
@@ -431,7 +431,6 @@ function renderHome(){
   const rib=[...Object.values(CATS).map(c=>L(c)),...Object.values(PARKS).map(q=>L(q))];
   const one=rib.map(x=>`<span class="rb-item">${esc(x)}</span><span class="rb-logo">${LOGO_SVG}</span>`).join("");
   $("#ribbon").innerHTML=`<div class="rb-run">${one}</div><div class="rb-run">${one}</div>`;
-  $("#aboutStmt").innerHTML=`${esc(t("aboutA"))}<em>${esc(t("aboutHi"))}</em>${esc(t("aboutB"))}`;
   $("#moods").innerHTML=Object.entries(MOODS).map(([k,m])=>`<button type="button" class="mood" data-mood="${k}"><span class="mood-ic">${icon(m.icon)}</span><span><b>${esc(L(m))}</b><span>${esc(S(m,"s"))}</span></span></button>`).join("");
   const real=dedupe(upcoming(TODAY,60,false).filter(e=>e.kind==="real"));
   const chulaFirst=[...real.filter(e=>e.park==="chula"),...real.filter(e=>e.park!=="chula")].slice(0,4).sort((a,b)=>a.key.localeCompare(b.key)||toMin(a.s)-toMin(b.s));
@@ -636,6 +635,7 @@ function renderMap(){
   $("#facilities").innerHTML=`<h3>${esc(z?t("facilitiesIn")(L(ZONES[z])):t("facilitiesAll"))}</h3><ul>${fac.map(f=>`<li>${icon("check")}<span>${esc(LA(f))}</span></li>`).join("")}</ul>`;
 }
 function renderAbout(){
+  $("#aboutStmt").innerHTML=`${esc(t("aboutA"))}<em>${esc(t("aboutHi"))}</em>${esc(t("aboutB"))}`;
   $("#aboutStats").innerHTML=statsHtml();
   $("#srcList").innerHTML=SOURCES.concat(CREDITS).map(([l,u])=>`<li><a href="${u}" target="_blank" rel="noopener">${esc(l)}${icon("external-link")}</a></li>`).join("")+`<li class="muted-li">${esc(state.lang==="th"?"โปสเตอร์และรายการกิจกรรมที่ทีม Latte and Friends รวบรวมในแชท (10 พ.ย. 2569)":"Posters and event lists collected by team Latte and Friends (10 Nov 2026)")}</li>`;
 }

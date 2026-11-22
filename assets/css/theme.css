@@ -423,3 +423,6 @@ body:not([data-route="home"]) main.page > section > .page-title,
   .wx-bar{height:60px}
   .wx-box{padding:var(--s4)}
 }
+
+/* about-us block lives on the About page (reached from the footer) */
+[data-route="about"] .hx-about{padding:var(--s6) 0}
