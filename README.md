@@ -5,6 +5,17 @@
 
 A static website (HTML/CSS/JS, no build step) with an admin panel (หลังบ้าน) at `/admin` so the team can edit content without touching code.
 
+## ลิงก์ / Links
+
+| | |
+|---|---|
+| 🌳 **เว็บไซต์ / Public website** | https://genera-friends.github.io/genera-site/ |
+| 🧑‍💼 **หลังบ้านสำหรับทีมงาน (ภาพตัวอย่าง) / Staff back office (mockup)** | https://genera-friends.github.io/genera-site/staff/ |
+| ✏️ **แก้ไขเนื้อหา / Content editor (CMS)** | https://genera-friends.github.io/genera-site/admin/ |
+
+> หน้า `/staff` เป็น **ภาพตัวอย่าง (mockup)** ของระบบหลังบ้านในอนาคต ข้อมูลทั้งหมดเป็นข้อมูลสมมติ ยังไม่บันทึกจริง สลับภาษาไทย/อังกฤษได้ที่แถบด้านบน
+> The `/staff` page is a clickable **mockup** of a future staff back office. All data is fictional and nothing is saved. Use the ไทย | EN switch in the top banner to change language.
+
 ---
 
 ## โครงสร้างไฟล์ / Structure
@@ -14,6 +25,7 @@ index.html              หน้าเว็บ (หน้าแรก กิ�
 assets/css/styles.css   สไตล์
 assets/js/app.js        การทำงานของเว็บ
 assets/js/icons.js      ไอคอน (Lucide)
+assets/js/weather.js    พยากรณ์อากาศ + เตือนความร้อน (Open-Meteo)
 assets/img/             รูปภาพ, แผนผังอุทยาน (park-map.svg)
 assets/img/uploads/     รูปที่อัปโหลดผ่านหลังบ้าน
 data/events.json        กิจกรรมจริง (คอนเสิร์ต หนังกลางแปลง ตลาดนัด ฯลฯ)
@@ -21,6 +33,7 @@ data/programme.json     โปรแกรมประจำสัปดาห�
 data/zones.json         โซนบนแผนผังอุทยาน
 data/site.json          ข้อมูลการเข้าใช้อุทยาน และแหล่งที่มา
 admin/                  หลังบ้าน (Sveltia CMS)
+staff/                  ภาพตัวอย่างหลังบ้านทีมงาน (mockup, TH/EN)
 ```
 
 **แก้เนื้อหา = แก้ไฟล์ใน `data/`** ผ่านหลังบ้าน หรือแก้ JSON ตรง ๆ ก็ได้
@@ -87,6 +100,8 @@ python3 -m http.server 8000
 
 ## 5. หมายเหตุ / Notes
 
+- **พยากรณ์อากาศและเตือนความร้อน** ดึงข้อมูลสดจาก [Open-Meteo](https://open-meteo.com) (ฟรี ไม่ต้องใช้ API key) ใน `assets/js/weather.js` คำนวณดัชนีความร้อนจากอุณหภูมิและความชื้น แล้วแบ่งระดับตามเกณฑ์กรมอุตุนิยมวิทยา (เฝ้าระวัง 27–32.9 · เตือนภัย 33–41.9 · อันตราย 42–51.9 · อันตรายมาก ≥52 °C) พยากรณ์ล่วงหน้าได้ 16 วัน ถ้าเพิ่มสวนใหม่ ให้ใส่พิกัดใน `COORDS` ในไฟล์นั้นด้วย
+  Weather & heat warnings use live Open-Meteo data (no API key), with heat index levels from the Thai Meteorological Department scale. Forecasts cover 16 days ahead. When adding a new park, add its coordinates to `COORDS` in `assets/js/weather.js`.
 - การจองที่ในเว็บเป็น **ตัวอย่าง (demo)** เก็บไว้ในเบราว์เซอร์ของผู้ใช้ (localStorage) ไม่ได้ส่งไปไหน
 - แผนผังอุทยานใน `assets/img/park-map.svg` เป็น **ภาพประกอบ** วาดจากผังเผยแพร่ของ LANDPROCESS / PMCU ไม่ใช่แบบก่อสร้าง
 - ข้อมูลกิจกรรมตรวจสอบล่าสุดตามวันที่ใน `data/site.json` ควรเช็กกับเพจผู้จัดก่อนเผยแพร่
