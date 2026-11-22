@@ -1,0 +1,450 @@
+<!doctype html>
+<html lang="th">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<title>GENERA Staff — หลังบ้าน (mockup)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600&family=Hanken+Grotesk:wght@400;500;600;700&family=IBM+Plex+Sans+Thai:wght@400;500;600;700&family=Kanit:wght@500;600&display=swap" rel="stylesheet">
+<!--
+  ILLUSTRATION ONLY. This page is a clickable mockup of a future staff back-office.
+  All names, bookings and numbers are invented sample data. Nothing is loaded from or
+  saved to any server.
+-->
+<style>
+:root{
+  --bg:#FFF7F0; --surface:#FFFFFF; --surface-2:#FFFBF7;
+  --line:#EBDDCF; --line-strong:#D6C3AE;
+  --ink:#141414; --ink-2:#4E4842; --ink-3:#6B635B;
+  --green:#173F27; --green-soft:#EEF3E2; --green-deep:#12301F;
+  --orange:#DE753C; --orange-ink:#A84E1C; --orange-soft:#FBE7DA;
+  --lime:#CDEB32; --red:#B42318; --red-soft:#FDECEA; --sand:#EDD5B7;
+  --display:"Anton","Kanit",Impact,sans-serif;
+  --script:"Caveat",cursive;
+  --font:"Hanken Grotesk","IBM Plex Sans Thai",system-ui,sans-serif;
+  --r:16px;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--font)}
+button{font:inherit;cursor:pointer}
+svg.i{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+
+.mock-banner{background:var(--lime);color:var(--green-deep);font-weight:600;font-size:13px;text-align:center;padding:6px 16px}
+
+.app{display:grid;grid-template-columns:248px 1fr;min-height:calc(100vh - 32px)}
+/* sidebar */
+.side{background:var(--green);color:#F4F1E8;padding:20px 14px;display:flex;flex-direction:column;gap:4px;position:sticky;top:0;height:calc(100vh - 32px)}
+.brand{display:flex;align-items:center;gap:10px;padding:4px 8px 18px}
+.brand img{width:38px;height:38px;border-radius:50%;background:var(--lime);padding:4px}
+.brand b{font-family:var(--display);font-weight:400;font-size:24px;letter-spacing:.02em}
+.brand small{display:block;font-size:12px;opacity:.75;margin-top:-4px}
+.nav{display:flex;align-items:center;gap:12px;padding:10px 12px;border-radius:12px;border:0;background:none;color:inherit;text-align:left;width:100%}
+.nav span small{display:block;font-size:11px;opacity:.6}
+.nav:hover{background:rgba(255,255,255,.08)}
+.nav[aria-current="page"]{background:var(--lime);color:var(--green-deep);font-weight:600}
+.nav .count{margin-left:auto;background:var(--orange);color:#fff;font-size:11px;font-weight:700;border-radius:99px;padding:1px 7px}
+.side .me{margin-top:auto;display:flex;align-items:center;gap:10px;padding:12px;border-top:1px solid rgba(255,255,255,.15)}
+.avatar{width:34px;height:34px;border-radius:50%;background:var(--orange);color:#fff;display:grid;place-items:center;font-weight:700;flex:none}
+.me small{display:block;opacity:.7;font-size:12px}
+
+/* main */
+main{padding:28px 32px 48px;min-width:0}
+.top{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+.script{font-family:var(--script);color:var(--orange-ink);font-size:26px;line-height:1;margin:0}
+h1{font-family:var(--display);font-weight:400;font-size:38px;line-height:1.05;margin:2px 0 0;text-transform:uppercase}
+:lang(th) h1{font-family:"Kanit",var(--display);font-weight:600;font-size:32px}
+h2{font-size:17px;margin:0}
+.btn{display:inline-flex;align-items:center;gap:8px;border-radius:99px;padding:9px 16px;border:1.5px solid var(--green);background:var(--surface);color:var(--green);font-weight:600}
+.btn.primary{background:var(--green);color:#fff}
+.btn.lime{background:var(--lime);border-color:var(--lime);color:var(--green-deep)}
+.btn.sm{padding:5px 12px;font-size:13px}
+.btn.danger{border-color:var(--red);color:var(--red)}
+.actions{display:flex;gap:8px;flex-wrap:wrap}
+
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.card-h{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:14px}
+.muted{color:var(--ink-3)}
+.grid{display:grid;gap:16px}
+.kpis{grid-template-columns:repeat(4,minmax(0,1fr))}
+.two{grid-template-columns:1.5fr 1fr}
+.kpi .label{font-size:13px;color:var(--ink-3);display:flex;align-items:center;gap:6px}
+.kpi .val{font-family:var(--display);font-size:40px;line-height:1.1;margin-top:6px}
+.kpi .delta{font-size:12px;font-weight:600;color:var(--green)}
+.kpi .delta.down{color:var(--red)}
+
+.badge{display:inline-flex;align-items:center;gap:4px;font-size:12px;font-weight:600;border-radius:99px;padding:2px 10px;white-space:nowrap}
+.b-green{background:var(--green-soft);color:var(--green)}
+.b-orange{background:var(--orange-soft);color:var(--orange-ink)}
+.b-red{background:var(--red-soft);color:var(--red)}
+.b-grey{background:#F1ECE6;color:var(--ink-2)}
+.b-lime{background:var(--lime);color:var(--green-deep)}
+
+/* session rows */
+.sess{display:grid;grid-template-columns:70px 1fr 170px auto;gap:14px;align-items:center;padding:14px 0;border-top:1px solid var(--line)}
+.sess:first-of-type{border-top:0}
+.time{font-family:var(--display);font-size:22px;line-height:1}
+.time small{display:block;font-family:var(--font);font-size:12px;color:var(--ink-3)}
+.bar{height:8px;border-radius:99px;background:#F1ECE6;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--green);border-radius:inherit}
+.bar i.warn{background:var(--orange)}
+.cap{font-size:12px;color:var(--ink-3);margin-top:4px}
+
+/* table */
+.tbl-wrap{overflow-x:auto}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:12px;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.04em;padding:8px 10px;border-bottom:1.5px solid var(--line-strong);white-space:nowrap}
+td{padding:11px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+tr:hover td{background:var(--surface-2)}
+.code{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:#F6F0EA;border-radius:6px;padding:2px 6px}
+
+.toolbar{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.input,.select{border:1.5px solid var(--line-strong);border-radius:12px;padding:8px 12px;background:var(--surface);font:inherit;color:var(--ink)}
+.input.search{min-width:240px;flex:1}
+
+.alert{display:flex;gap:12px;align-items:flex-start;padding:12px 14px;border-radius:12px;background:var(--orange-soft);color:var(--orange-ink);font-size:14px}
+.alert + .alert{margin-top:10px}
+.alert.green{background:var(--green-soft);color:var(--green)}
+
+/* check-in */
+.scan{aspect-ratio:1;max-width:340px;border-radius:24px;background:var(--green-deep);position:relative;display:grid;place-items:center;color:#cfd9c9;overflow:hidden}
+.scan::before{content:"";position:absolute;inset:18%;border:3px dashed var(--lime);border-radius:18px}
+.scan::after{content:"";position:absolute;left:18%;right:18%;height:3px;background:var(--lime);top:50%;box-shadow:0 0 18px var(--lime);animation:sweep 2.2s ease-in-out infinite alternate}
+@keyframes sweep{from{top:22%}to{top:78%}}
+@media (prefers-reduced-motion:reduce){.scan::after{animation:none}}
+.ticket{border:2px solid var(--green);border-radius:var(--r);padding:18px;background:var(--green-soft)}
+.ticket .big{font-family:var(--display);font-size:30px}
+
+/* calendar week */
+.week{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:8px}
+.day{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:10px;min-height:170px}
+.day h3{font-size:13px;margin:0 0 8px;color:var(--ink-3);font-weight:600}
+.day.today{border-color:var(--green);box-shadow:0 0 0 2px var(--green) inset}
+.chip{display:block;font-size:12px;border-radius:10px;padding:6px 8px;margin-bottom:6px;background:var(--green-soft);color:var(--green);line-height:1.3}
+.chip b{display:block}
+.chip.ev{background:var(--orange-soft);color:var(--orange-ink)}
+.chip.cx{background:#F1ECE6;color:var(--ink-3);text-decoration:line-through}
+
+/* charts */
+.chart{display:flex;align-items:flex-end;gap:10px;height:180px;padding-top:10px}
+.chart .col{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;height:100%;justify-content:flex-end}
+.chart .col i{display:block;width:100%;max-width:38px;background:var(--green);border-radius:8px 8px 3px 3px}
+.chart .col i.alt{background:var(--lime)}
+.chart .col small{font-size:11px;color:var(--ink-3)}
+.hbar{display:grid;grid-template-columns:150px 1fr 44px;gap:10px;align-items:center;font-size:13px;margin:8px 0}
+
+.form-row{display:grid;grid-template-columns:180px 1fr;gap:14px;align-items:center;padding:12px 0;border-top:1px solid var(--line)}
+.form-row:first-child{border-top:0}
+.switch{width:42px;height:24px;border-radius:99px;background:var(--green);position:relative;display:inline-block;vertical-align:middle}
+.switch::after{content:"";position:absolute;width:18px;height:18px;border-radius:50%;background:#fff;top:3px;right:3px}
+.switch.off{background:var(--line-strong)}
+.switch.off::after{right:auto;left:3px}
+
+.view{display:none}
+.view.on{display:block}
+
+.toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);background:var(--ink);color:#fff;padding:10px 18px;border-radius:99px;font-size:14px;opacity:0;pointer-events:none;transition:opacity .2s}
+.toast.show{opacity:1}
+
+.menu-btn{display:none}
+
+@media (max-width:1100px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr))}.two{grid-template-columns:1fr}.week{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media (max-width:820px){
+  .app{grid-template-columns:1fr}
+  .side{position:fixed;inset:32px auto 0 0;width:260px;z-index:10;transform:translateX(-100%);transition:transform .2s;height:auto}
+  .side.open{transform:none}
+  .menu-btn{display:inline-flex}
+  main{padding:20px 16px 40px}
+  .sess{grid-template-columns:60px 1fr;row-gap:8px}
+  .sess .cap-col,.sess .actions{grid-column:2}
+  .week{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .form-row{grid-template-columns:1fr;gap:6px}
+  .hbar{grid-template-columns:110px 1fr 36px}
+  .input.search{min-width:0}
+}
+</style>
+</head>
+<body>
+<div class="mock-banner">ภาพตัวอย่างหลังบ้าน (Mockup) · ข้อมูลทั้งหมดเป็นข้อมูลสมมติ ปุ่มต่าง ๆ ยังไม่บันทึกจริง</div>
+
+<div class="app">
+  <aside class="side" id="side">
+    <div class="brand">
+      <img src="../assets/img/genera-logo.svg" alt="">
+      <div><b>GENERA</b><small>Staff · หลังบ้าน</small></div>
+    </div>
+    <button class="nav" data-view="today" aria-current="page"><svg class="i"><use href="#i-home"/></svg><span>วันนี้<small>Today</small></span></button>
+    <button class="nav" data-view="bookings"><svg class="i"><use href="#i-ticket"/></svg><span>การจอง<small>Bookings</small></span><em class="count">12</em></button>
+    <button class="nav" data-view="checkin"><svg class="i"><use href="#i-scan"/></svg><span>เช็กอิน<small>Check-in</small></span></button>
+    <button class="nav" data-view="schedule"><svg class="i"><use href="#i-cal"/></svg><span>ตารางโปรแกรม<small>Schedule</small></span></button>
+    <button class="nav" data-view="events"><svg class="i"><use href="#i-star"/></svg><span>กิจกรรมในสวน<small>Park events</small></span></button>
+    <button class="nav" data-view="reports"><svg class="i"><use href="#i-chart"/></svg><span>รายงาน<small>Reports</small></span></button>
+    <button class="nav" data-view="settings"><svg class="i"><use href="#i-gear"/></svg><span>ตั้งค่า<small>Settings</small></span></button>
+    <div class="me"><span class="avatar">ป</span><div>ปลา (ผู้ดูแล)<small>Admin · ออกจากระบบ</small></div></div>
+  </aside>
+
+  <main>
+    <button class="btn sm menu-btn" id="menuBtn" style="margin-bottom:12px"><svg class="i"><use href="#i-menu"/></svg>เมนู</button>
+
+    <!-- ============ TODAY ============ -->
+    <section class="view on" id="v-today">
+      <div class="top">
+        <div><p class="script">สวัสดีตอนเช้า ปลา!</p><h1>วันอาทิตย์ 22 พ.ย. 2569</h1></div>
+        <div class="actions">
+          <button class="btn" data-goto="checkin"><svg class="i"><use href="#i-scan"/></svg>สแกนเช็กอิน</button>
+          <button class="btn primary" data-toast="เปิดฟอร์มเพิ่มรอบใหม่ (ตัวอย่าง)"><svg class="i"><use href="#i-plus"/></svg>เพิ่มรอบ</button>
+        </div>
+      </div>
+
+      <div class="grid kpis">
+        <div class="card kpi"><div class="label"><svg class="i"><use href="#i-ticket"/></svg>จองวันนี้</div><div class="val">38</div><div class="delta">+9 จากอาทิตย์ที่แล้ว</div></div>
+        <div class="card kpi"><div class="label"><svg class="i"><use href="#i-check"/></svg>เช็กอินแล้ว</div><div class="val">19<span class="muted" style="font-size:20px"> / 38</span></div><div class="delta">รอบเช้าเข้าร่วม 95%</div></div>
+        <div class="card kpi"><div class="label"><svg class="i"><use href="#i-users"/></svg>สัปดาห์นี้</div><div class="val">214</div><div class="delta">คน · 11 รอบ</div></div>
+        <div class="card kpi"><div class="label"><svg class="i"><use href="#i-x"/></svg>ยกเลิก / ไม่มา</div><div class="val">6%</div><div class="delta down">+2% จากเดือนที่แล้ว</div></div>
+      </div>
+
+      <div class="grid two" style="margin-top:16px">
+        <div class="card">
+          <div class="card-h"><h2>รอบของวันนี้</h2><span class="badge b-grey">2 รอบ + 1 กิจกรรมในสวน</span></div>
+          <div class="sess">
+            <div class="time">06:30<small>ถึง 07:30</small></div>
+            <div><b>ไทเก๊กยามเช้า ทุกวัย</b><div class="muted" style="font-size:13px">ลานหญ้า · ครูต้อม</div></div>
+            <div class="cap-col"><div class="bar"><i style="width:76%"></i></div><div class="cap">จอง 19/25 · เช็กอิน 18</div></div>
+            <div class="actions"><span class="badge b-green">จบแล้ว</span></div>
+          </div>
+          <div class="sess">
+            <div class="time">16:30<small>ถึง 17:30</small></div>
+            <div><b>เดินชมพื้นที่ชุ่มน้ำ</b><div class="muted" style="font-size:13px">พื้นที่ชุ่มน้ำ · พี่แบงก์</div></div>
+            <div class="cap-col"><div class="bar"><i class="warn" style="width:95%"></i></div><div class="cap">จอง 19/20 · เหลือ 1 ที่</div></div>
+            <div class="actions"><span class="badge b-orange">ใกล้เต็ม</span><button class="btn sm" data-goto="bookings">รายชื่อ</button></div>
+          </div>
+          <div class="sess">
+            <div class="time">16:00<small>ถึง 22:00</small></div>
+            <div><b>ตลาดนัดสีเขียว</b><div class="muted" style="font-size:13px">กิจกรรมในสวน · ไม่ต้องจอง</div></div>
+            <div class="cap-col"><span class="badge b-orange">กิจกรรมภายนอก</span></div>
+            <div class="actions"><button class="btn sm" data-goto="events">แก้ไข</button></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-h"><h2>ต้องดูแล</h2></div>
+          <div class="alert"><svg class="i"><use href="#i-cloud"/></svg><div><b>พยากรณ์ฝน 60% ช่วง 16:00</b><br>รอบ “เดินชมพื้นที่ชุ่มน้ำ” อยู่กลางแจ้ง ย้ายไปห้องเรียนหรือแจ้งผู้จองล่วงหน้า? <br><button class="btn sm" style="margin-top:8px" data-toast="ส่ง LINE แจ้งผู้จอง 19 คน (ตัวอย่าง)">แจ้งผู้จองทาง LINE</button></div></div>
+          <div class="alert"><svg class="i"><use href="#i-ticket"/></svg><div><b>3 คนในรายชื่อรอ</b> สำหรับ “ดนตรีอะคูสติกยามเย็น” ศุกร์นี้</div></div>
+          <div class="alert green"><svg class="i"><use href="#i-check"/></svg><div><b>ข้อมูลกิจกรรมอัปเดตแล้ว</b> 2 ชั่วโมงก่อน โดย มิ้นท์</div></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOKINGS ============ -->
+    <section class="view" id="v-bookings">
+      <div class="top">
+        <div><p class="script">ใครมาบ้าง</p><h1>การจอง</h1></div>
+        <div class="actions"><button class="btn" data-toast="ดาวน์โหลด bookings.csv (ตัวอย่าง)"><svg class="i"><use href="#i-down"/></svg>ส่งออก CSV</button></div>
+      </div>
+      <div class="card">
+        <div class="toolbar">
+          <input class="input search" placeholder="ค้นหาชื่อ เบอร์โทร หรือรหัสจอง…">
+          <select class="select"><option>ทุกรอบ</option><option>เดินชมพื้นที่ชุ่มน้ำ · อา. 22 พ.ย.</option><option>ไทเก๊กยามเช้า · อา. 22 พ.ย.</option><option>ยืดเหยียด · จ. 23 พ.ย.</option></select>
+          <select class="select"><option>ทุกสถานะ</option><option>ยืนยันแล้ว</option><option>เช็กอินแล้ว</option><option>ยกเลิก</option><option>รายชื่อรอ</option></select>
+        </div>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>รหัส</th><th>ชื่อ</th><th>รอบ</th><th>จำนวน</th><th>ที่นั่ง</th><th>ช่องทาง</th><th>สถานะ</th><th></th></tr></thead>
+          <tbody id="bookRows"></tbody>
+        </table></div>
+        <p class="muted" style="font-size:13px;margin:12px 0 0">แสดง 8 จาก 214 รายการ · ข้อมูลส่วนบุคคลจะถูกลบอัตโนมัติ 90 วันหลังวันกิจกรรม (PDPA)</p>
+      </div>
+    </section>
+
+    <!-- ============ CHECK-IN ============ -->
+    <section class="view" id="v-checkin">
+      <div class="top"><div><p class="script">ยินดีต้อนรับ!</p><h1>เช็กอินหน้างาน</h1></div></div>
+      <div class="grid two">
+        <div class="card">
+          <div class="card-h"><h2>สแกน QR บนตั๋ว</h2><span class="badge b-lime">กล้องพร้อม</span></div>
+          <div class="scan"><span style="position:relative;z-index:1;font-size:13px">จ่อ QR code ในกรอบ</span></div>
+          <div class="toolbar" style="margin-top:16px"><input class="input search" value="WL-7Q4K" aria-label="รหัสจอง"><button class="btn primary" data-toast="ค้นหารหัส (ตัวอย่าง)">ค้นหา</button></div>
+        </div>
+        <div class="card">
+          <div class="card-h"><h2>ผลการสแกน</h2></div>
+          <div class="ticket">
+            <span class="badge b-green"><svg class="i" style="width:14px;height:14px"><use href="#i-check"/></svg>ตั๋วถูกต้อง</span>
+            <div class="big" style="margin-top:8px">คุณสมศรี ใจดี</div>
+            <p style="margin:4px 0 12px">เดินชมพื้นที่ชุ่มน้ำ · อา. 22 พ.ย. 16:30<br>2 คน · รหัส <span class="code">WL-7Q4K</span></p>
+            <button class="btn primary" id="checkBtn"><svg class="i"><use href="#i-check"/></svg>ยืนยันเช็กอิน 2 คน</button>
+          </div>
+          <h2 style="margin:20px 0 8px">เพิ่งเช็กอิน</h2>
+          <div class="muted" style="font-size:14px;line-height:2">
+            16:22 · คุณวิชัย ส. (1 คน)<br>16:19 · ครอบครัวคุณนิด (4 คน)<br>16:15 · คุณ Anna K. (1 คน)
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SCHEDULE ============ -->
+    <section class="view" id="v-schedule">
+      <div class="top">
+        <div><p class="script">สัปดาห์นี้</p><h1>ตารางโปรแกรม GENERA</h1></div>
+        <div class="actions"><button class="btn">‹ สัปดาห์ก่อน</button><button class="btn">สัปดาห์ถัดไป ›</button><button class="btn primary" data-toast="เปิดฟอร์มเพิ่มรอบ (ตัวอย่าง)"><svg class="i"><use href="#i-plus"/></svg>เพิ่มรอบ</button></div>
+      </div>
+      <div class="week" id="week"></div>
+      <div class="card" style="margin-top:16px">
+        <div class="card-h"><h2>แก้ไขรอบ: ดนตรีอะคูสติกยามเย็น · ศ. 27 พ.ย.</h2><span class="badge b-orange">เต็ม · รอ 3</span></div>
+        <div class="form-row"><label>เวลา</label><div><input class="input" value="18:00" style="width:90px"> ถึง <input class="input" value="19:30" style="width:90px"></div></div>
+        <div class="form-row"><label>โซน</label><select class="select"><option>อัฒจันทร์ (Amphitheatre)</option><option>ลานหญ้า</option><option>ห้องเรียน (มีหลังคา)</option></select></div>
+        <div class="form-row"><label>จำนวนที่รับ</label><input class="input" value="40" style="width:90px"></div>
+        <div class="form-row"><label>เปิดให้จอง</label><span class="switch"></span></div>
+        <div class="form-row"><label></label><div class="actions"><button class="btn primary" data-toast="บันทึกแล้ว (ตัวอย่าง)">บันทึก</button><button class="btn danger" data-toast="ยกเลิกรอบและแจ้งผู้จอง 40 คน (ตัวอย่าง)">ยกเลิกรอบ + แจ้งผู้จอง</button></div></div>
+      </div>
+    </section>
+
+    <!-- ============ EVENTS ============ -->
+    <section class="view" id="v-events">
+      <div class="top">
+        <div><p class="script">ข่าวในสวน</p><h1>กิจกรรมในสวน</h1></div>
+        <div class="actions"><button class="btn primary" data-toast="เปิดฟอร์มเพิ่มกิจกรรม (ตัวอย่าง)"><svg class="i"><use href="#i-plus"/></svg>เพิ่มกิจกรรม</button></div>
+      </div>
+      <div class="card">
+        <div class="toolbar">
+          <input class="input search" placeholder="ค้นหากิจกรรม…">
+          <select class="select"><option>ทุกสวน</option><option>อุทยาน 100 ปี จุฬาฯ</option><option>สวนลุมพินี</option><option>สวนเบญจกิติ</option></select>
+          <select class="select"><option>กำลังจะมาถึง</option><option>ผ่านไปแล้ว</option><option>ต้องตรวจสอบ</option></select>
+        </div>
+        <div class="tbl-wrap"><table>
+          <thead><tr><th>วันที่</th><th>กิจกรรม</th><th>สถานที่</th><th>แหล่งที่มา</th><th>สถานะข้อมูล</th><th>แก้ไขล่าสุด</th><th></th></tr></thead>
+          <tbody>
+            <tr><td>12–15 พ.ย.</td><td><b>Picnic in the Park</b></td><td>อุทยาน 100 ปี</td><td>เพจผู้จัด</td><td><span class="badge b-green">ยืนยันแล้ว</span></td><td>มิ้นท์ · 2 ชม.</td><td><button class="btn sm">แก้ไข</button></td></tr>
+            <tr><td>28 พ.ย.</td><td><b>จุฬาฯ กลางแปลง ครั้งที่ 3</b></td><td>อุทยาน 100 ปี</td><td>เพจผู้จัด, ข่าว</td><td><span class="badge b-green">ยืนยันแล้ว</span></td><td>ปลา · 1 วัน</td><td><button class="btn sm">แก้ไข</button></td></tr>
+            <tr><td>29 พ.ย.</td><td><b>TESKA Winds</b></td><td>สวนลุมพินี</td><td>โปสเตอร์</td><td><span class="badge b-orange">ข้อมูลจากโปสเตอร์</span></td><td>เจ · 3 วัน</td><td><button class="btn sm">แก้ไข</button></td></tr>
+            <tr><td>6 ธ.ค.</td><td><b>RBSO Sunday concert</b></td><td>สวนลุมพินี</td><td>เพจผู้จัด</td><td><span class="badge b-green">ยืนยันแล้ว</span></td><td>มิ้นท์ · 4 วัน</td><td><button class="btn sm">แก้ไข</button></td></tr>
+            <tr><td>ธ.ค.</td><td><b>งานวัดบรรทัดทอง</b></td><td>วัดบรรทัดทอง</td><td>Facebook</td><td><span class="badge b-red">สถานที่ยังไม่ยืนยัน</span></td><td>เจ · 5 วัน</td><td><button class="btn sm">แก้ไข</button></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+    </section>
+
+    <!-- ============ REPORTS ============ -->
+    <section class="view" id="v-reports">
+      <div class="top">
+        <div><p class="script">ผลลัพธ์ SDG 11</p><h1>รายงาน</h1></div>
+        <div class="actions"><select class="select"><option>พฤศจิกายน 2569</option><option>ตุลาคม 2569</option></select><button class="btn" data-toast="ดาวน์โหลดรายงาน PDF (ตัวอย่าง)"><svg class="i"><use href="#i-down"/></svg>PDF</button></div>
+      </div>
+      <div class="grid kpis">
+        <div class="card kpi"><div class="label">ผู้เข้าร่วมทั้งเดือน</div><div class="val">812</div><div class="delta">+18% จาก ต.ค.</div></div>
+        <div class="card kpi"><div class="label">ผู้มาครั้งแรก</div><div class="val">47%</div><div class="delta">ของผู้จองทั้งหมด</div></div>
+        <div class="card kpi"><div class="label">อัตราที่นั่งเต็ม</div><div class="val">78%</div><div class="delta">เฉลี่ยทุกรอบ</div></div>
+        <div class="card kpi"><div class="label">ความพึงพอใจ</div><div class="val">4.7</div><div class="delta">จาก 5 · 126 ความเห็น</div></div>
+      </div>
+      <div class="grid two" style="margin-top:16px">
+        <div class="card">
+          <div class="card-h"><h2>ผู้เข้าร่วมรายสัปดาห์</h2><span class="muted" style="font-size:12px"><span class="badge b-green">จอง</span> <span class="badge b-lime">มาจริง</span></span></div>
+          <div class="chart" id="chart"></div>
+        </div>
+        <div class="card">
+          <div class="card-h"><h2>โปรแกรมยอดนิยม</h2></div>
+          <div id="popular"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SETTINGS ============ -->
+    <section class="view" id="v-settings">
+      <div class="top"><div><p class="script">ทีมงาน</p><h1>ตั้งค่า</h1></div></div>
+      <div class="grid two">
+        <div class="card">
+          <div class="card-h"><h2>ทีมงาน</h2><button class="btn sm primary" data-toast="ส่งคำเชิญทางอีเมล (ตัวอย่าง)">เชิญสมาชิก</button></div>
+          <div class="tbl-wrap"><table>
+            <thead><tr><th>ชื่อ</th><th>บทบาท</th><th>สิทธิ์</th></tr></thead>
+            <tbody>
+              <tr><td>ปลา</td><td><span class="badge b-lime">ผู้ดูแล</span></td><td>ทุกอย่าง</td></tr>
+              <tr><td>มิ้นท์</td><td><span class="badge b-green">บรรณาธิการ</span></td><td>กิจกรรม, ตาราง</td></tr>
+              <tr><td>เจ</td><td><span class="badge b-green">บรรณาธิการ</span></td><td>กิจกรรม</td></tr>
+              <tr><td>ครูต้อม</td><td><span class="badge b-grey">อาสาหน้างาน</span></td><td>เช็กอินเท่านั้น</td></tr>
+            </tbody>
+          </table></div>
+        </div>
+        <div class="card">
+          <div class="card-h"><h2>การแจ้งเตือนและการจอง</h2></div>
+          <div class="form-row"><label>ยืนยันการจองทาง LINE</label><span class="switch"></span></div>
+          <div class="form-row"><label>เตือนก่อนกิจกรรม</label><select class="select"><option>1 วันก่อน</option><option>3 ชั่วโมงก่อน</option></select></div>
+          <div class="form-row"><label>แจ้งทีมเมื่อรอบใกล้เต็ม</label><span class="switch"></span></div>
+          <div class="form-row"><label>จองได้สูงสุดต่อครั้ง</label><input class="input" value="4" style="width:70px"></div>
+          <div class="form-row"><label>ลบข้อมูลผู้จองอัตโนมัติ</label><select class="select"><option>90 วันหลังกิจกรรม</option><option>30 วันหลังกิจกรรม</option></select></div>
+          <div class="form-row"><label>รับรายชื่อรอ</label><span class="switch off"></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></symbol>
+  <symbol id="i-ticket" viewBox="0 0 24 24"><path d="M3 8a2 2 0 0 0 2-2h14a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H5a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/><path d="M13 6v2M13 11v2M13 16v2"/></symbol>
+  <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V5a2 2 0 0 1 2-2h2M17 3h2a2 2 0 0 1 2 2v2M21 17v2a2 2 0 0 1-2 2h-2M7 21H5a2 2 0 0 1-2-2v-2M7 12h10"/></symbol>
+  <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z"/></symbol>
+  <symbol id="i-chart" viewBox="0 0 24 24"><path d="M3 3v18h18M7 16v-4M12 16V8M17 16v-7"/></symbol>
+  <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></symbol>
+  <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18M6 6l12 12"/></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/></symbol>
+  <symbol id="i-cloud" viewBox="0 0 24 24"><path d="M20 16.6A5 5 0 0 0 18 7h-1.3A8 8 0 1 0 4 15.3M16 14v6M8 14v6M12 16v6"/></symbol>
+  <symbol id="i-down" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+</svg>
+
+<script>
+// ---- sample data (all fictional) ----
+const bookings=[
+  ["WL-7Q4K","คุณสมศรี ใจดี","เดินชมพื้นที่ชุ่มน้ำ · อา. 16:30",2,"—","LINE","ok"],
+  ["WL-3M8D","คุณวิชัย ส.","เดินชมพื้นที่ชุ่มน้ำ · อา. 16:30",1,"—","เว็บ","in"],
+  ["WL-9F2A","ครอบครัวคุณนิด","เดินชมพื้นที่ชุ่มน้ำ · อา. 16:30",4,"—","เว็บ","in"],
+  ["TC-1B7Z","Anna K.","ไทเก๊กยามเช้า · อา. 06:30",1,"เสื่อ 7","เว็บ","in"],
+  ["ST-5H6P","คุณประยูร ท.","ยืดเหยียด · จ. 17:30",2,"เก้าอี้ 3, 4","LINE","ok"],
+  ["MU-8K2C","คุณแพร","ดนตรีอะคูสติก · ศ. 18:00",3,"แถว B 5–7","เว็บ","ok"],
+  ["MU-2R9X","คุณต้น","ดนตรีอะคูสติก · ศ. 18:00",2,"—","เว็บ","wait"],
+  ["YG-4D1L","คุณมาลี","โยคะเบาๆ · พ. 17:30",1,"เสื่อ 12","LINE","cx"]
+];
+const st={ok:["ยืนยันแล้ว","b-green"],in:["เช็กอินแล้ว","b-lime"],wait:["รายชื่อรอ","b-orange"],cx:["ยกเลิก","b-grey"]};
+document.getElementById("bookRows").innerHTML=bookings.map(b=>`<tr><td><span class="code">${b[0]}</span></td><td>${b[1]}</td><td>${b[2]}</td><td>${b[3]}</td><td>${b[4]}</td><td>${b[5]}</td><td><span class="badge ${st[b[6]][1]}">${st[b[6]][0]}</span></td><td><button class="btn sm" data-toast="เปิดรายละเอียด ${b[0]} (ตัวอย่าง)">ดู</button></td></tr>`).join("");
+
+const days=[
+  ["จ. 23",[["17:30","ยืดเหยียดหลังเลิกงาน","12/25"]]],
+  ["อ. 24",[["17:30","วงน้ำสมุนไพร","21/30"]]],
+  ["พ. 25",[["17:30","โยคะเบาๆ","20/20 เต็ม"]]],
+  ["พฤ. 26",[["17:30","ร้อยมาลัย","9/15"]]],
+  ["ศ. 27",[["18:00","ดนตรีอะคูสติก","40/40 เต็ม"]]],
+  ["ส. 28",[["07:30","ปลูกผัก","14/20"],["16:00","เล่นด้วยกัน","22/30"],["18:00","จุฬาฯ กลางแปลง 3","ev"]]],
+  ["อา. 29",[["06:30","ไทเก๊ก","8/25"],["16:30","เดินพื้นที่ชุ่มน้ำ","ยกเลิก (ฝน)","cx"]]]
+];
+document.getElementById("week").innerHTML=days.map((d,i)=>`<div class="day${i===6?"":""}"><h3>${d[0]} พ.ย.</h3>${d[1].map(s=>`<span class="chip ${s[2]==="ev"?"ev":s[3]||""}"><b>${s[0]}</b>${s[1]}<br>${s[2]==="ev"?"กิจกรรมในสวน":s[2]}</span>`).join("")}</div>`).join("");
+
+const weeks=[["1–7",142,128],["8–14",188,171],["15–21",226,204],["22–28",256,0]];
+const max=260;
+document.getElementById("chart").innerHTML=weeks.map(w=>`<div class="col"><div style="display:flex;gap:4px;align-items:flex-end;width:100%;justify-content:center;height:100%"><i style="height:${w[1]/max*100}%"></i>${w[2]?`<i class="alt" style="height:${w[2]/max*100}%"></i>`:""}</div><small>${w[0]} พ.ย.</small></div>`).join("");
+const pop=[["ดนตรีอะคูสติก",100],["โยคะเบาๆ",96],["เล่นด้วยกัน",84],["ไทเก๊ก",71],["ปลูกผัก",64],["ร้อยมาลัย",58]];
+document.getElementById("popular").innerHTML=pop.map(p=>`<div class="hbar"><span>${p[0]}</span><div class="bar"><i style="width:${p[1]}%"></i></div><b>${p[1]}%</b></div>`).join("")+`<p class="muted" style="font-size:12px;margin:10px 0 0">% ที่นั่งที่ถูกจองเฉลี่ยในเดือนนี้</p>`;
+
+// ---- navigation ----
+const show=v=>{
+  document.querySelectorAll(".view").forEach(s=>s.classList.toggle("on",s.id==="v-"+v));
+  document.querySelectorAll(".nav").forEach(n=>n.dataset.view===v?n.setAttribute("aria-current","page"):n.removeAttribute("aria-current"));
+  document.getElementById("side").classList.remove("open");
+  scrollTo(0,0);
+  history.replaceState(null,"","#"+v);
+};
+document.addEventListener("click",e=>{
+  const n=e.target.closest("[data-view],[data-goto]");if(n){show(n.dataset.view||n.dataset.goto);return;}
+  const t=e.target.closest("[data-toast]");if(t)toast(t.dataset.toast);
+});
+document.getElementById("menuBtn").onclick=()=>document.getElementById("side").classList.toggle("open");
+document.getElementById("checkBtn").onclick=e=>{e.currentTarget.innerHTML="เช็กอินแล้ว ✓";e.currentTarget.classList.replace("primary","lime");toast("เช็กอินคุณสมศรี 2 คน (ตัวอย่าง)");};
+let tt;function toast(m){const el=document.getElementById("toast");el.textContent=m;el.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>el.classList.remove("show"),2200);}
+const h=location.hash.slice(1);if(h&&document.getElementById("v-"+h))show(h);
+</script>
+</body>
+</html>
