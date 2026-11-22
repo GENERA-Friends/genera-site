@@ -32,7 +32,12 @@ body{background:var(--bg);color:var(--ink);font:15px/1.5 var(--font)}
 button{font:inherit;cursor:pointer}
 svg.i{width:18px;height:18px;flex:none;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
 
-.mock-banner{background:var(--lime);color:var(--green-deep);font-weight:600;font-size:13px;text-align:center;padding:6px 16px}
+.mock-banner{background:var(--lime);color:var(--green-deep);font-weight:600;font-size:13px;padding:5px 16px;display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;text-align:center}
+.lang{display:inline-flex;border:1.5px solid var(--green);border-radius:99px;overflow:hidden;flex:none}
+.lang button{border:0;background:transparent;color:var(--green);font-weight:700;font-size:12px;padding:2px 12px}
+.lang button[aria-pressed="true"]{background:var(--green);color:#fff}
+.lang button:focus-visible,.nav:focus-visible,.btn:focus-visible{outline:2px solid var(--orange);outline-offset:2px}
+html[lang="en"] .nav span small{display:none}
 
 .app{display:grid;grid-template-columns:248px 1fr;min-height:calc(100vh - 32px)}
 /* sidebar */
@@ -167,7 +172,7 @@ tr:hover td{background:var(--surface-2)}
 </style>
 </head>
 <body>
-<div class="mock-banner">ภาพตัวอย่างหลังบ้าน (Mockup) · ข้อมูลทั้งหมดเป็นข้อมูลสมมติ ปุ่มต่าง ๆ ยังไม่บันทึกจริง</div>
+<div class="mock-banner"><span>ภาพตัวอย่างหลังบ้าน (Mockup) · ข้อมูลทั้งหมดเป็นข้อมูลสมมติ ปุ่มต่าง ๆ ยังไม่บันทึกจริง</span><span class="lang" role="group" aria-label="Language / ภาษา"><button type="button" data-lang="th" aria-pressed="true">ไทย</button><button type="button" data-lang="en" aria-pressed="false">EN</button></span></div>
 
 <div class="app">
   <aside class="side" id="side">
@@ -442,9 +447,66 @@ document.addEventListener("click",e=>{
   const t=e.target.closest("[data-toast]");if(t)toast(t.dataset.toast);
 });
 document.getElementById("menuBtn").onclick=()=>document.getElementById("side").classList.toggle("open");
-document.getElementById("checkBtn").onclick=e=>{e.currentTarget.innerHTML="เช็กอินแล้ว ✓";e.currentTarget.classList.replace("primary","lime");toast("เช็กอินคุณสมศรี 2 คน (ตัวอย่าง)");};
+document.getElementById("checkBtn").onclick=e=>{const b=e.currentTarget;b.textContent=tr("เช็กอินแล้ว ✓");b.classList.replace("primary","lime");applyLang(lang);toast(tr("เช็กอินคุณสมศรี 2 คน (ตัวอย่าง)"));};
 let tt;function toast(m){const el=document.getElementById("toast");el.textContent=m;el.classList.add("show");clearTimeout(tt);tt=setTimeout(()=>el.classList.remove("show"),2200);}
 const h=location.hash.slice(1);if(h&&document.getElementById("v-"+h))show(h);
+
+// ---- language switch (TH / EN) ----
+const EN={
+"ภาพตัวอย่างหลังบ้าน (Mockup) · ข้อมูลทั้งหมดเป็นข้อมูลสมมติ ปุ่มต่าง ๆ ยังไม่บันทึกจริง":"Back-office mockup · All data is fictional · Buttons don't save anything yet",
+"Staff · หลังบ้าน":"Staff · Back office","วันนี้":"Today","การจอง":"Bookings","เช็กอิน":"Check-in","ตารางโปรแกรม":"Schedule","กิจกรรมในสวน":"Park events","รายงาน":"Reports","ตั้งค่า":"Settings",
+"ป":"P","ปลา (ผู้ดูแล)":"Pla (Admin)","Admin · ออกจากระบบ":"Admin · Sign out","เมนู":"Menu",
+"สวัสดีตอนเช้า ปลา!":"Good morning, Pla!","วันอาทิตย์ 22 พ.ย. 2569":"Sunday 22 Nov 2026","สแกนเช็กอิน":"Scan check-in","เพิ่มรอบ":"Add session",
+"จองวันนี้":"Booked today","+9 จากอาทิตย์ที่แล้ว":"+9 vs last Sunday","เช็กอินแล้ว":"Checked in","รอบเช้าเข้าร่วม 95%":"95% turnout this morning","สัปดาห์นี้":"This week","คน · 11 รอบ":"people · 11 sessions","ยกเลิก / ไม่มา":"Cancelled / no-show","+2% จากเดือนที่แล้ว":"+2% vs last month",
+"รอบของวันนี้":"Today's sessions","2 รอบ + 1 กิจกรรมในสวน":"2 sessions + 1 park event","ถึง 07:30":"to 07:30","ถึง 17:30":"to 17:30","ถึง 22:00":"to 22:00",
+"ไทเก๊กยามเช้า ทุกวัย":"Morning tai chi, all ages","ลานหญ้า · ครูต้อม":"Lawn · Kru Tom","จอง 19/25 · เช็กอิน 18":"Booked 19/25 · 18 checked in","จบแล้ว":"Finished",
+"เดินชมพื้นที่ชุ่มน้ำ":"Wetland walk","พื้นที่ชุ่มน้ำ · พี่แบงก์":"Wetland · P'Bank","จอง 19/20 · เหลือ 1 ที่":"Booked 19/20 · 1 spot left","ใกล้เต็ม":"Almost full","รายชื่อ":"Guest list",
+"ตลาดนัดสีเขียว":"Green market","กิจกรรมในสวน · ไม่ต้องจอง":"Park event · no booking needed","กิจกรรมภายนอก":"External event","แก้ไข":"Edit",
+"ต้องดูแล":"Needs attention","พยากรณ์ฝน 60% ช่วง 16:00":"60% chance of rain at 16:00","รอบ “เดินชมพื้นที่ชุ่มน้ำ” อยู่กลางแจ้ง ย้ายไปห้องเรียนหรือแจ้งผู้จองล่วงหน้า?":"“Wetland walk” is outdoors. Move it to the classroom, or warn the people who booked?",
+"แจ้งผู้จองทาง LINE":"Notify bookers on LINE","3 คนในรายชื่อรอ":"3 people on the waitlist","สำหรับ “ดนตรีอะคูสติกยามเย็น” ศุกร์นี้":"for “Evening acoustic music” this Friday","ข้อมูลกิจกรรมอัปเดตแล้ว":"Event info updated","2 ชั่วโมงก่อน โดย มิ้นท์":"2 hours ago by Mint",
+"ใครมาบ้าง":"Who's coming","ส่งออก CSV":"Export CSV","ทุกรอบ":"All sessions","เดินชมพื้นที่ชุ่มน้ำ · อา. 22 พ.ย.":"Wetland walk · Sun 22 Nov","ไทเก๊กยามเช้า · อา. 22 พ.ย.":"Morning tai chi · Sun 22 Nov","ยืดเหยียด · จ. 23 พ.ย.":"Stretch · Mon 23 Nov",
+"ทุกสถานะ":"All statuses","ยืนยันแล้ว":"Confirmed","ยกเลิก":"Cancelled","รายชื่อรอ":"Waitlist","รหัส":"Code","ชื่อ":"Name","รอบ":"Session","จำนวน":"People","ที่นั่ง":"Spots","ช่องทาง":"Channel","สถานะ":"Status",
+"คุณสมศรี ใจดี":"Somsri Jaidee","เดินชมพื้นที่ชุ่มน้ำ · อา. 16:30":"Wetland walk · Sun 16:30","ดู":"View","คุณวิชัย ส.":"Wichai S.","เว็บ":"Web","ครอบครัวคุณนิด":"Nid's family","ไทเก๊กยามเช้า · อา. 06:30":"Morning tai chi · Sun 06:30","เสื่อ 7":"Mat 7",
+"คุณประยูร ท.":"Prayoon T.","ยืดเหยียด · จ. 17:30":"Stretch · Mon 17:30","เก้าอี้ 3, 4":"Chairs 3, 4","คุณแพร":"Prae","ดนตรีอะคูสติก · ศ. 18:00":"Acoustic music · Fri 18:00","แถว B 5–7":"Row B 5–7","คุณต้น":"Ton","คุณมาลี":"Malee","โยคะเบาๆ · พ. 17:30":"Gentle yoga · Wed 17:30","เสื่อ 12":"Mat 12",
+"แสดง 8 จาก 214 รายการ · ข้อมูลส่วนบุคคลจะถูกลบอัตโนมัติ 90 วันหลังวันกิจกรรม (PDPA)":"Showing 8 of 214 · Personal data is deleted automatically 90 days after the session (PDPA)",
+"ยินดีต้อนรับ!":"Welcome!","เช็กอินหน้างาน":"On-site check-in","สแกน QR บนตั๋ว":"Scan the ticket QR","กล้องพร้อม":"Camera ready","จ่อ QR code ในกรอบ":"Hold the QR code inside the frame","ค้นหา":"Search","ผลการสแกน":"Scan result","ตั๋วถูกต้อง":"Valid ticket",
+"เดินชมพื้นที่ชุ่มน้ำ · อา. 22 พ.ย. 16:30":"Wetland walk · Sun 22 Nov 16:30","2 คน · รหัส":"2 people · code","ยืนยันเช็กอิน 2 คน":"Check in 2 people","เพิ่งเช็กอิน":"Just checked in","เช็กอินแล้ว ✓":"Checked in ✓",
+"16:22 · คุณวิชัย ส. (1 คน)":"16:22 · Wichai S. (1 person)","16:19 · ครอบครัวคุณนิด (4 คน)":"16:19 · Nid's family (4 people)","16:15 · คุณ Anna K. (1 คน)":"16:15 · Anna K. (1 person)",
+"ตารางโปรแกรม GENERA":"GENERA programme","‹ สัปดาห์ก่อน":"‹ Previous week","สัปดาห์ถัดไป ›":"Next week ›",
+"จ. 23 พ.ย.":"Mon 23 Nov","อ. 24 พ.ย.":"Tue 24 Nov","พ. 25 พ.ย.":"Wed 25 Nov","พฤ. 26 พ.ย.":"Thu 26 Nov","ศ. 27 พ.ย.":"Fri 27 Nov","ส. 28 พ.ย.":"Sat 28 Nov","อา. 29 พ.ย.":"Sun 29 Nov",
+"ยืดเหยียดหลังเลิกงาน":"After-work stretch","วงน้ำสมุนไพร":"Herbal tea circle","โยคะเบาๆ":"Gentle yoga","20/20 เต็ม":"20/20 full","ร้อยมาลัย":"Garland workshop","ดนตรีอะคูสติก":"Acoustic music","40/40 เต็ม":"40/40 full",
+"ปลูกผัก":"Veggie gardening","เล่นด้วยกัน":"Family play","จุฬาฯ กลางแปลง 3":"Chula outdoor cinema 3","ไทเก๊ก":"Tai chi","เดินพื้นที่ชุ่มน้ำ":"Wetland walk","ยกเลิก (ฝน)":"Cancelled (rain)",
+"แก้ไขรอบ: ดนตรีอะคูสติกยามเย็น · ศ. 27 พ.ย.":"Edit session: Evening acoustic music · Fri 27 Nov","เต็ม · รอ 3":"Full · 3 waiting","เวลา":"Time","ถึง":"to","โซน":"Zone","อัฒจันทร์ (Amphitheatre)":"Amphitheatre","ลานหญ้า":"Lawn","ห้องเรียน (มีหลังคา)":"Classroom (covered)",
+"จำนวนที่รับ":"Capacity","เปิดให้จอง":"Open for booking","บันทึก":"Save","ยกเลิกรอบ + แจ้งผู้จอง":"Cancel session + notify bookers",
+"ข่าวในสวน":"What's on in the parks","เพิ่มกิจกรรม":"Add event","ทุกสวน":"All parks","อุทยาน 100 ปี จุฬาฯ":"Chula Centenary Park","สวนลุมพินี":"Lumpini Park","สวนเบญจกิติ":"Benjakitti Park","กำลังจะมาถึง":"Upcoming","ผ่านไปแล้ว":"Past","ต้องตรวจสอบ":"Needs checking",
+"วันที่":"Date","กิจกรรม":"Event","สถานที่":"Place","แหล่งที่มา":"Source","สถานะข้อมูล":"Info status","แก้ไขล่าสุด":"Last edited","12–15 พ.ย.":"12–15 Nov","อุทยาน 100 ปี":"Centenary Park","เพจผู้จัด":"Organiser page","มิ้นท์ · 2 ชม.":"Mint · 2 hr",
+"28 พ.ย.":"28 Nov","จุฬาฯ กลางแปลง ครั้งที่ 3":"Chula Klang Plaeng 3","เพจผู้จัด, ข่าว":"Organiser page, news","ปลา · 1 วัน":"Pla · 1 day","29 พ.ย.":"29 Nov","โปสเตอร์":"Poster","ข้อมูลจากโปสเตอร์":"Poster only","เจ · 3 วัน":"Jay · 3 days","6 ธ.ค.":"6 Dec","มิ้นท์ · 4 วัน":"Mint · 4 days",
+"ธ.ค.":"Dec","งานวัดบรรทัดทอง":"Banthat Thong temple fair","วัดบรรทัดทอง":"Banthat Thong temple","สถานที่ยังไม่ยืนยัน":"Venue not confirmed","เจ · 5 วัน":"Jay · 5 days",
+"ผลลัพธ์ SDG 11":"SDG 11 impact","พฤศจิกายน 2569":"November 2026","ตุลาคม 2569":"October 2026","ผู้เข้าร่วมทั้งเดือน":"Attendance this month","+18% จาก ต.ค.":"+18% vs Oct","ผู้มาครั้งแรก":"First-time visitors","ของผู้จองทั้งหมด":"of all bookers",
+"อัตราที่นั่งเต็ม":"Fill rate","เฉลี่ยทุกรอบ":"average across sessions","ความพึงพอใจ":"Satisfaction","จาก 5 · 126 ความเห็น":"out of 5 · 126 reviews","ผู้เข้าร่วมรายสัปดาห์":"Weekly attendance","จอง":"Booked","มาจริง":"Attended",
+"1–7 พ.ย.":"1–7 Nov","8–14 พ.ย.":"8–14 Nov","15–21 พ.ย.":"15–21 Nov","22–28 พ.ย.":"22–28 Nov","โปรแกรมยอดนิยม":"Most popular programmes","% ที่นั่งที่ถูกจองเฉลี่ยในเดือนนี้":"Average % of spots booked this month",
+"ทีมงาน":"Team","เชิญสมาชิก":"Invite member","บทบาท":"Role","สิทธิ์":"Access","ปลา":"Pla","ผู้ดูแล":"Admin","ทุกอย่าง":"Everything","มิ้นท์":"Mint","บรรณาธิการ":"Editor","กิจกรรม, ตาราง":"Events, schedule","เจ":"Jay","ครูต้อม":"Kru Tom","อาสาหน้างาน":"On-site volunteer","เช็กอินเท่านั้น":"Check-in only",
+"การแจ้งเตือนและการจอง":"Notifications & booking","ยืนยันการจองทาง LINE":"Booking confirmation on LINE","เตือนก่อนกิจกรรม":"Reminder before session","1 วันก่อน":"1 day before","3 ชั่วโมงก่อน":"3 hours before","แจ้งทีมเมื่อรอบใกล้เต็ม":"Alert team when nearly full",
+"จองได้สูงสุดต่อครั้ง":"Max people per booking","ลบข้อมูลผู้จองอัตโนมัติ":"Auto-delete booker data","90 วันหลังกิจกรรม":"90 days after session","30 วันหลังกิจกรรม":"30 days after session","รับรายชื่อรอ":"Allow waitlist",
+"เปิดฟอร์มเพิ่มรอบใหม่ (ตัวอย่าง)":"Opens the new-session form (mockup)","ส่ง LINE แจ้งผู้จอง 19 คน (ตัวอย่าง)":"LINE message sent to 19 bookers (mockup)","ดาวน์โหลด bookings.csv (ตัวอย่าง)":"Downloads bookings.csv (mockup)","ค้นหาชื่อ เบอร์โทร หรือรหัสจอง…":"Search name, phone or booking code…",
+"รหัสจอง":"Booking code","ค้นหารหัส (ตัวอย่าง)":"Looks up the code (mockup)","เปิดฟอร์มเพิ่มรอบ (ตัวอย่าง)":"Opens the new-session form (mockup)","บันทึกแล้ว (ตัวอย่าง)":"Saved (mockup)","ยกเลิกรอบและแจ้งผู้จอง 40 คน (ตัวอย่าง)":"Session cancelled, 40 bookers notified (mockup)",
+"เปิดฟอร์มเพิ่มกิจกรรม (ตัวอย่าง)":"Opens the add-event form (mockup)","ค้นหากิจกรรม…":"Search events…","ดาวน์โหลดรายงาน PDF (ตัวอย่าง)":"Downloads the PDF report (mockup)","ส่งคำเชิญทางอีเมล (ตัวอย่าง)":"Invitation emailed (mockup)",
+"เช็กอินคุณสมศรี 2 คน (ตัวอย่าง)":"Checked in Somsri, 2 people (mockup)"
+};
+let lang="th";document.documentElement.lang="th";
+const orig=new WeakMap();
+function tr(s){if(lang!=="en")return s;const k=s.trim();if(EN[k])return s.replace(k,EN[k]);const m=k.match(/^เปิดรายละเอียด (\S+) \(ตัวอย่าง\)$/);return m?`Opens booking ${m[1]} (mockup)`:s;}
+function applyLang(l){
+  lang=l;document.documentElement.lang=l;
+  const w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);let n;
+  while(n=w.nextNode()){if(n.parentElement.closest("script,style,svg"))continue;if(!orig.has(n))orig.set(n,n.nodeValue);const o=orig.get(n);n.nodeValue=l==="en"?tr(o):o;}
+  document.querySelectorAll("[placeholder],[data-toast],[aria-label]").forEach(e=>{for(const a of ["placeholder","data-toast","aria-label"]){if(!e.hasAttribute(a))continue;const k="data-th-"+a;if(!e.hasAttribute(k))e.setAttribute(k,e.getAttribute(a));const o=e.getAttribute(k);e.setAttribute(a,l==="en"?tr(o):o);}});
+  document.querySelectorAll("[data-lang]").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.lang===l)));
+  try{localStorage.setItem("genera-staff-lang",l);}catch(e){}
+}
+document.querySelectorAll("[data-lang]").forEach(b=>b.addEventListener("click",()=>applyLang(b.dataset.lang)));
+try{if(localStorage.getItem("genera-staff-lang")==="en")applyLang("en");}catch(e){}
+
 </script>
 </body>
 </html>
