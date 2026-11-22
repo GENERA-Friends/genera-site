@@ -376,6 +376,7 @@ function card(e,showDate=true){
       <div class="meta-row">${icon("map-pin")}${esc(placeShort(e))}</div>
       ${left!=null?`<div class="meta-row">${icon("users")}${esc(left?t("seatsShort")(left,e.cap):t("full"))}${almost?` · <span class="status soon">${esc(t("almostFull"))}</span>`:""}</div>`:e.cost?`<div class="meta-row">${icon("ticket")}${esc(LA(e.cost))}</div>`:""}
       ${st?`<div class="status ${st.cls}">${esc(st.txt)}</div>`:""}
+      ${wxChip(e)}
       <div class="card-actions">${bookButton(e)}</div>
     </div></article>`;
 }
@@ -425,7 +426,7 @@ function renderHome(){
   $("#todayNote").innerHTML=`<div class="upnext-media"><img src="${evImg(ev)}" alt="" onerror="${fb(ev)}"><span class="upnext-kind">${esc(ev.kind==="real"?t("upNextReal"):t("upNextProg"))}</span></div>
     <div class="upnext-body"><div class="upnext-eyebrow${live?" live":""}"><span class="dot" aria-hidden="true"></span>${esc(eyebrow)}</div>
     <h2 class="upnext-title">${esc(L(ev))}</h2>
-    <div class="meta-row">${icon("clock")}${esc(when)}</div><div class="meta-row">${icon("map-pin")}${esc(placeShort(ev))}</div>
+    <div class="meta-row">${icon("clock")}${esc(when)}</div><div class="meta-row">${icon("map-pin")}${esc(placeShort(ev))}</div>${wxChip(ev)}
     <button type="button" class="btn btn-dark btn-arrow" data-open="${ev.uid}"><span class="arrow-dot" aria-hidden="true">${icon("arrow-up-right")}</span>${esc(t("seeDetails"))}</button></div>`;
   const rib=[...Object.values(CATS).map(c=>L(c)),...Object.values(PARKS).map(q=>L(q))];
   const one=rib.map(x=>`<span class="rb-item">${esc(x)}</span><span class="rb-logo">${LOGO_SVG}</span>`).join("");
@@ -445,9 +446,76 @@ function renderHome(){
       <div class="hx-row-meta"><span>${icon("calendar-days")}${esc(t("nextRound"))}: ${esc(fmtShort(e))}</span><span>${icon("clock")}${esc(timeRange(e))}</span><span>${icon("map-pin")}${esc(placeShort(e))}</span></div></div>
   </li>`).join("");
   const f=rows[0];if(f){$("#progImg").src=evImg(f);$("#progCap").textContent=L(f);}
+  renderWx();
   $("#parkStats").innerHTML=statsHtml();
   $("#faq").innerHTML=t("faq").map(([q,a],i)=>`<details class="faq-item"${i===0?" open":""}><summary><span>${esc(q)}</span><span class="faq-ic" aria-hidden="true">${icon("plus")}</span></summary><p>${esc(a)}</p></details>`).join("");
   observeReveal();
+}
+/* ================= weather & heat warnings (data: assets/js/weather.js) ================= */
+const WX=window.GENERA_WX;
+const WT=()=>WX.TXT[state.lang];
+state.wxPark=(p=>WX.IDS.includes(p)?p:"chula")(ls.get("genera-wx-park","chula"));
+const wxPill=lv=>`<span class="wx-pill wx-l${lv}">${icon("thermometer")}${esc(WT().levels[lv])}</span>`;
+const deg=v=>v==null?"–":`${Math.round(v)}°`;
+function wxOf(e){if(!e||isPast(e))return null;const s=e.allDay?540:toMin(e.s),en=e.allDay?1080:endMin(e);return WX.forWindow(e.park||"chula",e.key,s,en);}
+function wxChip(e){
+  const w=wxOf(e);if(!w||w.later)return "";const x=WT(),out=[];
+  if(w.level>=2)out.push(`<span class="wx-chip wx-l${w.level}">${icon("thermometer")}${esc(x.chipHeat(x.levels[w.level],Math.round(w.hiMax)))}</span>`);
+  if(w.rain!=null&&w.rain>=60&&!e.sh)out.push(`<span class="wx-chip wx-rain">${icon("cloud-rain")}${esc(x.chipRain(w.rain))}</span>`);
+  return out.length?`<div class="wx-chips">${out.join("")}</div>`:"";
+}
+function wxTips(w,covered){const x=WT(),tips=[];
+  if(w.rain!=null&&w.rain>=60&&!covered)tips.push(["cloud-rain",x.rainTip(w.rain)]);
+  if(w.uv!=null&&w.uv>=8&&!covered)tips.push(["sun",x.uvTip]);
+  if(covered&&w.level>=1)tips.push(["umbrella",x.covered]);
+  return tips.map(([i,s])=>`<li>${icon(i)}<span>${esc(s)}</span></li>`).join("");}
+function wxEventBlock(e){
+  if(!e||isPast(e))return "";const x=WT(),st=WX.status;let inner;
+  if(!WX.data){inner=st==="error"?`<p class="wx-muted">${esc(x.error)} <button type="button" class="link-btn" data-wxretry>${icon("refresh-cw")}${esc(x.retry)}</button></p>`:`<p class="wx-muted">${esc(x.loading)}</p>`;}
+  else{const w=wxOf(e);if(!w)return "";
+    if(w.later){const o=parseKey(w.from);inner=`<p class="wx-muted">${icon("info")}<span>${esc(x.evLater(fmt(o.y,o.m,o.d,{day:"numeric",month:"long"})))}</span></p>`;}
+    else{const covered=e.kind==="prog"&&e.sh,tips=wxTips(w,covered);
+      inner=`<div class="wx-ev-card wx-l${w.level}">
+        <div class="wx-ev-top">${wxPill(w.level)}<span class="wx-ev-cond">${icon(WX.ICON_OF[w.code])}${esc(x.codes[w.code])}</span></div>
+        <p class="wx-advice">${esc(x.advice[w.level])}</p>
+        <dl class="wx-stats"><div><dt>${esc(x.evHi)}</dt><dd>${deg(w.hiMax)}C</dd></div><div><dt>${esc(x.evTemp)}</dt><dd>${deg(w.tMin)}–${deg(w.tMax)}C</dd></div><div><dt>${esc(x.evRain)}</dt><dd>${w.rain==null?"–":w.rain+"%"}</dd></div><div><dt>${esc(x.evUv)}</dt><dd>${w.uv==null?"–":Math.round(w.uv)}</dd></div></dl>
+        ${w.hours.length>1&&w.hours.length<=14?`<ol class="wx-hours" aria-label="${esc(x.feels)}">${w.hours.map(h=>`<li class="wx-l${WX.levelOf(h.hi)}"><span>${pad(h.h)}:00</span><b>${deg(h.hi)}</b></li>`).join("")}</ol>`:""}
+        ${tips?`<ul class="wx-tips">${tips}</ul>`:""}
+      </div>`;}}
+  return `<section class="wx-ev" id="wxEvent"><h3 class="grp">${icon("thermometer")}${esc(x.evTitle)}</h3>${inner}<p class="wx-src">${esc(x.src)}</p></section>`;
+}
+function renderWx(){
+  const el=$("#wxSec");if(!el)return;const x=WT(),park=state.wxPark,now=bkkNow(),nowKey=keyOf(now.y,now.m,now.d),hr=Math.floor(now.min/60);
+  const opts=WX.IDS.filter(id=>PARKS[id]).map(id=>`<option value="${id}"${id===park?" selected":""}>${esc(L(PARKS[id]))}</option>`).join("");
+  const head=`<div class="hx-head hx-head-row"><div><p class="script">${esc(x.wxScript)}</p><h2 class="display" id="wxTitle">${esc(x.wxTitle)}</h2><p>${esc(x.wxSub)}</p></div>
+    <label class="wx-park"><span>${icon("map-pin")}${esc(x.park)}</span><select id="wxPark">${opts}</select></label></div>`;
+  let body;
+  if(!WX.data){body=WX.status==="error"?`<div class="wx-box wx-msg">${icon("info")}<span>${esc(x.error)}</span><button type="button" class="btn btn-secondary" data-wxretry>${icon("refresh-cw")}${esc(x.retry)}</button></div>`:`<div class="wx-box wx-msg" aria-busy="true">${icon("cloud-sun")}<span>${esc(x.loading)}</span></div>`;}
+  else{
+    const cur=WX.current(park),hours=WX.nextHours(park,nowKey,hr,12),h0=hours[0]||{};
+    const c=cur||h0,lv=WX.levelOf(c.hi),code=WX.codeOf(c.code);
+    const nowCard=`<div class="wx-box wx-now wx-l${lv}">
+      <div class="wx-now-top"><span class="wx-now-ic">${icon(WX.ICON_OF[code])}</span><div><div class="wx-now-label">${esc(x.now)} · ${esc(x.codes[code])}</div><div class="wx-now-temp">${deg(c.t)}<small>C</small></div></div></div>
+      <div class="wx-feels"><span>${esc(x.feels)}</span><b>${deg(c.hi)}C</b>${wxPill(lv)}</div>
+      <p class="wx-advice">${esc(x.advice[lv])}</p>
+      <dl class="wx-stats"><div><dt>${esc(x.humidity)}</dt><dd>${c.rh==null?"–":Math.round(c.rh)+"%"}</dd></div><div><dt>${esc(x.rain)}</dt><dd>${h0.rain==null?"–":h0.rain+"%"}</dd></div><div><dt>${esc(x.uv)}</dt><dd>${h0.uv==null?"–":Math.round(h0.uv)}</dd></div></dl>
+    </div>`;
+    const maxHi=Math.max(40,...hours.map(h=>h.hi)),minHi=Math.min(24,...hours.map(h=>h.hi));
+    const strip=`<div class="wx-box wx-next"><h3>${icon("clock")}${esc(x.next12)}</h3><ol class="wx-strip">${hours.map(h=>{const l=WX.levelOf(h.hi);return `<li title="${esc(x.levels[l])}"><span class="wx-h">${pad(h.h)}:00</span>${icon(WX.ICON_OF[WX.codeOf(h.code)])}<span class="wx-bar"><i class="wx-l${l}" style="height:${Math.round(18+82*(h.hi-minHi)/Math.max(1,maxHi-minHi))}%"></i></span><b>${deg(h.hi)}</b><span class="wx-r">${h.rain!=null&&h.rain>=30?h.rain+"%":"&nbsp;"}</span></li>`;}).join("")}</ol>
+      <div class="wx-legend">${x.levels.map((n,i)=>`<span><i class="wx-l${i}"></i>${esc(n)}</span>`).join("")}</div></div>`;
+    const seen=new Set(),heads=upcoming(TODAY,7,false).filter(e=>{if(seen.has(e.uid))return false;seen.add(e.uid);const w=wxOf(e);return w&&!w.later&&(w.level>=2||(w.rain!=null&&w.rain>=60&&!e.sh));}).slice(0,6);
+    const list=`<div class="wx-box wx-heads"><h3>${icon("triangle-alert")}${esc(x.heads)}</h3>${heads.length?`<ul>${heads.map(e=>`<li><button type="button" data-open="${e.uid}"><span class="wx-hd-when">${esc(fmtShort(e))} · ${esc(e.allDay?t("allDayT"):e.s)}</span><span class="wx-hd-t">${esc(L(e))}</span><span class="wx-hd-p">${esc(placeShort(e))}</span>${wxChip(e)}</button></li>`).join("")}</ul>`:`<p class="wx-muted">${icon("check")}<span>${esc(x.noHeads)}</span></p>`}</div>`;
+    const upd=WX.fetchedAt?new Intl.DateTimeFormat(loc(),{timeZone:"Asia/Bangkok",hour:"2-digit",minute:"2-digit"}).format(new Date(WX.fetchedAt)):"";
+    body=`<div class="wx-grid">${nowCard}${strip}${list}</div><p class="wx-src">${esc(x.src)}${upd?` · ${esc(x.updated)} ${upd}`:""} <button type="button" class="link-btn" data-wxretry>${icon("refresh-cw")}${esc(x.refresh)}</button></p>`;
+  }
+  el.innerHTML=head+body;
+  $("#wxPark").addEventListener("change",ev=>{state.wxPark=ev.target.value;ls.set("genera-wx-park",state.wxPark);renderWx();});
+}
+function onWx(){
+  if(!READY)return;
+  if(!overlay.current){render();return;}
+  if(state.route==="home")renderWx();
+  if(panel.mode==="detail"){const e=findEvent(panel.uid),box=$("#wxEvent");if(e&&box){const h=wxEventBlock(e);if(h)box.outerHTML=h;else box.remove();}}
 }
 let revealObs=null;
 function observeReveal(){
@@ -670,7 +738,7 @@ function renderPanel(){
         fact("users",t("fSeats"),`${t("free")} · ${left?t("seatsShort")(left,e.cap):t("full")}`,b?`${t("booked")} · ${t("peopleShort")(b.people)}`:"");
       extra=`<div class="inline-acts"><button type="button" class="link-btn" data-zonepanel="${e.z}">${icon("map")}${esc(t("viewZone"))}</button></div>`;
     }
-    body.innerHTML=`${top}<div class="d-content">${badge(e)}<h2 id="pTitle" tabindex="-1">${esc(L(e))}</h2>${e.kind==="prog"?`<p class="warn">${icon("info")}<span>${esc(t("progNote"))}</span></p>`:""}<p class="desc">${esc(S(e,"d"))}</p><dl class="facts">${facts}</dl>${extra}</div>`;
+    body.innerHTML=`${top}<div class="d-content">${badge(e)}<h2 id="pTitle" tabindex="-1">${esc(L(e))}</h2>${e.kind==="prog"?`<p class="warn">${icon("info")}<span>${esc(t("progNote"))}</span></p>`:""}<p class="desc">${esc(S(e,"d"))}</p><dl class="facts">${facts}</dl>${wxEventBlock(e)}${extra}</div>`;
     const regBtn=e.kind==="real"&&e.reg&&e.reg[2]&&!isPast(e)?`<a class="btn btn-primary" href="${e.reg[2]}" target="_blank" rel="noopener">${icon("external-link")}<span>${esc(t("register"))}</span></a>`:"";
     foot.innerHTML=(e.kind==="real"?regBtn:bookButton(e))+`<div class="foot-row"><a class="btn btn-secondary" href="${lineUrl(e)}" target="_blank" rel="noopener">${icon("share-2")}<span>${esc(t("shareLine"))}</span></a><a class="btn btn-secondary" href="${gcalUrl(e)}" target="_blank" rel="noopener">${icon("calendar-plus")}<span>${esc(t("addCal"))}</span></a></div><button type="button" class="link-btn" style="justify-content:center" data-copy="${e.uid}">${icon("copy")}${esc(t("copy"))}</button><p class="note" id="copyNote" aria-live="polite"></p>`;
   }
@@ -787,6 +855,7 @@ document.addEventListener("click",async ev=>{
   const b=ev.target.closest("button,a");if(!b)return;
   if(b.getAttribute("aria-disabled")==="true"){ev.preventDefault();return;}
   if(b.dataset.lang){state.lang=b.dataset.lang;ls.set("genera-lang2",state.lang);render();return;}
+  if(b.hasAttribute("data-wxretry")){WX.load(true).then(onWx,onWx);onWx();return;}
   if(b.hasAttribute("data-back")){panelBack();return;}
   if(b.dataset.close){hide();return;}
   if(b.id==="menuBtn"){show("menuSheet",b);return;}
@@ -846,5 +915,6 @@ $("#grid").addEventListener("keydown",ev=>{const st={ArrowLeft:-1,ArrowRight:1,A
 
 $$("[data-icon]").forEach(el=>el.innerHTML=ICONS[el.dataset.icon]||"");
 fromHash();
-loadData().then(()=>{READY=true;render();setInterval(()=>{if(!overlay.current)render();},60000);})
+loadData().then(()=>{READY=true;render();WX.load().then(onWx,onWx);
+  setInterval(()=>{if(!overlay.current)render();const before=WX.fetchedAt;WX.load().then(()=>{if(WX.fetchedAt!==before)onWx();},()=>{});},60000);})
   .catch(err=>{console.error(err);$("#main").insertAdjacentHTML("afterbegin",`<div class="warn" role="alert">${icon("info")}<span>${state.lang==="th"?"โหลดข้อมูลกิจกรรมไม่สำเร็จ ลองรีเฟรชหน้านี้ ถ้าเปิดไฟล์จากเครื่อง ให้รันผ่านเซิร์ฟเวอร์ (ดู README)":"Couldn't load the activity data. Refresh the page — if you opened the file directly, run it through a local server (see README)."}</span></div>`);});
