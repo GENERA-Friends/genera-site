@@ -5,6 +5,17 @@
 
 A static website (HTML/CSS/JS, no build step) with an admin panel (หลังบ้าน) at `/admin` so the team can edit content without touching code.
 
+## ลิงก์ / Links
+
+| | |
+|---|---|
+| 🌳 **เว็บไซต์ / Public website** | https://genera-friends.github.io/genera-site/ |
+| 🧑‍💼 **หลังบ้านสำหรับทีมงาน (ภาพตัวอย่าง) / Staff back office (mockup)** | https://genera-friends.github.io/genera-site/staff/ |
+| ✏️ **แก้ไขเนื้อหา / Content editor (CMS)** | https://genera-friends.github.io/genera-site/admin/ |
+
+> หน้า `/staff` เป็น **ภาพตัวอย่าง (mockup)** ของระบบหลังบ้านในอนาคต ข้อมูลทั้งหมดเป็นข้อมูลสมมติ ยังไม่บันทึกจริง สลับภาษาไทย/อังกฤษได้ที่แถบด้านบน
+> The `/staff` page is a clickable **mockup** of a future staff back office. All data is fictional and nothing is saved. Use the ไทย | EN switch in the top banner to change language.
+
 ---
 
 ## โครงสร้างไฟล์ / Structure
@@ -21,6 +32,7 @@ data/programme.json     โปรแกรมประจำสัปดาห�
 data/zones.json         โซนบนแผนผังอุทยาน
 data/site.json          ข้อมูลการเข้าใช้อุทยาน และแหล่งที่มา
 admin/                  หลังบ้าน (Sveltia CMS)
+staff/                  ภาพตัวอย่างหลังบ้านทีมงาน (mockup, TH/EN)
 ```
 
 **แก้เนื้อหา = แก้ไฟล์ใน `data/`** ผ่านหลังบ้าน หรือแก้ JSON ตรง ๆ ก็ได้
